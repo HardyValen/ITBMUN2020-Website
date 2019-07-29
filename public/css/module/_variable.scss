@@ -1,0 +1,39 @@
+// Color
+$theme-colors: (
+    "black": #000000, //Used for Heading 1 - Article
+    "white": #FFFFFF, //Used for Heading 1 - Title - Main
+
+    //Primary Colors
+    "primary-light": #BF8CD9,
+    "primary": #5B4566,
+    "primary-dark": #321740,
+    "primary-darker": #23102D,
+    "primary-darkest": #120817,
+    
+    //Secondary Colors
+    "secondary-light": #EA5A5A,
+    "secondary": #D02B2F,
+    "secondary-dark": #F46279,
+    "secondary-darker": #FD92A4,
+
+    //Primary Alt Colors
+    "primary-alt-lighter": #BAC7D8,
+    "primary-alt-light": #8D9EBC,
+    "primary-alt": #1C355E,
+    "primary-alt-dark": #142542,
+
+    //Primary Alt Colors
+    "secondary-alt-light": #96E3BF,
+    "secondary-alt": #07E288,
+
+    //Main Colors
+    "title-main": #FFFFFF,
+    "heading-1-main": #F6F6F6,
+    "paragraph-main": #E5E5E5,
+
+    //Article Colors
+    "title-article": #060606,
+    "heading-1-article": #242424,
+    "paragraph-article": #424242,
+
+);

@@ -1,0 +1,45 @@
+/* =================================================================== 
+ *
+ *  ITBMUN 2020 Main Stylesheet
+ *  29-07-2019
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *      # A. Import Modules
+ *      # B. Default Colors
+ *
+ * =================================================================== */
+
+/* ===================================================================
+ * # A. Import Module
+ * ------------------------------------------------------------------- */
+ @import 'module/math';
+ @import 'module/mixin-fluid';
+ @import 'module/variable';
+ @import 'module/fonts';
+ @import 'module/elevation-shadow';
+
+/* # End of Import Module
+ * ----------------------- */
+
+/* ===================================================================
+ * # A. Default Colors
+ * ------------------------------------------------------------------- */
+body {
+    background-color: map-get($theme-colors, "black");
+    color: map-get($theme-colors, "paragraph-main")
+}
+
+h1 {
+    color: map-get($theme-colors, "heading-1-main");
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: map-get($theme-colors, "title-main");
+    @include lemonMilkRegular();
+}
+
+/* # End of Default Colors
+ * ----------------------- */
+

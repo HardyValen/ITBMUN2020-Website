@@ -1,311 +1,166 @@
-@mixin fontface($name, $url) {
-  font-family: $name, sans-serif;
-  src: url($url) format('truetype');
-  font-weight: normal;
+/* Lemon Milk ======================= */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i,800,800i|Titillium+Web:300,300i,400,400i,600,600i,700,700i&display=swap');
+// font-family: 'Titillium Web', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+
+@font-face {
+  font-family: 'Lemon/Milk Regular';
   font-style: normal;
-}
+  font-weight: normal;
+  src: local('Lemon/Milk Regular'), url('../font/lemonmilk/LemonMilk.woff') format('woff');
+  }
+  
+  
+@font-face {
+  font-family: 'Lemon/Milk Regular italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Regular italic'), url('../font/lemonmilk/LemonMilkitalic.woff') format('woff');
+  }
+  
+  
+@font-face {
+  font-family: 'Lemon/Milk light italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk light italic'), url('../font/lemonmilk/LemonMilklightitalic.woff') format('woff');
+  }
+  
+  
+@font-face {
+  font-family: 'Lemon/Milk Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Bold'), url('../font/lemonmilk/LemonMilkbold.woff') format('woff');
+  }
+  
+  
+@font-face {
+  font-family: 'Lemon/Milk Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Bold'), url('../font/lemonmilk/LemonMilkbolditalic.woff') format('woff');
+  }
+  
+  
+@font-face {
+  font-family: 'Lemon/Milk light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk light Regular'), url('../font/lemonmilk/LemonMilklight.woff') format('woff');
+  }
 
-
-/* Font - Playfair Display */
-/* ======================= */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
-/* font-family: 'Playfair Display', serif; */
-
-/* Font - Adobe Caslon Pro             */
-/* =================================== */
+/* HelveticaNeue ======================= */
 
 @font-face {
-  @include fontface("Adobe Caslon Pro Regular", "../font/ACaslonPro/ACaslonPro-Regular.otf");
-}
-
+  font-family: 'Helvetica Neue LT Pro 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 55 Roman'), url('../font/HelveticaNeue/HelveticaNeueLTPro-Roman.woff') format('woff');
+  }
+  
 @font-face {
-  @include fontface("Adobe Caslon Pro Bold", "../font/ACaslonPro/ACaslonPro-Bold.otf");
-}
-
+  font-family: 'Helvetica Neue LT Pro 56 Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 56 Italic'), url('../font/HelveticaNeue/HelveticaNeueLTPro-It.woff') format('woff');
+  }
+  
 @font-face {
-  @include fontface("Adobe Caslon Pro Bold Italic", "../font/ACaslonPro/ACaslonPro-BoldItalic.otf");
-}
-
+  font-family: 'Helvetica Neue LT Pro 45 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 45 Light'), url('../font/HelveticaNeue/HelveticaNeueLTPro-Lt.woff') format('woff');
+  }
+  
 @font-face {
-  @include fontface("Adobe Caslon Pro Italic", "../font/ACaslonPro/ACaslonPro-Italic.otf");
-}
-
+  font-family: 'Helvetica Neue LT Pro 46 Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 46 Light Italic'), url('../font/HelveticaNeue/HelveticaNeueLTPro-LtIt.woff') format('woff');
+  }
+  
+  
 @font-face {
-  @include fontface("Adobe Caslon Pro Semibold", "../font/ACaslonPro/ACaslonPro-Semibold.otf");
-}
+  font-family: 'Helvetica Neue LT Pro 65 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 65 Medium'), url('../font/HelveticaNeue/HelveticaNeueLTPro-Md.woff') format('woff');
+  }
 
+  
 @font-face {
-  @include fontface("Adobe Caslon Pro Semibold Italic", "../font/ACaslonPro/ACaslonPro-SemiboldItalic.otf");
-}
-
-/* Font - Calibri                      */
-/* =================================== */
-
+  font-family: 'Helvetica Neue LT Pro 66 Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 66 Medium Italic'), url('../font/HelveticaNeue/HelveticaNeueLTPro-MdIt.woff') format('woff');
+  }
+  
+  
 @font-face {
-  @include fontface("Calibri", "../font/Calibri.ttf");
-}
-
+  font-family: 'Helvetica Neue LT Pro 75 Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 75 Bold'), url('../font/HelveticaNeue/HelveticaNeueLTPro-Bd.woff') format('woff');
+  }
+  
 @font-face {
-  @include fontface('Calibri Light', "../font/calibril.ttf");
-}
-
-@font-face {
-  @include fontface('Calibri Bold', "../font/CALIBRIB.TTF");
-}
-
-@font-face {
-  @include fontface('Calibri Italic', "../font/CALIBRII.TTF");
-}
-
-@font-face {
-  @include fontface('Calibri Italic Bold', "../font/CALIBRIZ.TTF");
-}
-
-/* Font - Formata                      */
-/* =================================== */
-@font-face {
-  @include fontface('Formata Bold', "../font/Formata/Formata-Bold.otf");
-}
-
-@font-face {
-  @include fontface('Formata Bold Condensed Italic', "../font/Formata/Formata-BoldCondensedItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Bold Italic', "../font/Formata/Formata-BoldItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Condensed Italic SC', "../font/Formata/Formata-CnItalicSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Condensed', "../font/Formata/Formata-Condensed.otf");
-}
-
-@font-face {
-  @include fontface('Formata Condensed Expert', "../font/Formata/Formata-CondensedExpert.otf");
-}
-
-@font-face {
-  @include fontface('Formata Condensed Italic', "../font/Formata/Formata-CondensedItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Condensed Italic SC', "../font/Formata/Formata-CondensedSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Italic', "../font/Formata/Formata-Italic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Italic Expert', "../font/Formata/Formata-ItalicExpert.otf");
-}
-
-@font-face {
-  @include fontface('Formata Italic SC', "../font/Formata/Formata-ItalicSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light', "../font/Formata/Formata-Light.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light Condensed Italic SC', "../font/Formata/Formata-LightCnItalicSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light Condensed SC', "../font/Formata/Formata-LightCnSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light Condensed', "../font/Formata/Formata-LightCondensed.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light Condensed Italic', "../font/Formata/Formata-LightCondensedItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light Italic', "../font/Formata/Formata-LightItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light Italic SC', "../font/Formata/Formata-LightItalicSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Light SC', "../font/Formata/Formata-LightSC.otf");
-}
-
-@font-face {
-  @include fontface('Formata Medium', "../font/Formata/Formata-Medium.otf");
-}
-
-@font-face {
-  @include fontface('Formata Medium Condensed', "../font/Formata/Formata-MediumCondensed.otf");
-}
-
-@font-face {
-  @include fontface('Formata Medium Condensed Italic', "../font/Formata/Formata-MediumCondensedItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Medium Italic', "../font/Formata/Formata-MediumItalic.otf");
-}
-
-@font-face {
-  @include fontface('Formata Regular', "../font/Formata/Formata-Regular.otf");
-}
-
-@font-face {
-  @include fontface('Formata Regular SC', "../font/Formata/Formata-RegularSC.otf");
-}
-
-
-/* Calling Font Classes */
-
-.formata-bold {
-  font-family: 'Formata Bold', sans-serif !important; 
-}
-
-.formata-bold-condensed-italic {
-  font-family: 'Formata Bold Condensed Italic', sans-serif !important; 
-}
-
-.formata-bold-italic {
-  font-family: 'Formata Bold Italic', sans-serif !important; 
-}
-
-.formata-condensed-italic-sc {
-  font-family: 'Formata Condensed Italic SC', sans-serif !important; 
-}
-
-.formata-condensed {
-  font-family: 'Formata Condensed', sans-serif !important; 
-}
-
-.formata-condensed-expert {
-  font-family: 'Formata Condensed Expert', sans-serif !important; 
-}
-
-.formata-condensed-italic {
-  font-family: 'Formata Condensed Italic', sans-serif !important; 
-}
-
-.formata-condensed-sc {
-  font-family: 'Formata Condensed SC', sans-serif !important; 
-}
-
-.formata-italic {
-  font-family: 'Formata Italic', sans-serif !important; 
-}
-
-.formata-italic-expert {
-  font-family: 'Formata Italic Expert', sans-serif !important; 
-}
-
-.formata-italic-sc {
-  font-family: 'Formata Italic SC', sans-serif !important; 
-}
-
-.formata-light {
-  font-family: 'Formata Light', sans-serif !important; 
-}
-
-.formata-light-condensed-italic-sc {
-  font-family: 'Formata Light Condensed Italic SC', sans-serif !important; 
-}
-
-.formata-light-condensed-sc {
-  font-family: 'Formata Light Condensed SC', sans-serif !important; 
-}
-
-.formata-light-condensed {
-  font-family: 'Formata Light Condensed', sans-serif !important; 
-}
-
-.formata-light-condensed-italic {
-  font-family: 'Formata Light Condensed Italic', sans-serif !important; 
-}
-
-.formata-light-italic{
-  font-family: 'Formata Light Italic', sans-serif !important; 
-}
-
-.formata-light-italic-sc {
-  font-family: 'Formata Light Italic SC', sans-serif !important; 
-}
-
-.formata-light-sc {
-  font-family: 'Formata Light SC', sans-serif !important; 
-}
-
-.formata-medium {
-  font-family: 'Formata Medium', sans-serif !important; 
-}
-
-.formata-medium-condensed {
-  font-family: 'Formata Medium Condensed', sans-serif !important; 
-}
-
-.formata-medium-condensed-italic {
-  font-family: 'Formata Medium Condensed Italic', sans-serif !important; 
-}
-
-.formata-medium-italic {
-  font-family: 'Formata Medium Italic', sans-serif !important; 
-}
+  font-family: 'Helvetica Neue LT Pro 76 Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue LT Pro 76 Bold Italic'), url('../font/HelveticaNeue/HelveticaNeueLTPro-BdIt.woff') format('woff');
+  }
 
-.formata-regular {
-  font-family: 'Formata Regular', sans-serif !important; 
+// Silly Mixins karena gua males haha
+// ==================================
+@mixin lemonMilkRegular() {
+    font-family: 'Lemon/Milk Regular';
 }
 
-.formata-regular-SC {
-  font-family: 'Formata Regular SC', sans-serif !important; 
+@mixin lemonMilkRegularItalic() {
+    font-family: 'Lemon/Milk Regular italic';
 }
 
-.calibri {
-  font-family: 'Calibri', sans-serif !important; 
+@mixin lemonMilkLightItalic() {
+    font-family: 'Lemon/Milk light italic';
 }
 
-.calibri-light {
-  font-family: 'Calibri Light', sans-serif !important; 
+@mixin lemonMilkBold() {
+    font-family: 'Lemon/Milk Bold';
 }
 
-.calibri-bold {
-  font-family: 'Calibri Bold', sans-serif !important;
+@mixin lemonMilkLightRegular() {
+    font-family: 'Lemon/Milk light Regular';
 }
 
-.calibri-italic {
-  font-family: 'Calibri Italic', sans-serif !important;
+@mixin helveticaNeue() {
+    font-family: 'Helvetica Neue LT Pro 55 Roman';
 }
 
-.calibri-bold-italic {
-  font-family: 'Calibri Italic Bold', sans-serif !important;
+@mixin helveticaNeueItalic() {
+    font-family: 'Helvetica Neue LT Pro 56 Italic';
 }
 
-.acaslonpro {
-  font-family: 'Adobe Caslon Pro Regular', serif !important; 
+@mixin helveticaNeueLight() {
+    font-family: 'Helvetica Neue LT Pro 45 Light';
 }
 
-.acaslonpro-bold {
-  font-family: 'Adobe Caslon Pro Bold', serif !important;
+@mixin helveticaNeueLightItalic() {
+    font-family: 'Helvetica Neue LT Pro 46 Light Italic';
 }
 
-.acaslonpro-italic {
-  font-family: 'Adobe Caslon Pro Italic', serif !important;
+@mixin helveticaNeueMedium() {
+    font-family: 'Helvetica Neue LT Pro 65 Medium';
 }
 
-.acaslonpro-bolditalic {
-  font-family: 'Adobe Caslon Pro Bold Italic', serif !important;
+@mixin helveticaNeueMediumItalic() {
+    font-family: 'Helvetica Neue LT Pro 66 Medium Italic';
 }
 
-.acaslonpro-semibold {
-  font-family: 'Adobe Caslon Pro Semibold', serif !important;
+@mixin helveticaNeueBold() {
+    font-family: 'Helvetica Neue LT Pro 75 Bold';
 }
 
-.acaslonpro-semibolditalic {
-  font-family: 'Adobe Caslon Pro Semibold Italic', serif !important;
+@mixin helveticaNeueBoldItalic() {
+    font-family: 'Helvetica Neue LT Pro 76 Bold Italic';
 }
