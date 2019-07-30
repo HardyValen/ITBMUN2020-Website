@@ -7,12 +7,14 @@
  *  TOC:
  *      # A. Import Modules
  *      # B. Custom Normalize
+ *      # C. Typography
  *
  * =================================================================== */
 
 /* ===================================================================
  * # A. Import Module
  * ------------------------------------------------------------------- */
+ @import 'module/fonts';
  @import 'module/math';
  @import 'module/mixin-fluid';
 
@@ -63,4 +65,18 @@ article, aside, footer, header, nav, section {
 }
 
 /* # End of Normalize
+ * ----------------------- */
+
+/* ===================================================================
+ * # C. Typography
+ * ------------------------------------------------------------------- */
+html {
+    font-size: 62.5%;
+}
+
+html {
+    @include titilliumWeb();
+}
+
+/* # End of Typography
  * ----------------------- */

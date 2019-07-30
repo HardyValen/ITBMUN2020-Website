@@ -1,7 +1,7 @@
 // Color
 $theme-colors: (
-    "black": #000000, //Used for Heading 1 - Article
-    "white": #FFFFFF, //Used for Heading 1 - Title - Main
+    "black": #000000,
+    "white": #FFFFFF,
 
     //Primary Colors
     "primary-light": #BF8CD9,
@@ -11,10 +11,10 @@ $theme-colors: (
     "primary-darkest": #120817,
     
     //Secondary Colors
+    "secondary-lightest": #FD92A4,
+    "secondary-lighter": #F46279,
     "secondary-light": #EA5A5A,
     "secondary": #D02B2F,
-    "secondary-dark": #F46279,
-    "secondary-darker": #FD92A4,
 
     //Primary Alt Colors
     "primary-alt-lighter": #BAC7D8,

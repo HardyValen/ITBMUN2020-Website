@@ -7,6 +7,7 @@
  *  TOC:
  *      # A. Import Modules
  *      # B. Default Colors
+ *      # C. Navigation Bar
  *
  * =================================================================== */
 
@@ -23,16 +24,30 @@
  * ----------------------- */
 
 /* ===================================================================
- * # A. Default Colors
+ * # B. Default Colors
  * ------------------------------------------------------------------- */
 body {
     background-color: map-get($theme-colors, "black");
-    color: map-get($theme-colors, "paragraph-main")
+    color: map-get($theme-colors, "paragraph-main");
+    font-size:1.6rem;
 }
 
 h1 {
     color: map-get($theme-colors, "heading-1-main");
     font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: #ffffff;
+}
+
+a#active{
+    color: map-get($theme-colors, "secondary-light");
+}
+
+a:hover{
+    text-decoration: none;
+    color: map-get($theme-colors, "secondary-light" )
 }
 
 .title {
@@ -43,3 +58,51 @@ h1 {
 /* # End of Default Colors
  * ----------------------- */
 
+/* ===================================================================
+ * # C. Navigation for Main
+ * ------------------------------------------------------------------- */
+ .navigation{
+    background-color:rgba(0, 0, 0, 0);
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        @include fluidmarginx(2rem, 5rem);
+        @include fluidmarginy(2rem, 2rem);
+        
+        @include montserrat();
+        @include fluidfontsize(1.2rem, 1.4rem);
+        font-weight:700;
+        text-transform: uppercase;
+        
+
+        ul{
+            margin: 0;
+            li:not(:first-child)::before{
+                content: "\2003\2003|\2003\2003";
+            }
+        }
+
+        li {
+            a {
+                letter-spacing: 1px;
+            } 
+
+            .navigation-logo{
+                @include fluidwidth(4rem, 10rem);
+            }
+        }
+    }
+}
+
+/* # End of Navigation for Main
+ * ----------------------- */
