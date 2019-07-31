@@ -1,0 +1,25 @@
+.button-white-transparent{
+    @include fluidpaddingx(1rem, 3rem);
+    @include fluidpaddingy(0.5rem, 1.5rem);
+    border: 2px solid white;
+    @include montserrat();
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include fluidfontsize(1.2rem, 1.6rem);
+    transition: 0.2s;
+}
+
+.button-white-transparent:hover{
+    background-color:map-get($theme-colors, "secondary-light" );
+    color: white;
+    border-color: map-get($theme-colors, "secondary-light" );
+    transition: 0.1s;
+}
+
+.button-white-transparent:active{
+    background-color:map-get($theme-colors, "secondary" );
+    color: white;
+    border-color: map-get($theme-colors, "secondary" );
+    transition: 0.1s;
+}

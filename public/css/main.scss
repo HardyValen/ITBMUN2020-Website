@@ -8,6 +8,8 @@
  *      # A. Import Modules
  *      # B. Default Colors
  *      # C. Navigation Bar
+ *      # D. Sections
+ *          -- 1. Hero
  *
  * =================================================================== */
 
@@ -19,17 +21,22 @@
  @import 'module/variable';
  @import 'module/fonts';
  @import 'module/elevation-shadow';
+ @import 'module/hamburger';
+ @import 'module/section';
+ @import 'module/button';
 
 /* # End of Import Module
  * ----------------------- */
 
 /* ===================================================================
- * # B. Default Colors
+ * # B. Default Colors etc
  * ------------------------------------------------------------------- */
 body {
     background-color: map-get($theme-colors, "black");
     color: map-get($theme-colors, "paragraph-main");
     font-size:1.6rem;
+    overflow-x: hidden;
+    @include titilliumWeb();
 }
 
 h1 {
@@ -61,13 +68,18 @@ a:hover{
 /* ===================================================================
  * # C. Navigation for Main
  * ------------------------------------------------------------------- */
+ #navbar {
+    transition: top 1s; /* Transition effect when sliding down (and up) */
+  }
+
  .navigation{
     background-color:rgba(0, 0, 0, 0);
     position: fixed;
     width:100%;
     top: 0;
     left: 0;
-    
+    z-index: 1000;
+
     ul {
         margin: 0;
         padding: 0;
@@ -83,12 +95,21 @@ a:hover{
         @include fluidfontsize(1.2rem, 1.4rem);
         font-weight:700;
         text-transform: uppercase;
-        
 
-        ul{
+        ul.navigation-items{
             margin: 0;
             li:not(:first-child)::before{
                 content: "\2003\2003|\2003\2003";
+            }
+
+            @media screen and (max-width:960px){
+                display: none;
+            }
+        }
+
+        .navigation-burger{
+            @media screen and (min-width:960px) {
+                display: none;
             }
         }
 
@@ -98,11 +119,161 @@ a:hover{
             } 
 
             .navigation-logo{
-                @include fluidwidth(4rem, 10rem);
+                @include fluidwidth(8rem, 10rem);
             }
         }
     }
 }
 
 /* # End of Navigation for Main
+ * ----------------------- */
+
+/* ===================================================================
+ * # D. Sections
+ * ------------------------------------------------------------------- */
+
+// -- 1. Hero Section
+    .main-hero{
+        @include sectionProperties(100%);
+        background: linear-gradient(359.87deg, #000000 4.51%, rgba(35, 16, 45, 0.4) 85.49%), url(../assets/stock/Edited/bg-hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @media screen and (max-width:960px) {
+            background-position-x: 60%;
+            align-items: stretch;
+            flex-wrap: nowrap;
+        } 
+
+        .main-hero-container{
+            @include fluidmargin(2rem, 5rem);
+            width: 100%;
+
+            .main-hero-content{
+                align-self: center; 
+            }
+            
+            .scroll-down{
+                @include montserrat();
+                @include fluidfontsize(1.4rem, 1.8rem);
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 1px;
+
+                display:flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+
+            .interlude{
+                @include titilliumWeb();
+                font-weight:700;
+                @include fluidfontsize(1.4rem, 2.8rem);
+                color: map-get($theme-colors, "primary-light");
+            }
+            
+            .grand-theme{
+                @include lemonMilkRegular();
+                @include fluidfontsize(1.8rem, 4.8rem);
+                @include fluidletterspacing(1.8px, 4.8px);
+                line-height: 1.4;
+
+                @media screen and (max-width:960px){
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+// -- 2. Remark Section
+    .main-remark{
+        @include fluidmarginy(3.0rem, 8.5rem);
+        @include sectionProperties(100%);
+
+        h1{
+            font-weight: 700;
+            @include fluidpaddingx(2.0rem, 0rem);
+            @include fluidfontsize(2.8rem, 4.2rem);
+            @include titilliumWeb();
+        }
+
+        .remark-card{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: space-between;
+            flex-direction: column;
+            width:100%;
+            height:100%;
+            @include fluidheight(20rem, 40rem);
+            @include fluidpadding(1.5rem, 4rem);
+            background-color:#242424;
+
+            p{
+                @include fluidfontsize(1.2rem, 1.6rem);
+                margin-bottom: 0px;
+            }
+
+            .remark-card-summary{
+                width:50%;
+                @media screen and (max-width:960px) {
+                    width:75%;
+                }
+            }
+
+            .remark-card-footer{
+                width:100%;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        .remark-bg-itbmun2020{
+            background: 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
+                linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+              rgba(50, 23, 64, 0.3) 80.76%),
+                url(../assets/placeholders/MarieCurie.jpeg);
+                
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .remark-bg-itbmun2019{
+            background: 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
+                linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+              rgba(50, 23, 64, 0.3) 80.76%),
+                url(../assets/placeholders/Bjarne.jpg);
+                
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .remark-bg-gmunc{
+            background: 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
+                linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+              rgba(50, 23, 64, 0.3) 80.76%),
+                url(../assets/placeholders/NelsonMandela.jpeg);
+                
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+// -- 3. Date & Venue Section
+    .main-venue{
+        @include fluidmarginy(3.0rem, 8.5rem);
+        @include sectionProperties(100%);
+    }
+
+ /* # End of Sections
  * ----------------------- */

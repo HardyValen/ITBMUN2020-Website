@@ -37,3 +37,19 @@ $theme-colors: (
     "paragraph-article": #424242,
 
 );
+
+// Media Queries and Breakpoints
+    // Breakpoints
+    $bp-small: 76.8rem;
+    $bp-medium: 102.4rem;
+    $bp-large: 136.6rem;
+    $bp-xlarge: 192.0rem;
+    $bp-xxlarge: 256.0rem;
+
+    // Media Queries
+    $mq-small: "(min-width: #{$bp-small})";
+    $mq-medium: "(min-width: #{$bp-medium})";
+    $mq-large: "(min-width: #{$bp-large})";
+    $mq-xlarge: "(min-width: #{$bp-xlarge})";
+    $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+    $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
