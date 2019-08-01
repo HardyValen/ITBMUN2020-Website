@@ -8,6 +8,8 @@
  *      # A. Import Modules
  *      # B. Default Colors
  *      # C. Navigation Bar
+ *          -- 1. Navbar
+ *          -- 2. Sidebar
  *      # D. Sections
  *          -- 1. Hero
  *
@@ -66,63 +68,126 @@ h1 {
 /* ===================================================================
  * # C. Navigation for Main
  * ------------------------------------------------------------------- */
- #navbar {
-    transition: top 1s; /* Transition effect when sliding down (and up) */
-  }
 
- .navigation{
-    @import 'module/anchor';
-    background-color:rgba(0, 0, 0, 0);
-    position: fixed;
-    width:100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+// -- 1. Navbar 
+    #navbar {
+        transition: 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
+    }
 
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-        @include fluidmarginx(2rem, 5rem);
-        @include fluidmarginy(2rem, 2rem);
-        
-        @include montserrat();
-        @include fluidfontsize(1.2rem, 1.4rem);
-        font-weight:700;
-        text-transform: uppercase;
+    .navigation{
+        @import 'module/anchor';
+        background-color:rgba(0, 0, 0, 0);
+        position: fixed;
+        width:100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
 
-        ul.navigation-items{
+        ul {
             margin: 0;
-            li:not(:first-child)::before{
-                content: "\2003\2003|\2003\2003";
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            @include fluidmarginx(2rem, 5rem);
+            @include fluidmarginy(2rem, 2rem);
+            
+            @include montserrat();
+            @include fluidfontsize(1.2rem, 1.4rem);
+            font-weight:700;
+            text-transform: uppercase;
+
+            ul.navigation-items{
+                margin: 0;
+                li:not(:first-child)::before{
+                    content: "\2003\2003|\2003\2003";
+                }
+
+                @media screen and (max-width:960px){
+                    display: none;
+                }
             }
 
-            @media screen and (max-width:960px){
-                display: none;
+            .navigation-burger{
+                @media screen and (min-width:960px) {
+                    display: none;
+                }
             }
-        }
 
-        .navigation-burger{
-            @media screen and (min-width:960px) {
-                display: none;
-            }
-        }
+            li {
+                a {
+                    letter-spacing: 1px;
+                }
 
-        li {
-            a {
-                letter-spacing: 1px;
-            } 
+                .navigation-logo{
+                    @include fluidwidth(8rem, 10rem);
+                }
 
-            .navigation-logo{
-                @include fluidwidth(8rem, 10rem);
+                h1 {
+                    @include fluidfontsize(2.4rem, 3.6rem);
+                    @include titilliumWeb();
+                    font-weight: 700;
+                }
             }
         }
     }
-}
+
+// -- 2. Sidebar
+    .navigation-sidebar{
+        width:100%;
+        min-height:100%;
+        background-color:map-get($theme-colors, "primary-darker");
+        width:100%;
+
+        .navigation-sidebar-top{
+            background-color:map-get($theme-colors, "primary-darkest");
+            @include fluidpaddingy(0.5rem, 1.5rem);
+
+            @import 'module/anchor';
+            width:100%;
+            @include fluidheight(2rem, 5rem);
+            top: 0;
+            left: 0;
+            z-index: 1000;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                @include fluidmarginx(2rem, 5rem);
+                @include fluidmarginy(2rem, 2rem);
+                text-transform: uppercase;
+    
+                .navigation-burger{
+                    @media screen and (min-width:960px) {
+                        display: none;
+                    }
+                }
+    
+                li {
+                    h1 {
+                        @include fluidfontsize(2.4rem, 3.6rem);
+                        @include titilliumWeb();
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .navigation-sidebar-body{
+                width: 100%;
+                min-height:90%;
+                @include fluidpaddingx(2rem, 5rem);
+                @include fluidpaddingy(4.5rem, 9rem);
+            }
+        }
+    }
+
 
 /* # End of Navigation for Main
  * ----------------------- */
@@ -131,6 +196,9 @@ h1 {
  * # D. Sections
  * ------------------------------------------------------------------- */
 
+body{
+    transition: 0.5s ease-in-out;
+}
 // -- 1. Hero Section
     .main-hero{
         @import 'module/anchor';
@@ -371,10 +439,15 @@ h1 {
                 justify-content: center;
                 transition: 0.3s;
 
-                
-
                 img{
                     @include fluidwidth(7rem, 18rem);
+                }
+
+                p{
+                    @include fluidfontsize(1.2rem, 1.6rem);
+                    @include montserrat();
+                    @include fluidletterspacing(1.2px, 1.6px);
+                    font-weight:700;
                 }
             }
 
@@ -422,57 +495,61 @@ h1 {
             .main-support-card{
                 width:100%;
                 height:30rem;
-                display: flex;
-                align-items: flex-end;
-                @include fluidpaddingy(2.0rem, 2.0rem);
-                @include fluidpaddingx(2.0rem, 3.0rem);
-                justify-content:flex-start;
+                text-decoration: none;
+                overflow: hidden;
                 
                 @media screen and (max-width:960px){
                     height:10rem;
-                    justify-content:flex-start;
                     @include fluidpaddingx(2.0rem, 3.0rem);
                 }
 
-                h2{
-                    @include fluidfontsize(2.0rem, 2.4rem);
-                    font-weight:700;
+                .bg-sponsors, .bg-medpar, .bg-others{
+                    display: flex;
+                    align-items: flex-end;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width:100%;
+                    height:100%;
+                    transition: all .3s;
+    
+                    @include fluidpaddingy(2.0rem, 2.0rem);
+                    @include fluidpaddingx(2.0rem, 3.0rem);
+
+                    h2{
+                        @include fluidfontsize(2.0rem, 2.4rem);
+                        font-weight:700;
+                    }   
                 }
 
-                
+                .bg-sponsors:hover, .bg-medpar:hover, .bg-others:hover{
+                    transform: scale(1.1);
+                    color: map-get($theme-colors, "secondary-light" );
+                }
+    
+                .bg-sponsors{
+                    background: 
+                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+                        rgba(50, 23, 64, 0.3) 80.76%), 
+                        url('../assets/stock/Source/Sponsors.jpg');
+                }
+    
+                .bg-medpar{
+                    background: 
+                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+                        rgba(50, 23, 64, 0.3) 80.76%), 
+                        url('../assets/stock/Source/Medpar.jpg');
+                }
+    
+                .bg-others{
+                    background: 
+                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+                        rgba(50, 23, 64, 0.3) 80.76%), 
+                        url('../assets/stock/Source/Support.jpg');
+                }
             }
-
-            .bg-sponsors{
-                background: 
-                    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-                    rgba(50, 23, 64, 0.3) 80.76%), 
-                    url('../assets/stock/Source/Sponsors.jpg');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-            }
-
-            .bg-medpar{
-                background: 
-                    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-                    rgba(50, 23, 64, 0.3) 80.76%), 
-                    url('../assets/stock/Source/Medpar.jpg');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-            }
-
-            .bg-others{
-                background: 
-                    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-                    rgba(50, 23, 64, 0.3) 80.76%), 
-                    url('../assets/stock/Source/Support.jpg');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-            }
-
-
         }
     }
 

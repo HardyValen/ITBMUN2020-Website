@@ -8,6 +8,8 @@
  *      # A. Import Modules
  *      # B. Default Colors
  *      # C. Navigation Bar
+ *          -- 1. Navbar
+ *          -- 2. Sidebar
  *      # D. Sections
  *          -- 1. Hero
  *
@@ -323,8 +325,8 @@ h1 {
  * # C. Navigation for Main
  * ------------------------------------------------------------------- */
 #navbar {
-  -webkit-transition: top 1s;
-  transition: top 1s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   /* Transition effect when sliding down (and up) */
 }
 
@@ -469,11 +471,231 @@ h1 {
   }
 }
 
+.navigation ul li h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+
+.navigation ul li h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation ul li h1 {
+    font-size: calc(2.4rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation ul li h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.navigation-sidebar {
+  width: 100%;
+  min-height: 100%;
+  background-color: #23102D;
+  width: 100%;
+}
+
+.navigation-sidebar .navigation-sidebar-top {
+  background-color: #120817;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navigation-sidebar .navigation-sidebar-top {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top {
+    padding-bottom: calc(0.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.navigation-sidebar .navigation-sidebar-top a {
+  color: #ffffff;
+}
+
+.navigation-sidebar .navigation-sidebar-top a#active {
+  color: #EA5A5A;
+}
+
+.navigation-sidebar .navigation-sidebar-top a:hover {
+  text-decoration: none;
+  color: #EA5A5A;
+}
+
+.navigation-sidebar .navigation-sidebar-top a:active {
+  text-decoration: none;
+  color: #D02B2F;
+}
+
+.navigation-sidebar .navigation-sidebar-top {
+  height: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top {
+    height: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top {
+    height: 5rem;
+  }
+}
+
+.navigation-sidebar .navigation-sidebar-top ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.navigation-sidebar .navigation-sidebar-top ul {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top ul {
+    margin-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    margin-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top ul {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+.navigation-sidebar .navigation-sidebar-top ul {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top ul {
+    margin-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    margin-top: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top ul .navigation-burger {
+    display: none;
+  }
+}
+
+.navigation-sidebar .navigation-sidebar-top ul li h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+
+.navigation-sidebar .navigation-sidebar-top ul li h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top ul li h1 {
+    font-size: calc(2.4rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top ul li h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+  width: 100%;
+  min-height: 90%;
+}
+
+.navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+    padding-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+    padding-bottom: calc(4.5rem + 4.5 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(4.5rem + 4.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navigation-sidebar .navigation-sidebar-top .navigation-sidebar-body {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
 /* # End of Navigation for Main
  * ----------------------- */
 /* ===================================================================
  * # D. Sections
  * ------------------------------------------------------------------- */
+body {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 .main-hero {
   width: 100%;
   min-height: 100%;
@@ -1212,6 +1434,46 @@ h1 {
   }
 }
 
+.main-councils .main-councils-wrapper .council p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.main-councils .main-councils-wrapper .council p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-councils .main-councils-wrapper .council p {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-councils .main-councils-wrapper .council p {
+    font-size: 1.6rem;
+  }
+}
+
+.main-councils .main-councils-wrapper .council p {
+  letter-spacing: 1.2px;
+  padding-left: 1.2px;
+}
+
+@media screen and (min-width: 320px) {
+  .main-councils .main-councils-wrapper .council p {
+    letter-spacing: calc(1.2px + 0.4 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(1.2px + 0.4 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-councils .main-councils-wrapper .council p {
+    letter-spacing: 1.6px;
+    padding-left: 1.6px;
+  }
+}
+
 .main-councils .main-councils-wrapper .council:hover {
   background-color: #EA5A5A;
   text-decoration: none;
@@ -1326,61 +1588,13 @@ h1 {
 .main-supports .main-supports-wrapper .main-support-card {
   width: 100%;
   height: 30rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.main-supports .main-supports-wrapper .main-support-card {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 320px) {
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-.main-supports .main-supports-wrapper .main-support-card {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-@media screen and (min-width: 320px) {
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+  text-decoration: none;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 960px) {
   .main-supports .main-supports-wrapper .main-support-card {
     height: 10rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .main-supports .main-supports-wrapper .main-support-card {
     padding-left: 2rem;
@@ -1402,45 +1616,98 @@ h1 {
   }
 }
 
-.main-supports .main-supports-wrapper .main-support-card h2 {
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+    padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors h2, .main-supports .main-supports-wrapper .main-support-card .bg-medpar h2, .main-supports .main-supports-wrapper .main-support-card .bg-others h2 {
   font-weight: 700;
 }
 
-.main-supports .main-supports-wrapper .main-support-card h2 {
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors h2, .main-supports .main-supports-wrapper .main-support-card .bg-medpar h2, .main-supports .main-supports-wrapper .main-support-card .bg-others h2 {
   font-size: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  .main-supports .main-supports-wrapper .main-support-card h2 {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors h2, .main-supports .main-supports-wrapper .main-support-card .bg-medpar h2, .main-supports .main-supports-wrapper .main-support-card .bg-others h2 {
     font-size: calc(2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .main-supports .main-supports-wrapper .main-support-card h2 {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors h2, .main-supports .main-supports-wrapper .main-support-card .bg-medpar h2, .main-supports .main-supports-wrapper .main-support-card .bg-others h2 {
     font-size: 2.4rem;
   }
 }
 
-.main-supports .main-supports-wrapper .bg-sponsors {
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors:hover, .main-supports .main-supports-wrapper .main-support-card .bg-medpar:hover, .main-supports .main-supports-wrapper .main-support-card .bg-others:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #EA5A5A;
+}
+
+.main-supports .main-supports-wrapper .main-support-card .bg-sponsors {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/stock/Source/Sponsors.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/stock/Source/Sponsors.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.main-supports .main-supports-wrapper .bg-medpar {
+.main-supports .main-supports-wrapper .main-support-card .bg-medpar {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/stock/Source/Medpar.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/stock/Source/Medpar.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.main-supports .main-supports-wrapper .bg-others {
+.main-supports .main-supports-wrapper .main-support-card .bg-others {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/stock/Source/Support.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/stock/Source/Support.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* # End of Sections

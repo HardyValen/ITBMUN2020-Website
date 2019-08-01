@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav class='navigation navigation-landing' id='navbar'>
+    <nav class='navigation navigation-landing' id='navbar' style='display:none;'>
         <ul>
             <li class='navigation-brand'>
                 <img class="navigation-logo" src="{{URL::asset('assets/logo/itbmun2020-logo-white.png')}}">
@@ -38,7 +38,7 @@
                 <li class='navigation-item'><a href=#>Press</a></li>
             </ul>
             <li class='navigation-burger'>
-                <button class="hamburger" type="button">
+                <button class="hamburger" type="button" onclick="openNav()">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
@@ -46,6 +46,30 @@
             </li>
         </ul>
     </nav>
+
+    <section class='navigation-sidebar'>
+        <nav class="navigation-sidebar-top">
+            <ul>
+                <li class='navigation-brand'>
+                    <h1>Navigation</h1>
+                </li>
+                <li class='navigation-burger'>
+                    <button class="hamburger" type="button" onclick="closeNav()">
+                        <i class="fas fa-times fa-3x"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-sidebar-body">
+            <div class="row">
+                <div class="col-xs-10 col-12 offset-xs-1">
+                    <div class="navigation-sidebar-wrapper">
+                        test
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class='main-hero' id='hero'>
         <div class="main-hero-container row">
@@ -204,15 +228,21 @@
                     &mdash;
                 </h1>
                     <div class="main-supports-wrapper">
-                        <div class="main-support-card bg-sponsors">
-                            <h2>SPONSORS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                        </div>
-                        <div class="main-support-card bg-medpar">
-                            <h2>MEDIA PARTNERS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                        </div>
-                        <div class="main-support-card bg-others">
-                            <h2>OTHER MUN&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                        </div>
+                        <a href='#' class="main-support-card">
+                            <div class="bg-sponsors">
+                                <h2>SPONSORS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                            </div>
+                        </a>
+                        <a href='#' class="main-support-card bg-medpar">
+                            <div class="bg-medpar">
+                                <h2>MEDIA PARTNERS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                            </div>
+                        </a>
+                        <a href='#' class="main-support-card bg-others">
+                            <div class="bg-others">
+                                <h2>OTHER MUN&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                            </div>
+                        </a>
                     </div>
                 </h1>
             </div>
@@ -221,5 +251,11 @@
 </body>
 
 <script src="{{URL::asset('js/nav-scroll.js')}}"></script>
+<script>
+function openNav() {
+    document.querySelector("main").style.marginLeft = window.innerWidth + "px";
+    document.querySelector("#navbar").style.marginLeft = window.innerWidth + "px";
+}
 
+</script>
 </html>
