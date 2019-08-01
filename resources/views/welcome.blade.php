@@ -126,11 +126,100 @@
     </section>
 
     <section class='main-venue'>
-        
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-12">
+                <h1>
+                    DATE & VENUE<br>
+                    &mdash;
+                </h1>
+                <div class="main-venue-wrapper">
+                    <div class="main-venue-image"></div>
+                    <div class="main-venue-content">
+                        <h2>
+                            Month XX-XX, 2019<br>
+                            Building Name, City<br>
+                            <b>Indonesia</b>
+                        </h2>
+                        <p>
+                            Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-councils">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-12">
+                <h1>
+                    COUNCILS<br>
+                    &mdash;
+                </h1>
+                <div class="main-councils-wrapper">
+                    <div class="row">
+                        <a class="council col-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/WHA-white.png')}}">
+                            <p>WHA</p>
+                        </a>
+                        <a class="council col-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
+                            <p>UNEP</p>
+                        </a>
+                        <a class="council col-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/DISEC-white-text.png')}}">
+                            <p>DISEC</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a class="council col-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNESCO-white.png')}}">
+                            <p>UNESCO</p>
+                        </a>
+                        <a class="council col-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
+                            <p>CRISIS</p>
+                        </a>
+                        <a class="council col-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNSC-white-text.png')}}">
+                            <p>UNSC</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a class="council col-4 offset-4" href='#'>
+                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNCA-white-notext.png')}}">
+                            <p>UNCA PRESS</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='main-supports'>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-12">
+                <h1>
+                    SUPPORTS<br>
+                    &mdash;
+                </h1>
+                    <div class="main-supports-wrapper">
+                        <div class="main-support-card bg-sponsors">
+                            <h2>SPONSORS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                        </div>
+                        <div class="main-support-card bg-medpar">
+                            <h2>MEDIA PARTNERS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                        </div>
+                        <div class="main-support-card bg-others">
+                            <h2>OTHER MUN&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                        </div>
+                    </div>
+                </h1>
+            </div>
+        </div>
     </section>
 </body>
 
 <script src="{{URL::asset('js/nav-scroll.js')}}"></script>
-<script src="{{URL::asset('js/smooth-scroll.js')}}"></script>
 
 </html>

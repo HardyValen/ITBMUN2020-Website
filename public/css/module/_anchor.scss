@@ -1,0 +1,17 @@
+a{
+    color: #ffffff;
+}
+
+a#active{
+    color: map-get($theme-colors, "secondary-light");
+}
+
+a:hover{
+    text-decoration: none;
+    color: map-get($theme-colors, "secondary-light" )
+}
+
+a:active{
+    text-decoration: none;
+    color: map-get($theme-colors, "secondary" )
+}
