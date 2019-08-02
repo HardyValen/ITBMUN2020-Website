@@ -24,237 +24,266 @@
 </head>
 
 <body>
-    <nav class='navigation navigation-landing' id='navbar' style='display:none;'>
-        <ul>
-            <li class='navigation-brand'>
-                <img class="navigation-logo" src="{{URL::asset('assets/logo/itbmun2020-logo-white.png')}}">
-            </li>
-            <ul class='navigation-items'>
-                <li class='navigation-item'><a id='active' href=#>Home</a></li>
-                <li class='navigation-item'><a href=#>About</a></li>
-                <li class='navigation-item'><a href=#>Councils</a></li>
-                <li class='navigation-item'><a href=#>Articles</a></li>
-                <li class='navigation-item'><a href=#>Documents</a></li>
-                <li class='navigation-item'><a href=#>Press</a></li>
-            </ul>
-            <li class='navigation-burger'>
-                <button class="hamburger" type="button" onclick="openNav()">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </li>
-        </ul>
-    </nav>
-
     <section class='navigation-sidebar'>
-        <nav class="navigation-sidebar-top">
+        <div class="navigation-sidebar-header">
             <ul>
-                <li class='navigation-brand'>
+                <li>
                     <h1>Navigation</h1>
                 </li>
+                <li>
+                    <i class="fas fa-times fa-2x" onclick="closeNav()"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation-sidebar-body">
+            <div class="row">
+                <div class="col-10 col-sm-8 col-md-6 offset-1 offset-sm-2 offset-md-3">
+                    <div class="row">
+                        <a href="#" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/home.svg")}}' type="image/svg+xml"></object>
+                            <p>Home</p>
+                        </a>
+                        <a href="#" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/councils.svg")}}' type="image/svg+xml"></object>
+                            <p>Councils</p>
+                        </a>
+                        <a href="#" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/about.svg")}}' type="image/svg+xml"></object>  
+                            <p>About</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="#" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/articles.svg")}}' type="image/svg+xml"></object>
+                            <p>Articles</p>
+                        </a>
+                        <a href="#" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/documents.svg")}}' type="image/svg+xml"></object>
+                            <p>Documents</p>
+                        </a>
+                        <a href="#" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/press.svg")}}' type="image/svg+xml"></object>
+                            <p>Press</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <nav class='navigation navigation-landing' id='navbar'>
+            <ul>
+                <li class='navigation-brand'>
+                    <img class="navigation-logo" src="{{URL::asset('assets/logo/itbmun2020-logo-white.png')}}">
+                </li>
+                <ul class='navigation-items'>
+                    <li class='navigation-item'><a id='active' href=#>Home</a></li>
+                    <li class='navigation-item'><a href=#>About</a></li>
+                    <li class='navigation-item'><a href=#>Councils</a></li>
+                    <li class='navigation-item'><a href=#>Articles</a></li>
+                    <li class='navigation-item'><a href=#>Documents</a></li>
+                    <li class='navigation-item'><a href=#>Press</a></li>
+                </ul>
                 <li class='navigation-burger'>
-                    <button class="hamburger" type="button" onclick="closeNav()">
-                        <i class="fas fa-times fa-3x"></i>
+                    <button class="hamburger" type="button" onclick="openNav()">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
                     </button>
                 </li>
             </ul>
         </nav>
-        <div class="navigation-sidebar-body">
+        <section class='main-hero' id='hero'>
+            <div class="main-hero-container row">
+                <div class="col-12"></div>
+                <div class="col-md-10 col-lg-8 col-12 main-hero-content">
+                    <p class='interlude'>Ommiting the Void:</p>
+                    <h1 class='grand-theme'>
+                        Bridging the<br>
+                        multipolar universe<br>
+                        through technology
+                    </h1>
+                </div>
+                <div class="col-md-2 col-lg-4 col-12 scroll-down">
+                    <p>
+                        <a href="#remark">Learn More&emsp;<i class="fas fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class='main-remark' id='remark'>
             <div class="row">
-                <div class="col-xs-10 col-12 offset-xs-1">
-                    <div class="navigation-sidebar-wrapper">
-                        test
+                <div class="col-md-8 col-12 offset-md-2">
+                    <h1>REMARKS<br>&mdash;</h1>
+
+                    <!-- # START Remark from Secgen ITBMUN 2020 -->
+                    <div class='remark-card remark-bg-itbmun2020'>
+                        <div class='remark-card-summary'>
+                            <p>
+                                Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est... 
+                            </p>
+                        </div>
+                        <div class='remark-card-footer'>
+                            <p>
+                                <big><b>Angelica Wiliana</b></big><br>
+                                Secretary General ITBMUN 2020
+                            </p>
+                            <a class='button-white-transparent' href='#'>Read</a>
+                        </div>
+                    </div>
+                    <!-- # END of Secgen ITBMUN 2020 -->
+
+                    <!-- # START Remark from Secgen ITBMUN 2019 -->
+                    <div class='remark-card remark-bg-itbmun2019'>
+                        <div class='remark-card-summary'>
+                            <p>
+                                Vivamus fermentum turpis metus. Maecenas efficitur metus condimentum sapien fringilla tempus. Ut ut mollis est...
+                            </p>
+                        </div>
+                        <div class='remark-card-footer'>
+                            <p>
+                                <big><b>Bjarne Stornstroup</b></big><br>
+                                Secretary General ITBMUN 2019
+                            </p>
+                            <a class='button-white-transparent' href='#'>Read</a>
+                        </div>
+                    </div>
+                    <!-- # END of Secgen ITBMUN 2019 -->
+
+                    <!-- # START Head of GMUNC ITB -->
+                    <div class='remark-card remark-bg-gmunc'>
+                        <div class='remark-card-summary'>
+                            <p>
+                            Donec molestie turpis eu tempor pretium. Aliquam tortor quam, fermentum ac fermentum sed..
+                            </p>
+                        </div>
+                        <div class='remark-card-footer'>
+                            <p>
+                                <big><b>Nelson Mandela</b></big><br>
+                                Head of GMUNC ITB
+                            </p>
+                            <a class='button-white-transparent' href='#'>Read</a>
+                        </div>
+                    </div>
+                    <!-- # END of Head of GMUNC ITB -->
+                </div>
+            </div>
+        </section>
+
+        <section class='main-venue'>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-12">
+                    <h1>
+                        DATE & VENUE<br>
+                        &mdash;
+                    </h1>
+                    <div class="main-venue-wrapper">
+                        <div class="main-venue-image"></div>
+                        <div class="main-venue-content">
+                            <h2>
+                                Month XX-XX, 2019<br>
+                                Building Name, City<br>
+                                <b>Indonesia</b>
+                            </h2>
+                            <p>
+                                Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est 
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class='main-hero' id='hero'>
-        <div class="main-hero-container row">
-            <div class="col-12"></div>
-            <div class="col-md-10 col-12 main-hero-content">
-                <p class='interlude'>Ommiting the Void:</p>
-                <h1 class='grand-theme'>
-                    Bridging the<br>
-                    multipolar universe<br>
-                    through technology
-                </h1>
-            </div>
-            <div class="col-md-2 col-12 scroll-down">
-                <p>
-                    <a href="#remark">Learn More&emsp;<i class="fas fa-arrow-down"></i></a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class='main-remark' id='remark'>
-        <div class="row">
-            <div class="col-md-8 col-12 offset-md-2">
-                <h1>REMARKS<br>&mdash;</h1>
-
-                <!-- # START Remark from Secgen ITBMUN 2020 -->
-                <div class='remark-card remark-bg-itbmun2020'>
-                    <div class='remark-card-summary'>
-                        <p>
-                            Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est... 
-                        </p>
-                    </div>
-                    <div class='remark-card-footer'>
-                        <p>
-                            <big><b>Angelica Wiliana</b></big><br>
-                            Secretary General ITBMUN 2020
-                        </p>
-                        <a class='button-white-transparent' href='#'>Read</a>
-                    </div>
-                </div>
-                <!-- # END of Secgen ITBMUN 2020 -->
-
-                <!-- # START Remark from Secgen ITBMUN 2019 -->
-                <div class='remark-card remark-bg-itbmun2019'>
-                    <div class='remark-card-summary'>
-                        <p>
-                            Vivamus fermentum turpis metus. Maecenas efficitur metus condimentum sapien fringilla tempus. Ut ut mollis est...
-                        </p>
-                    </div>
-                    <div class='remark-card-footer'>
-                        <p>
-                            <big><b>Bjarne Stornstroup</b></big><br>
-                            Secretary General ITBMUN 2019
-                        </p>
-                        <a class='button-white-transparent' href='#'>Read</a>
-                    </div>
-                </div>
-                <!-- # END of Secgen ITBMUN 2019 -->
-
-                <!-- # START Head of GMUNC ITB -->
-                <div class='remark-card remark-bg-gmunc'>
-                    <div class='remark-card-summary'>
-                        <p>
-                        Donec molestie turpis eu tempor pretium. Aliquam tortor quam, fermentum ac fermentum sed..
-                        </p>
-                    </div>
-                    <div class='remark-card-footer'>
-                        <p>
-                            <big><b>Nelson Mandela</b></big><br>
-                            Head of GMUNC ITB
-                        </p>
-                        <a class='button-white-transparent' href='#'>Read</a>
-                    </div>
-                </div>
-                <!-- # END of Head of GMUNC ITB -->
-            </div>
-        </div>
-    </section>
-
-    <section class='main-venue'>
-        <div class="row">
-            <div class="col-md-8 offset-md-2 col-12">
-                <h1>
-                    DATE & VENUE<br>
-                    &mdash;
-                </h1>
-                <div class="main-venue-wrapper">
-                    <div class="main-venue-image"></div>
-                    <div class="main-venue-content">
-                        <h2>
-                            Month XX-XX, 2019<br>
-                            Building Name, City<br>
-                            <b>Indonesia</b>
-                        </h2>
-                        <p>
-                            Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est 
-                        </p>
+        <section class="main-councils">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-12">
+                    <h1>
+                        COUNCILS<br>
+                        &mdash;
+                    </h1>
+                    <div class="main-councils-wrapper">
+                        <div class="row">
+                            <a class="council col-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/WHA-white.png')}}">
+                                <p>WHA</p>
+                            </a>
+                            <a class="council col-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
+                                <p>UNEP</p>
+                            </a>
+                            <a class="council col-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/DISEC-white-text.png')}}">
+                                <p>DISEC</p>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a class="council col-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/UNESCO-white.png')}}">
+                                <p>UNESCO</p>
+                            </a>
+                            <a class="council col-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
+                                <p>CRISIS</p>
+                            </a>
+                            <a class="council col-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/UNSC-white-text.png')}}">
+                                <p>UNSC</p>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a class="council col-4 offset-4" href='#'>
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/UNCA-white-notext.png')}}">
+                                <p>UNCA PRESS</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="main-councils">
-        <div class="row">
-            <div class="col-md-8 offset-md-2 col-12">
-                <h1>
-                    COUNCILS<br>
-                    &mdash;
-                </h1>
-                <div class="main-councils-wrapper">
-                    <div class="row">
-                        <a class="council col-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/WHA-white.png')}}">
-                            <p>WHA</p>
-                        </a>
-                        <a class="council col-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
-                            <p>UNEP</p>
-                        </a>
-                        <a class="council col-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/DISEC-white-text.png')}}">
-                            <p>DISEC</p>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a class="council col-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNESCO-white.png')}}">
-                            <p>UNESCO</p>
-                        </a>
-                        <a class="council col-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
-                            <p>CRISIS</p>
-                        </a>
-                        <a class="council col-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNSC-white-text.png')}}">
-                            <p>UNSC</p>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a class="council col-4 offset-4" href='#'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNCA-white-notext.png')}}">
-                            <p>UNCA PRESS</p>
-                        </a>
-                    </div>
+        <section class='main-supports'>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-12">
+                    <h1>
+                        SUPPORTS<br>
+                        &mdash;
+                    </h1>
+                        <div class="main-supports-wrapper">
+                            <a href='#' class="main-support-card">
+                                <div class="bg-sponsors">
+                                    <h2>SPONSORS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                                </div>
+                            </a>
+                            <a href='#' class="main-support-card bg-medpar">
+                                <div class="bg-medpar">
+                                    <h2>MEDIA PARTNERS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                                </div>
+                            </a>
+                            <a href='#' class="main-support-card bg-others">
+                                <div class="bg-others">
+                                    <h2>OTHER MUN&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                                </div>
+                            </a>
+                        </div>
+                    </h1>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class='main-supports'>
-        <div class="row">
-            <div class="col-md-8 offset-md-2 col-12">
-                <h1>
-                    SUPPORTS<br>
-                    &mdash;
-                </h1>
-                    <div class="main-supports-wrapper">
-                        <a href='#' class="main-support-card">
-                            <div class="bg-sponsors">
-                                <h2>SPONSORS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                            </div>
-                        </a>
-                        <a href='#' class="main-support-card bg-medpar">
-                            <div class="bg-medpar">
-                                <h2>MEDIA PARTNERS&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                            </div>
-                        </a>
-                        <a href='#' class="main-support-card bg-others">
-                            <div class="bg-others">
-                                <h2>OTHER MUN&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                            </div>
-                        </a>
-                    </div>
-                </h1>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </body>
 
 <script src="{{URL::asset('js/nav-scroll.js')}}"></script>
 <script>
+ScreenOrientation.lock("portrait");
+
 function openNav() {
-    document.querySelector("main").style.marginLeft = window.innerWidth + "px";
-    document.querySelector("#navbar").style.marginLeft = window.innerWidth + "px";
+    document.querySelector(".navigation-sidebar").style.right = "0%";
+}
+
+function closeNav() {
+    document.querySelector(".navigation-sidebar").style.right = "-100%";
 }
 
 </script>
