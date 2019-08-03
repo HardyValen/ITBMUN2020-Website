@@ -12,6 +12,11 @@
  *          -- 2. Sidebar
  *      # D. Sections
  *          -- 1. Hero
+ *          -- 2. Remarks
+ *          -- 3. Date & Venue
+ *          -- 4. Councils
+ *          -- 5. Supports
+ *      # E. Footer
  *
  * =================================================================== */
 
@@ -26,17 +31,7 @@
  @import 'module/hamburger';
  @import 'module/section';
  @import 'module/button';
-
- // Test
- @mixin h1main(){
-    font-weight: 700;
-    @include fluidfontsize(2.8rem, 4.2rem);
-    @include titilliumWeb();
-
-    @media screen and (max-width:960px){
-        @include fluidpaddingx(2.0rem, 3.6rem);
-    }
- }
+ @import 'module/typography';
 
 /* # End of Import Module
  * ----------------------- */
@@ -67,149 +62,11 @@ h1 {
 /* ===================================================================
  * # C. Navigation for Main
  * ------------------------------------------------------------------- */
+ // -- 1. Navbar   
+    @import "sections/main/navbar/navbar-top";
 
-// -- 1. Navbar 
-    #navbar {
-        transition: 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
-    }
-
-    .navigation{
-        @import 'module/anchor';
-        background-color:rgba(0, 0, 0, 0);
-        position: fixed;
-        width:100%;
-        top: 0;
-        left: 0;
-        z-index: 2000;
-
-        ul {
-            padding-inline-start: 0px;
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            list-style-type: none;
-            @include fluidmarginx(2rem, 5rem);
-            @include fluidmarginy(2rem, 2rem);
-            
-            @include montserrat();
-            @include fluidfontsize(1.2rem, 1.4rem);
-            font-weight:700;
-            text-transform: uppercase;
-
-            ul.navigation-items{
-                margin: 0;
-                li:not(:first-child)::before{
-                    content: "\2003\2003|\2003\2003";
-                }
-
-                @media screen and (max-width:960px){
-                    display: none;
-                }
-            }
-
-            .navigation-burger{
-                @media screen and (min-width:960px) {
-                    display: none;
-                }
-            }
-
-            li {
-                a {
-                    letter-spacing: 1px;
-                }
-
-                .navigation-logo{
-                    @include fluidwidth(8rem, 10rem);
-                }
-
-                h1 {
-                    @include fluidfontsize(2.4rem, 3.6rem);
-                    @include titilliumWeb();
-                    font-weight: 700;
-                }
-            }
-        }
-    }
-
-// -- 2. Sidebar
-    .navigation-sidebar{
-        right:-100%;
-        position: fixed;
-        width:100%;
-        min-height:100%;
-        background-color:map-get($theme-colors, "primary-darker");
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        justify-content: flex-start;
-        z-index: 2001;
-        transition: 0.5s ease-in-out;
-
-        .navigation-sidebar-header{
-            width:100%;
-            top: 0;
-            left: 0;
-            @include fluidheight(7rem, 10rem);
-            background-color: map-get($theme-colors, "primary-darkest");
-
-            ul{
-                height:100%;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                list-style-type: none;
-                @include fluidpaddingx(2rem, 5rem);
-
-                li{
-                    h1{
-                        @include fluidfontsize(2.4rem, 2.8rem);
-                        @include titilliumWeb();
-                        font-weight:700;
-                    }
-                }
-            }
-        }
-
-        .navigation-sidebar-body{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-content: flex-start;
-            justify-content: center;
-            @include fluidpaddingy(2rem, 5rem);
-
-            .navigation-link{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                @include fluidheight(10rem, 20rem);
-                @include fluidpadding(1rem, 2rem);
-
-                transition: 0.3s;
-
-                object{
-                    @include fluidwidth(3rem, 7rem);
-                    @include fluidmarginbottom(0.5rem, 1.2rem);
-                }
-
-                p{
-                    @include helveticaNeue();
-                    @include fluidfontsize(1.2rem, 1.6rem);
-                }
-            }
-
-            .navigation-link:hover{
-                background-color: map-get($theme-colors, "secondary-light");
-            }
-        }
-    }
-
+ // -- 2. Sidebar
+    @import "sections/main/navbar/sidebar";
 
 /* # End of Navigation for Main
  * ----------------------- */
@@ -218,360 +75,29 @@ h1 {
  * # D. Sections
  * ------------------------------------------------------------------- */
 
-main{
-    transition: 0.5s ease-in-out;
-    margin-right:0;
-}
 // -- 1. Hero Section
-    .main-hero{
-        @import 'module/anchor';
-        @include sectionProperties(100%);
-        background: linear-gradient(359.87deg, #000000 4.51%, rgba(35, 16, 45, 0.4) 85.49%), url(../assets/stock/Edited/bg-hero.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        @media screen and (max-width:960px) {
-            background-position-x: 60%;
-            align-items: stretch;
-            flex-wrap: nowrap;
-        } 
-
-        .main-hero-container{
-            @include fluidmargin(2rem, 5rem);
-            width: 100%;
-
-            .main-hero-content{
-                align-self: center; 
-            }
-            
-            .scroll-down{
-                @include montserrat();
-                @include fluidfontsize(1.4rem, 1.8rem);
-                text-transform: uppercase;
-                font-weight: 700;
-                letter-spacing: 1px;
-
-                display:flex;
-                align-items: flex-end;
-                justify-content: flex-end;
-            }
-
-            .interlude{
-                @include titilliumWeb();
-                font-weight:700;
-                @include fluidfontsize(1.4rem, 2.8rem);
-                color: map-get($theme-colors, "primary-light");
-            }
-            
-            .grand-theme{
-                @include lemonMilkRegular();
-                @include fluidfontsize(1.8rem, 4.8rem);
-                @include fluidletterspacing(1.8px, 4.8px);
-                line-height: 1.4;
-
-                @media screen and (max-width:960px){
-                    line-height: 1.5;
-                }
-            }
-        }
-    }
+    @import "blocks/main/sections/hero";
 
 // -- 2. Remark Section
-    .main-remark{
-        @include fluidmarginy(3.0rem, 8.5rem);
-        @include sectionProperties(100%);
-
-        h1{
-            @include h1main();
-        }
-
-        .remark-card{
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-            justify-content: space-between;
-            flex-direction: column;
-            width:100%;
-            @include fluidheight(20rem, 40rem);
-            @include fluidpadding(1.5rem, 4rem);
-            background-color:#242424;
-
-            p{
-                @include fluidfontsize(1.2rem, 1.6rem);
-                margin-bottom: 0px;
-            }
-
-            .remark-card-summary{
-                width:50%;
-                @media screen and (max-width:960px) {
-                    width:75%;
-                }
-            }
-
-            .remark-card-footer{
-                width:100%;
-                display:flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-            }
-        }
-        
-        .remark-bg-itbmun2020{
-            background: 
-                linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
-                linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-              rgba(50, 23, 64, 0.3) 80.76%),
-                url(../assets/placeholders/MarieCurie.jpeg);
-                
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .remark-bg-itbmun2019{
-            background: 
-                linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
-                linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-              rgba(50, 23, 64, 0.3) 80.76%),
-                url(../assets/placeholders/Bjarne.jpg);
-                
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .remark-bg-gmunc{
-            background: 
-                linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
-                linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-              rgba(50, 23, 64, 0.3) 80.76%),
-                url(../assets/placeholders/NelsonMandela.jpeg);
-                
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
+    @import "blocks/main/sections/remark";
 
 // -- 3. Date & Venue Section
-    .main-venue{
-        @include fluidmarginy(3.0rem, 8.5rem);
-        @include sectionProperties(50%);
-
-        h1{
-            @include h1main();
-        }
-
-        .main-venue-wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: row;
-            width:100%;
-            min-height:25rem;
-
-            @media screen and (max-width:960px) {
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-content: space-between;
-                justify-content: space-between;
-                flex-direction: column;
-            }
-
-            .main-venue-image{
-                width:50%;
-                @include fluidheight(15rem, 25rem);
-                background: url(../assets/stock/Source/venue.jpg);                
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                @media screen and (max-width:960px) {
-                    width:100%;
-                }
-            }
-
-            .main-venue-content{
-                width:50%;
-                height:30rem;
-                display: flex;
-                flex-wrap: nowrap;
-                align-content: space-between;
-                justify-content: space-between;
-                flex-direction: column;
-                color: white;
-                padding-left: 5rem;
-
-                @include fluidpaddingy(2rem, 3rem);
-
-                @media screen and (max-width:960px){
-                    width:100%;
-                    padding-left:0px;
-                    height:15rem;
-                }
-
-                h2{
-                    @include fluidfontsize(1.8rem, 2.4rem);
-                    @include fluidletterspacing(1.4px, 2px);
-                    font-weight:400;
-                    b{
-                        font-weight: 700;
-                    }
-
-                    @media screen and (max-width:960px){
-                        text-align: center;
-                    }
-                }
-
-                p{
-                    @include fluidfontsize(1.2rem, 1.6rem);
-                    @media screen and (max-width: 960px) {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
+    @import "blocks/main/sections/venue";
 
 // -- 4. Councils Section
-
-    .main-councils{
-        @include fluidmarginy(3.0rem, 8.5rem);
-        @include sectionProperties(50%);
-
-        h1{
-            @include h1main();
-        }
-
-        .main-councils-wrapper{
-            width:100%;
-            min-height:40rem;
-
-            .council{
-                @include fluidpaddingy(1rem, 4rem);
-                width:33.33%;
-                min-height:10rem;
-
-                display: flex;
-                flex-wrap:nowrap;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                transition: 0.3s;
-
-                img{
-                    @include fluidwidth(7rem, 18rem);
-                }
-
-                p{
-                    @include fluidfontsize(1.2rem, 1.6rem);
-                    @include montserrat();
-                    @include fluidletterspacing(1.2px, 1.6px);
-                    font-weight:700;
-                }
-            }
-
-            .council:hover{
-                background-color:map-get($theme-colors, "secondary-light");
-                
-            }
-
-            .council:active{
-                background-color:map-get($theme-colors, "secondary");
-            }
-
-            @media screen and (max-width:960px) {
-                padding-left:2rem;
-                padding-right:2rem;
-            }
-        }
-    }
+    @import "blocks/main/sections/councils";
 
 // -- 5. Supports Section
-    .main-supports{
-        @include fluidmarginy(3.0rem, 8.5rem);
-        @include sectionProperties(50%);
-
-        h1{
-            @include h1main();
-        }
-
-        .main-supports-wrapper{
-            width:100%;
-            height:30rem;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction:row;
-
-            @media screen and (max-width:960px){
-                flex-direction: column;
-            }
-
-            .main-support-card{
-                width:100%;
-                height:30rem;
-                overflow: hidden;
-                
-                @media screen and (max-width:960px){
-                    height:10rem;
-                    @include fluidpaddingx(2.0rem, 3.0rem);
-                }
-
-                .bg-sponsors, .bg-medpar, .bg-others{
-                    display: flex;
-                    align-items: flex-end;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width:100%;
-                    height:100%;
-                    transition: all .3s;
-    
-                    @include fluidpaddingy(2.0rem, 2.0rem);
-                    @include fluidpaddingx(2.0rem, 3.0rem);
-
-                    h2{
-                        @include fluidfontsize(2.0rem, 2.4rem);
-                        font-weight:700;
-                    }   
-                }
-
-                .bg-sponsors:hover, .bg-medpar:hover, .bg-others:hover{
-                    transform: scale(1.1);
-                    color: map-get($theme-colors, "secondary-light" );
-                }
-    
-                .bg-sponsors{
-                    background: 
-                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-                        rgba(50, 23, 64, 0.3) 80.76%), 
-                        url('../assets/stock/Source/Sponsors.jpg');
-                }
-    
-                .bg-medpar{
-                    background: 
-                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-                        rgba(50, 23, 64, 0.3) 80.76%), 
-                        url('../assets/stock/Source/Medpar.jpg');
-                }
-    
-                .bg-others{
-                    background: 
-                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-                        rgba(50, 23, 64, 0.3) 80.76%), 
-                        url('../assets/stock/Source/Support.jpg');
-                }
-            }
-        }
-    }
+    @import "blocks/main/sections/supports";
 
  /* # End of Sections
+ * ----------------------- */
+
+/* ===================================================================
+ * # E. Footer
+ * ------------------------------------------------------------------- */
+
+    @import "blocks/main/footer";
+
+/* # End of Footer
  * ----------------------- */

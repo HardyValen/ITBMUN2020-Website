@@ -23,7 +23,27 @@
     <!-- END of Local CSS -->
 </head>
 
+<!-- 
+ *  CONTENTS 
+ * ============================
+ * ## 1. <Sidebar Navigation>
+ * ## 2. <Navigation Top>
+ * ## 3. Hero Section
+ *       |_ <#remark> 
+ * ## 4. Remark Section
+ *       |_ <Secgen ITBMUN 2020>
+ *       |_ <Secgen ITBMUN 2019>
+ *       |_ <GMUNC>
+ * ## 5. Venue Section
+ * ## 6. Councils Section
+ * ## 7. Support Section
+ *       |_ <Sponsors>
+ *       |_ <Media Partners>
+ *       |_ <Other MUN>
+-->
+
 <body>
+<!-- ## 1. Sidebar Navigation ========= -->
     <section class='navigation-sidebar'>
         <div class="navigation-sidebar-header">
             <ul>
@@ -70,8 +90,10 @@
             </div>
         </div>
     </section>
+<!-- ## END of Sidebar Navigation ========= -->
 
     <main>
+<!-- ## 2. Sidebar Navigation ========= -->
         <nav class='navigation navigation-landing' id='navbar'>
             <ul>
                 <li class='navigation-brand'>
@@ -94,6 +116,9 @@
                 </li>
             </ul>
         </nav>
+<!-- ## END of Sidebar Navigation ========= -->
+
+<!-- ## 3. Main Hero Section ========= -->
         <section class='main-hero' id='hero'>
             <div class="main-hero-container row">
                 <div class="col-12"></div>
@@ -112,7 +137,9 @@
                 </div>
             </div>
         </section>
+<!-- ## END of Main Hero Section ========= -->
 
+<!-- ## 4. Main Remark Section ========= -->
         <section class='main-remark' id='remark'>
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2">
@@ -171,7 +198,9 @@
                 </div>
             </div>
         </section>
+<!-- ## END of Main Remark Section ========= -->
 
+<!-- ## 5. Main Venue Section ========= -->
         <section class='main-venue'>
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-12">
@@ -195,7 +224,9 @@
                 </div>
             </div>
         </section>
+<!-- ## END of Main Venue Section ========= -->
 
+<!-- ## 6. Main Councils Section ========= -->
         <section class="main-councils">
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-12">
@@ -224,7 +255,7 @@
                                 <p>UNESCO</p>
                             </a>
                             <a class="council col-4" href='#'>
-                                <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
+                                <img src="{{URL::asset('assets/councilLogos/Edited/White/CRISIS-white.png')}}">
                                 <p>CRISIS</p>
                             </a>
                             <a class="council col-4" href='#'>
@@ -235,14 +266,16 @@
                         <div class="row">
                             <a class="council col-4 offset-4" href='#'>
                                 <img src="{{URL::asset('assets/councilLogos/Edited/White/UNCA-white-notext.png')}}">
-                                <p>UNCA PRESS</p>
+                                <p style='text-align:center'>UNCA<br>PRESS</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+<!-- ## END of Main Councils Section ========= -->
 
+<!-- ## 7. Main Supports Section ========= -->
         <section class='main-supports'>
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-12">
@@ -271,12 +304,45 @@
                 </div>
             </div>
         </section>
+<!-- ## END of Main Supports Section ========= -->
+
+<!-- ## 8. Footer Navigation ========= -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h1>Contacts<br>&mdash;</h1>
+                    <div class="row contact-wrapper">
+                        <a class="contact-link col-md-2 col-4" href="#">
+                            <object data='{{URL::asset("assets/socmedIcons/line.svg")}}' type="image/svg+xml"></object>
+                        </a>
+                        <a class="contact-link col-md-2 col-4" href="#">
+                            <object data='{{URL::asset("assets/socmedIcons/instagram.svg")}}' type="image/svg+xml"></object>
+                        </a>
+                        <a class="contact-link col-md-2 col-4" href="#">
+                            <object data='{{URL::asset("assets/socmedIcons/email.svg")}}' type="image/svg+xml"></object>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <p>
+                        <big><b>Ganesha Model United Nation Conference</b></big><br>
+                        Labtek V, Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132
+                    </p>
+                    <p>
+                        <b><i class="far fa-copyright"></i>&ensp;ITB Model United Nation 2020</b>
+                    </p>
+                </div>
+                
+            </div>
+        </footer>
+<!-- ## END of Footer Navigation ========= -->
+
     </main>
 </body>
 
 <script src="{{URL::asset('js/nav-scroll.js')}}"></script>
 <script>
-ScreenOrientation.lock("portrait");
 
 function openNav() {
     document.querySelector(".navigation-sidebar").style.right = "0%";

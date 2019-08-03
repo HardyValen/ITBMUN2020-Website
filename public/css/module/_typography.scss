@@ -1,0 +1,9 @@
+@mixin h1main(){
+    font-weight: 700;
+    @include fluidfontsize(2.8rem, 4.2rem);
+    @include titilliumWeb();
+
+    @media screen and (max-width:960px){
+        @include fluidpaddingx(2.0rem, 0rem);
+    }
+ }

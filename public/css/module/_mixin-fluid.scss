@@ -36,6 +36,23 @@
       }
     }
 
+    @mixin fluidminwidth($floor, $ceiling) {
+      $u1: unit($floor);
+      $u2: unit($ceiling);
+      
+      @if $u1 == $u2 {
+          & {
+              min-width: $floor;
+              @media screen and (min-width: 320px) {
+                min-width: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 32rem) / (96 - 32)));
+              }
+              @media screen and (min-width: 960px) {
+                min-width: $ceiling;
+              }
+          }
+      }
+    }
+
     @mixin fluidheight($floor, $ceiling) {
       $u1: unit($floor);
       $u2: unit($ceiling);
@@ -48,6 +65,23 @@
               }
               @media screen and (min-width: 960px) {
                 height: $ceiling;
+              }
+          }
+      }
+    }
+
+    @mixin fluidminheight($floor, $ceiling) {
+      $u1: unit($floor);
+      $u2: unit($ceiling);
+      
+      @if $u1 == $u2 {
+          & {
+              min-height: $floor;
+              @media screen and (min-width: 320px) {
+                min-height: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 32rem) / (96 - 32)));
+              }
+              @media screen and (min-width: 960px) {
+                min-height: $ceiling;
               }
           }
       }

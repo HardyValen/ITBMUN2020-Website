@@ -1,0 +1,61 @@
+footer{
+    min-height:30rem;
+    width:100%;
+    background-color: map-get($theme-colors, "primary-darkest" );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fluidpaddingy(2rem, 5rem);
+    @include helveticaNeue();
+
+    .footer-section{
+        @include fluidminwidth(20rem, 64rem);
+        @include fluidpaddingy(1rem, 2rem);
+        
+        @media screen and (max-width:960px) {
+           @include fluidpaddingx(2rem, 0rem)
+        }
+
+        .contact-link{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           min-height: 6rem;
+           @include fluidpaddingy(1rem, 3rem);
+           transition: 0.3s;
+
+           object{
+               @include fluidwidth(2.8rem, 4rem);
+               @include fluidmarginbottom(0.5rem, 1.2rem);
+           }
+
+           p{
+               @include montserrat();
+               @include fluidfontsize(1.2rem, 1.4rem);
+               @include fluidletterspacing(0px, 1px);
+               font-weight: 700;
+               margin-block-end: 0;
+           }
+        }
+
+        .contact-link:hover{
+            background-color: map-get($theme-colors, "secondary-light");
+        }
+
+        .contact-link:active{
+           background-color: map-get($theme-colors, "secondary");
+       }
+    }
+
+    h1{
+        @include titilliumWeb();
+        @include fluidfontsize(2.8rem, 4.2rem);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    p{
+        @include fluidfontsize(1.2rem, 1.6rem);
+    }
+}

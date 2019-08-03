@@ -12,6 +12,11 @@
  *          -- 2. Sidebar
  *      # D. Sections
  *          -- 1. Hero
+ *          -- 2. Remarks
+ *          -- 3. Date & Venue
+ *          -- 4. Councils
+ *          -- 5. Supports
+ *      # E. Footer
  *
  * =================================================================== */
 /* ===================================================================
@@ -741,12 +746,6 @@ h1 {
 /* ===================================================================
  * # D. Sections
  * ------------------------------------------------------------------- */
-main {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  margin-right: 0;
-}
-
 .main-hero {
   width: 100%;
   min-height: 100%;
@@ -973,15 +972,15 @@ main {
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
   .main-remark h1 {
-    padding-left: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 960px) {
   .main-remark h1 {
-    padding-left: 3.6rem;
-    padding-right: 3.6rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -1160,15 +1159,15 @@ main {
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
   .main-venue h1 {
-    padding-left: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 960px) {
   .main-venue h1 {
-    padding-left: 3.6rem;
-    padding-right: 3.6rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -1411,15 +1410,15 @@ main {
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
   .main-councils h1 {
-    padding-left: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 960px) {
   .main-councils h1 {
-    padding-left: 3.6rem;
-    padding-right: 3.6rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -1594,15 +1593,15 @@ main {
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
   .main-supports h1 {
-    padding-left: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 960px) {
   .main-supports h1 {
-    padding-left: 3.6rem;
-    padding-right: 3.6rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -1644,24 +1643,6 @@ main {
   .main-supports .main-supports-wrapper .main-support-card {
     height: 10rem;
   }
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media screen and (max-width: 960px) and (min-width: 320px) {
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (max-width: 960px) and (min-width: 960px) {
-  .main-supports .main-supports-wrapper .main-support-card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
 }
 
 .main-supports .main-supports-wrapper .main-support-card .bg-sponsors, .main-supports .main-supports-wrapper .main-support-card .bg-medpar, .main-supports .main-supports-wrapper .main-support-card .bg-others {
@@ -1671,8 +1652,6 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
   -webkit-transition: all .3s;
@@ -1743,21 +1722,288 @@ main {
   color: #EA5A5A;
 }
 
+@media screen and (max-width: 960px) {
+  .main-supports .main-supports-wrapper .main-support-card .bg-sponsors:hover, .main-supports .main-supports-wrapper .main-support-card .bg-medpar:hover, .main-supports .main-supports-wrapper .main-support-card .bg-others:hover {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
 .main-supports .main-supports-wrapper .main-support-card .bg-sponsors {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/stock/Source/Sponsors.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/stock/Source/Sponsors.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-supports .main-supports-wrapper .main-support-card .bg-medpar {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/stock/Source/Medpar.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/stock/Source/Medpar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-supports .main-supports-wrapper .main-support-card .bg-others {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/stock/Source/Support.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/stock/Source/Support.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* # End of Sections
+ * ----------------------- */
+/* ===================================================================
+ * # E. Footer
+ * ------------------------------------------------------------------- */
+footer {
+  min-height: 30rem;
+  width: 100%;
+  background-color: #120817;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Helvetica Neue LT Pro 55 Roman';
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer {
+    padding-bottom: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+footer .footer-section {
+  min-width: 20rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section {
+    min-width: calc(20rem + 44 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section {
+    min-width: 64rem;
+  }
+}
+
+footer .footer-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section {
+    padding-bottom: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  footer .footer-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  footer .footer-section {
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  footer .footer-section {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+footer .footer-section .contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 6rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .footer-section .contact-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link {
+    padding-bottom: calc(1rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+footer .footer-section .contact-link object {
+  width: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link object {
+    width: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link object {
+    width: 4rem;
+  }
+}
+
+footer .footer-section .contact-link object {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link object {
+    margin-bottom: calc(0.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link object {
+    margin-bottom: 1.2rem;
+  }
+}
+
+footer .footer-section .contact-link p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+footer .footer-section .contact-link p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link p {
+    font-size: 1.4rem;
+  }
+}
+
+footer .footer-section .contact-link p {
+  letter-spacing: 0px;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link p {
+    letter-spacing: calc(0px + 1 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(0px + 1 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link p {
+    letter-spacing: 1px;
+    padding-left: 1px;
+  }
+}
+
+footer .footer-section .contact-link:hover {
+  background-color: #EA5A5A;
+}
+
+footer .footer-section .contact-link:active {
+  background-color: #D02B2F;
+}
+
+footer h1 {
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer h1 {
+    font-size: calc(2.8rem + 1.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer h1 {
+    font-size: 4.2rem;
+  }
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer p {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+
+/* # End of Footer
  * ----------------------- */
 /*# sourceMappingURL=main.css.map */
