@@ -1,6 +1,6 @@
 .main-venue{
     @include fluidmarginy(3.0rem, 8.5rem);
-    @include sectionProperties(50%);
+    @include sectionProperties(20%);
 
     h1{
         @include h1main();
@@ -13,7 +13,7 @@
         align-items: center;
         flex-direction: row;
         width:100%;
-        min-height:25rem;
+        min-height:10rem;
 
         @media screen and (max-width:960px) {
             flex-direction: column;

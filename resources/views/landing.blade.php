@@ -77,7 +77,7 @@
                     <!-- # END of Secgen ITBMUN 2020 -->
 
                     <!-- # START Remark from Secgen ITBMUN 2019 -->
-                    <div class='remark-card remark-bg-itbmun2019'>
+                    <!--<div class='remark-card remark-bg-itbmun2019'>
                         <div class='remark-card-summary'>
                             <p>
                                 Vivamus fermentum turpis metus. Maecenas efficitur metus condimentum sapien fringilla tempus. Ut ut mollis est...
@@ -90,11 +90,11 @@
                             </p>
                             <a class='button-white-transparent' href='/remark/secgen2019'>Read</a>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- # END of Secgen ITBMUN 2019 -->
 
                     <!-- # START Head of GMUNC ITB -->
-                    <div class='remark-card remark-bg-gmunc'>
+                    <!--<div class='remark-card remark-bg-gmunc'>
                         <div class='remark-card-summary'>
                             <p>
                             Donec molestie turpis eu tempor pretium. Aliquam tortor quam, fermentum ac fermentum sed..
@@ -107,7 +107,7 @@
                             </p>
                             <a class='button-white-transparent' href='/remark/gmuncITB'>Read</a>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- # END of Head of GMUNC ITB -->
                 </div>
             </div>
@@ -123,12 +123,12 @@
                         &mdash;
                     </h1>
                     <div class="main-venue-wrapper">
-                        <div class="main-venue-image"></div>
+                        <!--<div class="main-venue-image"></div>-->
                         <div class="main-venue-content">
                             <h2>
-                                Month XX-XX, 2019<br>
-                                Building Name, City<br>
-                                <b>Indonesia</b>
+                                January 31 &ndash; February 2, 2019<br>
+                                <!--Building Name, City<br>-->
+                                <b>Bandung, Indonesia</b>
                             </h2>
                             <p>
                                 Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est 
