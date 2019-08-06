@@ -1,6 +1,6 @@
 .main-remark{
     @include fluidmarginy(3.0rem, 8.5rem);
-    @include sectionProperties(100%);
+    @include sectionProperties(50%);
 
     h1{
         @include h1main();

@@ -10,13 +10,14 @@
  *      # C. Navigation Bar
  *          -- 1. Navbar
  *          -- 2. Sidebar
- *      # D. Sections
+ *      # D. Footer
+ *      # E. Main Sections
  *          -- 1. Hero
  *          -- 2. Remarks
  *          -- 3. Date & Venue
  *          -- 4. Councils
  *          -- 5. Supports
- *      # E. Footer
+
  *
  * =================================================================== */
 
@@ -63,16 +64,25 @@ h1 {
  * # C. Navigation for Main
  * ------------------------------------------------------------------- */
  // -- 1. Navbar   
-    @import "sections/main/navbar/navbar-top";
+    @import "blocks/main/navbar/navbar-top";
 
  // -- 2. Sidebar
-    @import "sections/main/navbar/sidebar";
+    @import "blocks/main/navbar/sidebar";
 
 /* # End of Navigation for Main
  * ----------------------- */
 
 /* ===================================================================
- * # D. Sections
+ * # D. Footer
+ * ------------------------------------------------------------------- */
+
+ @import "blocks/main/footer";
+
+ /* # End of Footer
+  * ----------------------- */
+
+/* ===================================================================
+ * # E. Main Sections
  * ------------------------------------------------------------------- */
 
 // -- 1. Hero Section
@@ -90,14 +100,18 @@ h1 {
 // -- 5. Supports Section
     @import "blocks/main/sections/supports";
 
- /* # End of Sections
+/* # End of Main Sections
  * ----------------------- */
 
 /* ===================================================================
- * # E. Footer
+ * # F. Remark Sections
  * ------------------------------------------------------------------- */
 
-    @import "blocks/main/footer";
+// -- 1. Hero Section
+    @import "blocks/main/remark/hero";
 
-/* # End of Footer
+// -- 2. Body Content Section
+    @import "blocks/main/remark/body";
+
+/* # End of Remark Sections
  * ----------------------- */

@@ -1,0 +1,55 @@
+.remark-body{
+    @include fluidmarginbottom(2rem, 4rem);
+    @include sectionProperties(100%);
+    @include fluidpaddingx(2rem, 5rem);
+
+    h1{
+        @include h1main();
+    }
+
+    .remark-content {
+        display: none;
+        padding: 0 18px;
+
+        &.is-active {
+          display: block;
+        }
+    }
+
+    .remark-nav{
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            list-style-type: none;
+
+            @include fluidpaddingx(0rem, 0rem);
+            margin-bottom: 0px;
+
+            li{
+                @include helveticaNeue();
+                @include fluidpaddingx(0.5rem, 1.5rem);
+                @include fluidpaddingy(0.5rem, 0.7rem);
+                @include fluidfontsize(1.2rem, 1.4rem);
+                color: map-get($theme-colors, "link-main");
+                border-bottom: 2px solid transparent;
+                cursor: pointer;
+            }
+
+            li:hover{
+                $color: map-get($theme-colors, "secondary-light");
+                color: lighten($color, 10%);
+                border-bottom: 2px solid lighten($color, 10%);
+            }
+
+            .is-active, .is-active:hover{
+                color: map-get($theme-colors, "secondary-light");
+                border-bottom: 2px solid map-get($theme-colors, "secondary-light");
+            }
+        }
+    }
+}

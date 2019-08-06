@@ -10,13 +10,14 @@
  *      # C. Navigation Bar
  *          -- 1. Navbar
  *          -- 2. Sidebar
- *      # D. Sections
+ *      # D. Footer
+ *      # E. Main Sections
  *          -- 1. Hero
  *          -- 2. Remarks
  *          -- 3. Date & Venue
  *          -- 4. Councils
  *          -- 5. Supports
- *      # E. Footer
+
  *
  * =================================================================== */
 /* ===================================================================
@@ -229,6 +230,7 @@
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .button-white-transparent {
@@ -347,10 +349,6 @@ h1 {
   color: #ffffff;
 }
 
-.navigation a#active {
-  color: #EA5A5A;
-}
-
 .navigation a:hover {
   text-decoration: none;
   color: #EA5A5A;
@@ -457,6 +455,10 @@ h1 {
 
 .navigation ul li a {
   letter-spacing: 1px;
+}
+
+.navigation ul li .active-nav {
+  color: #EA5A5A;
 }
 
 .navigation ul li .navigation-logo {
@@ -744,7 +746,225 @@ h1 {
 /* # End of Navigation for Main
  * ----------------------- */
 /* ===================================================================
- * # D. Sections
+ * # D. Footer
+ * ------------------------------------------------------------------- */
+footer {
+  min-height: 30rem;
+  width: 100%;
+  background-color: #120817;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Helvetica Neue LT Pro 55 Roman';
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer {
+    padding-bottom: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+footer .footer-section {
+  min-width: 20rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section {
+    min-width: calc(20rem + 44 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section {
+    min-width: 64rem;
+  }
+}
+
+footer .footer-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section {
+    padding-bottom: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  footer .footer-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  footer .footer-section {
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  footer .footer-section {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+footer .footer-section .contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 6rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .footer-section .contact-link object {
+  width: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link object {
+    width: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link object {
+    width: 4rem;
+  }
+}
+
+footer .footer-section .contact-link p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+footer .footer-section .contact-link p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link p {
+    font-size: 1.4rem;
+  }
+}
+
+footer .footer-section .contact-link p {
+  letter-spacing: 0px;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-link p {
+    letter-spacing: calc(0px + 1 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(0px + 1 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-link p {
+    letter-spacing: 1px;
+    padding-left: 1px;
+  }
+}
+
+footer .footer-section .contact-link:hover {
+  background-color: #EA5A5A;
+}
+
+footer .footer-section .contact-link:active {
+  background-color: #D02B2F;
+}
+
+footer h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+
+footer h2 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer h2 {
+    font-size: calc(2.8rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer h2 {
+    font-size: 3.6rem;
+  }
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer p {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+
+/* # End of Footer
+  * ----------------------- */
+/* ===================================================================
+ * # E. Main Sections
  * ------------------------------------------------------------------- */
 .main-hero {
   width: 100%;
@@ -765,10 +985,6 @@ h1 {
 
 .main-hero a {
   color: #ffffff;
-}
-
-.main-hero a#active {
-  color: #EA5A5A;
 }
 
 .main-hero a:hover {
@@ -797,18 +1013,18 @@ h1 {
 }
 
 .main-hero .main-hero-container {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 @media screen and (min-width: 320px) {
   .main-hero .main-hero-container {
-    margin: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .main-hero .main-hero-container {
-    margin: 5rem;
+    padding: 5rem;
   }
 }
 
@@ -920,7 +1136,7 @@ h1 {
 
 .main-remark {
   width: 100%;
-  min-height: 100%;
+  min-height: 50%;
 }
 
 .main-remark {
@@ -1750,260 +1966,315 @@ h1 {
   background-size: cover;
 }
 
-/* # End of Sections
+/* # End of Main Sections
  * ----------------------- */
 /* ===================================================================
- * # E. Footer
+ * # F. Remark Sections
  * ------------------------------------------------------------------- */
-footer {
-  min-height: 30rem;
+.remark-hero {
   width: 100%;
-  background-color: #120817;
+  min-height: 60%;
+  background: linear-gradient(359.87deg, #000000 4.51%, rgba(50, 23, 64, 0.3) 85.49%), url(../assets/stock/Source/Remarks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Helvetica Neue LT Pro 55 Roman';
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-position-y: 25%;
 }
 
-footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.remark-hero a {
+  color: #ffffff;
+}
+
+.remark-hero a:hover {
+  text-decoration: none;
+  color: #EA5A5A;
+}
+
+.remark-hero a:active {
+  text-decoration: none;
+  color: #D02B2F;
+}
+
+.remark-hero {
+  padding: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  footer {
-    padding-bottom: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  .remark-hero {
+    padding: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-footer .footer-section {
-  min-width: 20rem;
-}
-
-@media screen and (min-width: 320px) {
-  footer .footer-section {
-    min-width: calc(20rem + 44 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  footer .footer-section {
-    min-width: 64rem;
-  }
-}
-
-footer .footer-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-@media screen and (min-width: 320px) {
-  footer .footer-section {
-    padding-bottom: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  footer .footer-section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .remark-hero {
+    padding: 5rem;
   }
 }
 
 @media screen and (max-width: 960px) {
-  footer .footer-section {
+  .remark-hero {
+    background-position-x: 60%;
+    width: 100%;
+    min-height: 40%;
+  }
+}
+
+.remark-hero h1 {
+  font-family: 'Lemon/Milk Regular';
+  line-height: 1.4;
+}
+
+.remark-hero h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-hero h1 {
+    font-size: calc(2.4rem + 2.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-hero h1 {
+    font-size: 4.8rem;
+  }
+}
+
+.remark-hero h1 {
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-hero h1 {
+    letter-spacing: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-hero h1 {
+    letter-spacing: 4.8px;
+    padding-left: 4.8px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .remark-hero h1 {
+    line-height: 1.5;
+  }
+}
+
+.remark-body {
+  width: 100%;
+  min-height: 100%;
+}
+
+.remark-body {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-body {
+    margin-bottom: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-body {
+    margin-bottom: 4rem;
+  }
+}
+
+.remark-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-body {
+    padding-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.remark-body h1 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.remark-body h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-body h1 {
+    font-size: calc(2.8rem + 1.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-body h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .remark-body h1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
-  footer .footer-section {
+  .remark-body h1 {
     padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
     padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 960px) {
-  footer .footer-section {
+  .remark-body h1 {
     padding-left: 0rem;
     padding-right: 0rem;
   }
 }
 
-footer .footer-section .contact-link {
+.remark-body .remark-content {
+  display: none;
+  padding: 0 18px;
+}
+
+.remark-body .remark-content.is-active {
+  display: block;
+}
+
+.remark-body .remark-nav {
+  width: 100%;
+}
+
+.remark-body .remark-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin-bottom: 0px;
 }
 
-footer .footer-section .contact-link {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.remark-body .remark-nav ul {
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (min-width: 320px) {
-  footer .footer-section .contact-link {
-    padding-bottom: calc(1rem + 2 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(1rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  .remark-body .remark-nav ul {
+    padding-left: calc(0rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(0rem + 0 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  footer .footer-section .contact-link {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .remark-body .remark-nav ul {
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
-footer .footer-section .contact-link object {
-  width: 2.8rem;
+.remark-body .remark-nav ul li {
+  font-family: 'Helvetica Neue LT Pro 55 Roman';
+  color: #D4D4D4;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.remark-body .remark-nav ul li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
-  footer .footer-section .contact-link object {
-    width: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  .remark-body .remark-nav ul li {
+    padding-left: calc(0.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(0.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  footer .footer-section .contact-link object {
-    width: 4rem;
+  .remark-body .remark-nav ul li {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-footer .footer-section .contact-link object {
-  margin-bottom: 0.5rem;
+.remark-body .remark-nav ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
-  footer .footer-section .contact-link object {
-    margin-bottom: calc(0.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+  .remark-body .remark-nav ul li {
+    padding-bottom: calc(0.5rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  footer .footer-section .contact-link object {
-    margin-bottom: 1.2rem;
+  .remark-body .remark-nav ul li {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
   }
 }
 
-footer .footer-section .contact-link p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-}
-
-footer .footer-section .contact-link p {
+.remark-body .remark-nav ul li {
   font-size: 1.2rem;
 }
 
 @media screen and (min-width: 320px) {
-  footer .footer-section .contact-link p {
+  .remark-body .remark-nav ul li {
     font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  footer .footer-section .contact-link p {
+  .remark-body .remark-nav ul li {
     font-size: 1.4rem;
   }
 }
 
-footer .footer-section .contact-link p {
-  letter-spacing: 0px;
-  padding-left: 0px;
+.remark-body .remark-nav ul li:hover {
+  color: #f08787;
+  border-bottom: 2px solid #f08787;
 }
 
-@media screen and (min-width: 320px) {
-  footer .footer-section .contact-link p {
-    letter-spacing: calc(0px + 1 * ((100vw - 320px) / (960 - 320)));
-    padding-left: calc(0px + 1 * ((100vw - 320px) / (960 - 320)));
-  }
+.remark-body .remark-nav ul .is-active, .remark-body .remark-nav ul .is-active:hover {
+  color: #EA5A5A;
+  border-bottom: 2px solid #EA5A5A;
 }
 
-@media screen and (min-width: 960px) {
-  footer .footer-section .contact-link p {
-    letter-spacing: 1px;
-    padding-left: 1px;
-  }
-}
-
-footer .footer-section .contact-link:hover {
-  background-color: #EA5A5A;
-}
-
-footer .footer-section .contact-link:active {
-  background-color: #D02B2F;
-}
-
-footer h1 {
-  font-family: 'Titillium Web', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-footer h1 {
-  font-size: 2.8rem;
-}
-
-@media screen and (min-width: 320px) {
-  footer h1 {
-    font-size: calc(2.8rem + 1.4 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  footer h1 {
-    font-size: 4.2rem;
-  }
-}
-
-footer p {
-  font-size: 1.2rem;
-}
-
-@media screen and (min-width: 320px) {
-  footer p {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  footer p {
-    font-size: 1.6rem;
-  }
-}
-
-/* # End of Footer
+/* # End of Remark Sections
  * ----------------------- */
 /*# sourceMappingURL=main.css.map */

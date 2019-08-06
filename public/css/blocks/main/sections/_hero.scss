@@ -16,7 +16,7 @@
     } 
 
     .main-hero-container{
-        @include fluidmargin(2rem, 5rem);
+        @include fluidpadding(2rem, 5rem);
         width: 100%;
 
         .main-hero-content{

@@ -8,6 +8,7 @@
     letter-spacing: 1px;
     @include fluidfontsize(1.2rem, 1.6rem);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .button-white-transparent:hover{

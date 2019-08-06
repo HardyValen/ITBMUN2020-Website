@@ -5,12 +5,17 @@
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+|   Table of Contents
+|   =================
+|   * 1. View Web Page
+|        -- View Landing Page
+|           * View Remarks
+|        
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function() {return redirect()->to("/landing");});
+Route::get('/landing', 'PageRequestController@viewLanding');
+Route::get('/remark/secgen2020', 'PageRequestController@viewRemarkSecgen2020');
+Route::get('/remark/secgen2019', 'PageRequestController@viewRemarkSecgen2019');
+Route::get('/remark/gmunc-advisor', 'PageRequestController@viewRemarkGmuncAdvisor');
