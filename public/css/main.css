@@ -1301,22 +1301,17 @@ footer p {
 }
 
 .main-remark .remark-bg-itbmun2020 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url(../assets/placeholders/MarieCurie.jpeg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url(../assets/placeholders/MarieCurie.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-remark .remark-bg-itbmun2019 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url(../assets/placeholders/Bjarne.jpg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url(../assets/placeholders/Bjarne.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url(../assets/page-landing/section-remark/secgenITBMUN2020.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url(../assets/page-landing/section-remark/secgenITBMUN2020.jpg);
 }
 
 .main-remark .remark-bg-gmunc {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url(../assets/placeholders/NelsonMandela.jpeg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url(../assets/placeholders/NelsonMandela.jpeg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url(../assets/page-landing/section-remark/SecgenGMUNC.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url(../assets/page-landing/section-remark/SecgenGMUNC.jpg);
+  background-position-x: 80%;
+}
+
+.main-remark .remark-bg-itbmun2020, .main-remark .remark-bg-gmunc {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2152,15 +2147,6 @@ footer p {
   }
 }
 
-.remark-body .remark-content {
-  display: none;
-  padding: 0 18px;
-}
-
-.remark-body .remark-content.is-active {
-  display: block;
-}
-
 .remark-body .remark-nav {
   width: 100%;
 }
@@ -2273,6 +2259,71 @@ footer p {
 .remark-body .remark-nav ul .is-active, .remark-body .remark-nav ul .is-active:hover {
   color: #EA5A5A;
   border-bottom: 2px solid #EA5A5A;
+}
+
+@media screen and (max-width: 960px) {
+  .remark-body .remark-nav {
+    display: none;
+  }
+}
+
+.remark-body .remark-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-body .remark-wrapper {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-body .remark-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.remark-body .remark-wrapper .remark-content {
+  display: none;
+}
+
+.remark-body .remark-wrapper .remark-content p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-body .remark-wrapper .remark-content p {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-body .remark-wrapper .remark-content p {
+    font-size: 1.6rem;
+  }
+}
+
+.remark-body .remark-wrapper .remark-content img {
+  height: 12rem;
+}
+
+@media screen and (min-width: 320px) {
+  .remark-body .remark-wrapper .remark-content img {
+    height: calc(12rem + 12 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .remark-body .remark-wrapper .remark-content img {
+    height: 24rem;
+  }
+}
+
+.remark-body .remark-wrapper .remark-content.is-active {
+  display: block;
 }
 
 /* # End of Remark Sections

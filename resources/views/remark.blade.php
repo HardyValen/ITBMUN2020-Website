@@ -30,15 +30,40 @@
             <div class="col-12 offset-md-2 col-md-8">
                 <nav class="remark-nav">
                     <ul>
-                        <li id="secgen2020-nav"><a href="#secgen2020">Secgen 2020</a></li>
-                        <li id="secgen2019-nav"><a href="#secgen2019">Secgen 2019</a></li>
-                        <li id="gmunc-nav"><a href="#gmunc-advisor">GMUNC Advisor</a></li>
+                        <li id="secgen2020-nav"><a href="#secgen2020">Secgen ITBMUN 2020</a></li>
+                        <li id="gmunc-nav"><a href="#secgenGMUNC">Secgen GMUNC</a></li>
                     </ul>
                 </nav>
                 <div class="remark-wrapper">
-                    <div class="remark-content" id="secgen2020">Section One</div>
-                    <div class="remark-content" id="secgen2019">Section Two</div>
-                    <div class="remark-content" id="gmunc-advisor">Section Three</div>
+                    <div class="remark-content" id="secgen2020">
+                        <img src="{{URL::asset('assets/page-landing/section-remark/SecgenGMUNC.jpg')}}">
+                        <p>
+                            Greetings fellow Delegates, Chairs, Ladies and Gentlemen. It's my utmost pleasure to welcome you to ITBMUN 2020. My name is Angelica Wiliana, a bioengineering student of batch 2018 Bandung Institute of Technology.
+                        </p>
+                        <p>
+                            After years of experience in the MUN realm, it's truly an honor to serve you as this year's Secretary General of ITBMUN. Our goal this year is to preserve the culture of bridging science and social studies through technology-based events and highly relatable conference topics while striving to provide inclusive learning environment through objective asessment method. All of the mentioned are of the effort to express our zeal to provide a constructive educational platform and a memorable experience for everyone regardless of their role in ITBMUN.
+                        </p>
+                        <p>
+                            Personally speaking, my favorite part of every MUN conference is the chance of making friends and being immersed into dynamic debates. I hope that ITBMUN can do you right on this one !
+                        </p>
+                        <p>
+                            Finally, on behalf of the Secretariat, we hope that your adventure here is not only a just war of brain and manners, but an everlasting experience to cherish by the bonds that we'll form together. See you in ITBMUN 2020 !
+                        </p>
+                    </div>
+                    <div class="remark-content" id="secgenGMUNC">
+                        <p>
+                            Welcome delegates!
+                        </p>
+                        <p>
+                            My name is Hanif Alfada, Secretary General of ITB's MUN club, and i am proud to announce that Ganesha Model United Nations Club (GMUNC) Institut Teknologi Bandung will now be hosting the 4th ITB MUN.
+                        </p>
+                        <p>
+                            ITB MUN is a project initiated 4 years ago fueled by a dream to deliver a MUN with the best quality we can deliver. Over the course of the 4 years ITB MUN has rapidly developed, growing not just in size but also quality; constantly seeking new boundaries, only to break through them.
+                        </p>
+                        <p>
+                            Bringing the theme of technology and diplomacy, ITB MUN is a manifestation of ITB's students, especially its MUN club, which tries to show how the advancement of technology and the unravelment of the world stage are highly intertwined. Presenting a broad array of topics, ITB MUN also tries to as inclusive as possible for delegates from varying backgrounds.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,17 +89,10 @@
         document.querySelector("#secgen2020").classList.add("is-active");
     </script>
     @else
-        @if($getString == "secgen2019")
-        <script>
-            document.querySelector("#secgen2019-nav").classList.add("is-active");
-            document.querySelector("#secgen2019").classList.add("is-active");
-        </script>
-        @else
-        <script>
-            document.querySelector("#gmunc-nav").classList.add("is-active");
-            document.querySelector("#gmunc-advisor").classList.add("is-active");
-        </script>
-        @endif
+    <script>
+        document.querySelector("#gmunc-nav").classList.add("is-active");
+        document.querySelector("#secgenGMUNC").classList.add("is-active");
+    </script>
     @endif
 
 @endsection

@@ -44,21 +44,7 @@
             linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
             linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
           rgba(50, 23, 64, 0.3) 80.76%),
-            url(../assets/placeholders/MarieCurie.jpeg);
-            
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .remark-bg-itbmun2019{
-        background: 
-            linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
-            linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
-          rgba(50, 23, 64, 0.3) 80.76%),
-            url(../assets/placeholders/Bjarne.jpg);
-            
-        background-repeat: no-repeat;
-        background-size: cover;
+            url(../assets/page-landing/section-remark/secgenITBMUN2020.jpg);
     }
 
     .remark-bg-gmunc{
@@ -66,8 +52,11 @@
             linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), 
             linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
           rgba(50, 23, 64, 0.3) 80.76%),
-            url(../assets/placeholders/NelsonMandela.jpeg);
-            
+            url(../assets/page-landing/section-remark/SecgenGMUNC.jpg);
+            background-position-x: 80%;
+    }
+
+    .remark-bg-itbmun2020, .remark-bg-gmunc{
         background-repeat: no-repeat;
         background-size: cover;
     }

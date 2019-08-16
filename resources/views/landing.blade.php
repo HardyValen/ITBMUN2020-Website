@@ -63,52 +63,35 @@
                     <div class='remark-card remark-bg-itbmun2020'>
                         <div class='remark-card-summary'>
                             <p>
-                                Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est... 
+                            Our goal this year is to preserve the culture of bridging science and social studies through technology-based events and highly relatable conference topics...
                             </p>
                         </div>
                         <div class='remark-card-footer'>
                             <p>
                                 <big><b>Angelica Wiliana</b></big><br>
-                                Secretary General ITBMUN 2020
+                                Secretary General of ITBMUN 2020
                             </p>
                             <a class='button-white-transparent' href="/remark/secgen2020">Read</a>
                         </div>
                     </div>
                     <!-- # END of Secgen ITBMUN 2020 -->
 
-                    <!-- # START Remark from Secgen ITBMUN 2019 -->
-                    <div class='remark-card remark-bg-itbmun2019'>
-                        <div class='remark-card-summary'>
-                            <p>
-                                Vivamus fermentum turpis metus. Maecenas efficitur metus condimentum sapien fringilla tempus. Ut ut mollis est...
-                            </p>
-                        </div>
-                        <div class='remark-card-footer'>
-                            <p>
-                                <big><b>Bjarne Stornstroup</b></big><br>
-                                Secretary General ITBMUN 2019
-                            </p>
-                            <a class='button-white-transparent' href='/remark/secgen2019'>Read</a>
-                        </div>
-                    </div>
-                    <!-- # END of Secgen ITBMUN 2019 -->
-
-                    <!-- # START Head of GMUNC ITB -->
+                    <!-- # START Remark from Secgen GMUNC -->
                     <div class='remark-card remark-bg-gmunc'>
                         <div class='remark-card-summary'>
                             <p>
-                            Donec molestie turpis eu tempor pretium. Aliquam tortor quam, fermentum ac fermentum sed..
+                                ITB MUN is a project initiated 4 years ago fueled by a dream to deliver a MUN with the best quality we can deliver... 
                             </p>
                         </div>
                         <div class='remark-card-footer'>
                             <p>
-                                <big><b>Nelson Mandela</b></big><br>
-                                Head of GMUNC ITB
+                                <big><b>Hanif Alfada</b></big><br>
+                                Secretary General of GMUNC
                             </p>
-                            <a class='button-white-transparent' href='/remark/gmuncITB'>Read</a>
+                            <a class='button-white-transparent' href='/remark/secgenGMUNC'>Read</a>
                         </div>
                     </div>
-                    <!-- # END of Head of GMUNC ITB -->
+                    <!-- # END of Secgen Secgen GMUNC -->
                 </div>
             </div>
         </section>

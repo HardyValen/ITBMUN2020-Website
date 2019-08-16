@@ -11,17 +11,13 @@ class PageRequestController extends Controller
         return view("landing");
     }
 
-    // ## -- 2. View Landing
+    // ## -- 2. View Remark - Secgen 2020
     public function viewRemarkSecgen2020(){
         return view("remark")->with('getString', 'secgen2020');
     }
 
-    // ## -- 3. View Landing
-    public function viewRemarkSecgen2019(){
-        return view("remark")->with('getString', 'secgen2019');
-    }
-
-    public function viewRemarkGmuncAdvisor(){
+    // ## -- 3. View Remark - GMUNC Advisor
+    public function viewRemarkSecgenGmunc(){
         return view("remark")->with('getString', 'gmunc');
     }
 }
