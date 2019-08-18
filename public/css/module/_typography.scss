@@ -7,3 +7,41 @@
         @include fluidpaddingx(2.0rem, 0rem);
     }
  }
+
+ @mixin h1titlearticle(){
+    font-weight: 400;
+    @include fluidfontsize(3.2rem, 5.6rem);
+    @include titilliumWeb();
+    color: map-get($theme-colors, "title-article")
+ }
+
+
+ @mixin h1article(){
+    font-weight: 700;
+    @include fluidfontsize(2.0rem, 2.8rem);
+    @include titilliumWeb();
+    color: map-get($theme-colors, "heading-article" )
+ }
+
+ @mixin h2article(){
+    font-weight: 700;
+    @include fluidfontsize(1.8rem, 2.4rem);
+    @include titilliumWeb();
+    color: map-get($theme-colors, "heading-article" )
+ }
+
+ @mixin h3article(){
+    font-weight: 500;
+    @include fluidfontsize(1.6rem, 2.0rem);
+    @include titilliumWeb();
+    color: map-get($theme-colors, "heading-article"); 
+ }
+
+ @mixin paragraphArticle(){
+    font-weight: 400;
+    @include fluidfontsize(1.3rem, 1.6rem);
+    @include titilliumWeb();
+    color: map-get($theme-colors, "paragraph-article");
+    line-height: 1.7;
+    margin-bottom: 3rem;
+ }

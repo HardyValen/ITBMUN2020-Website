@@ -1,0 +1,125 @@
+/* =================================================================== 
+ *
+ *  ITBMUN 2020 Article Stylesheet
+ *  29-07-2019
+ *  ------------------------------------------------------------------
+ *
+ *
+ * =================================================================== */
+
+/* ===================================================================
+ * # A. Import Module
+ * ------------------------------------------------------------------- */
+ @import 'module/math';
+ @import 'module/mixin-fluid';
+ @import 'module/variable';
+ @import 'module/fonts';
+ @import 'module/elevation-shadow';
+ @import 'module/hamburger';
+ @import 'module/section';
+ @import 'module/button';
+ @import 'module/typography';
+ @import 'module/anchor-article';
+
+/* # End of Import Module
+ * ----------------------- */
+
+/* ===================================================================
+ * # B. Default Colors etc
+ * ------------------------------------------------------------------- */
+body {
+    background-color: map-get($theme-colors, "white");
+    color: map-get($theme-colors, "paragraph-article");
+    font-size:1.6rem;
+    @include titilliumWeb();
+}
+
+h1 {
+    color: map-get($theme-colors, "heading-1-article");
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: map-get($theme-colors, "title-article");
+    @include lemonMilkRegular();
+}
+
+/* # End of Default Colors
+ * ----------------------- */
+
+/* ===================================================================
+ * # C. Navigation for Article
+ * ------------------------------------------------------------------- */
+ // -- 1. Navbar   
+    @import "blocks/article/navbar/navbar-top";
+
+ // -- 2. Sidebar
+    @import "blocks/article/navbar/sidebar";
+
+/* # End of Navigation for Main
+ * ----------------------- */
+
+/* ===================================================================
+ * # D. Footer
+ * ------------------------------------------------------------------- */
+
+ @import "blocks/main/footer";
+
+ /* # End of Footer
+  * ----------------------- */
+
+/* ===================================================================
+ * # E. Article
+ * ------------------------------------------------------------------- */
+
+ .article-container{
+    @include sectionProperties(100%);
+    padding-top: 15rem;
+    padding-bottom: 4rem;
+    @include fluidpaddingx(2rem, 4rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .article-wrapper{
+        width: 60%;
+        min-height: 20rem;
+        @include anchorStyleArticle2();
+
+        @media screen and (max-width: 960px){
+            @include fluidwidth(28rem, 76rem);
+        }
+
+        .title{
+            @include h1titlearticle();
+        }
+
+        .image-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            @include fluidpaddingy(2rem, 4rem);
+
+            .council-logo{
+                @include fluidheight(24rem, 24rem);
+            }
+        }
+        
+        h1{
+            @include h1article();
+        }
+
+        h2{
+            @include h2article();
+        }
+
+        h3{
+            @include h3article();
+        }
+
+        p{
+            @include paragraphArticle();
+        }
+    }
+ }

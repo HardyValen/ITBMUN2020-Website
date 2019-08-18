@@ -1,7 +1,7 @@
 <nav class='navigation navigation-landing' id='navbar'>
     <ul>
         <li class='navigation-brand'>
-            <a href="/landing"><img class="navigation-logo" src="{{URL::asset('assets/logo/itbmun2020-logo-white.png')}}"></a>
+            <a href="/landing"><img class="navigation-logo" src="{{URL::asset('assets/logo/itbmun2020-logo-black.png')}}"></a>
         </li>
         <ul class='navigation-items'>
             <li class='navigation-item'><a href="/landing">Home</a></li>
