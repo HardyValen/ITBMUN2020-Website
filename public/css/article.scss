@@ -91,10 +91,6 @@ h1 {
             @include fluidwidth(28rem, 76rem);
         }
 
-        .title{
-            @include h1titlearticle();
-        }
-
         .image-container{
             width: 100%;
             display: flex;
@@ -104,6 +100,10 @@ h1 {
             .council-logo{
                 @include fluidheight(24rem, 24rem);
             }
+        }
+
+        .title{
+            @include h1titlearticle();
         }
         
         h1{
@@ -123,3 +123,113 @@ h1 {
         }
     }
  }
+
+ .council-container{
+    @mixin backgroundCouncil(){
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include fluidpaddingy(2rem, 2.8rem);
+    }
+
+    @include sectionProperties(100%);
+    padding-top: 15rem;
+    padding-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .council-wrapper{
+        @include anchorStyleArticle2();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 20rem;
+
+        .council-header{
+            width: 60%;
+            @include anchorStyleArticle2();
+            
+            @media screen and (max-width: 960px){
+                width: 100%;
+                @include fluidpaddingx(2rem, 4rem);
+            }    
+        }
+
+        .council-image-container{
+            width: 100%;
+            @include fluidmarginy(3rem, 4rem);
+            display: flex;
+            justify-content: center;
+
+            .council-logo{
+                @include fluidheight(24rem, 24rem);
+            }
+        }
+
+        .council-background-crisis{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/crisis.gif);
+            @include backgroundCouncil();
+        }
+
+        .council-background-disec{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/disec.gif);
+            @include backgroundCouncil();
+        }
+
+        .council-background-unca{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/press.gif);
+            @include backgroundCouncil();
+        }
+
+        .council-background-unep{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/unep.gif);
+            @include backgroundCouncil();
+        }
+
+        .council-background-unesco{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/unesco.gif);
+            @include backgroundCouncil();
+        }
+
+        .council-background-unsc{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/unsc.gif);
+            @include backgroundCouncil();
+        }
+
+        .council-background-wha{
+            background:linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/wha.gif);
+            @include backgroundCouncil();
+        }
+        
+        .council-content{
+            width: 60%;
+
+            @media screen and (max-width: 960px){
+                width: 100%;
+                @include fluidpaddingx(2rem, 4rem);
+            }    
+        }
+
+        .title{
+            @include h1titlearticle();
+        }
+        
+        h1{
+            @include h1article();
+        }
+
+        h2{
+            @include h2article();
+        }
+
+        h3{
+            @include h3article();
+        }
+
+        p{
+            @include paragraphArticle();
+        }
+    }
+}

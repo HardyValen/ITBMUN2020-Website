@@ -148,31 +148,31 @@
                     </h1>
                     <div class="main-councils-wrapper">
                         <a class="council" href='/councils/WHA'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/WHA-white.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/WHA-white.png')}}">
                             <p>WHA</p>
                         </a>
                         <a class="council" href='/councils/UNEP'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/UNEP-white-notext.png')}}">
                             <p>UNEP</p>
                         </a>
                         <a class="council" href='/councils/DISEC'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/DISEC-white-text.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/DISEC-white-text.png')}}">
                             <p>DISEC</p>
                         </a>
                         <a class="council" href='/councils/UNESCO'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNESCO-white.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/UNESCO-white.png')}}">
                             <p>UNESCO</p>
                         </a>
                         <a class="council" href='/councils/CRISIS'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/CRISIS-white.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/CRISIS-white.png')}}">
                             <p>CRISIS</p>
                         </a>
                         <a class="council" href='/councils/UNSC'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNSC-white-text.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/UNSC-white-text.png')}}">
                             <p>UNSC</p>
                         </a>
                         <a class="council" href='/councils/UNCA'>
-                            <img src="{{URL::asset('assets/councilLogos/Edited/White/UNCA-white-notext.png')}}">
+                            <img src="{{URL::asset('assets/councils/councilLogos/Edited/White/UNCA-white-notext.png')}}">
                             <p style='text-align:center'>UNCA PRESS</p>
                         </a>
                     </div>

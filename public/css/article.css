@@ -978,28 +978,6 @@ footer p {
   }
 }
 
-.article-container .article-wrapper .title {
-  font-weight: 400;
-  font-family: 'Titillium Web', sans-serif;
-  color: #060606;
-}
-
-.article-container .article-wrapper .title {
-  font-size: 3.2rem;
-}
-
-@media screen and (min-width: 320px) {
-  .article-container .article-wrapper .title {
-    font-size: calc(3.2rem + 2.4 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .article-container .article-wrapper .title {
-    font-size: 5.6rem;
-  }
-}
-
 .article-container .article-wrapper .image-container {
   width: 100%;
   display: -webkit-box;
@@ -1042,6 +1020,28 @@ footer p {
 @media screen and (min-width: 960px) {
   .article-container .article-wrapper .image-container .council-logo {
     height: 24rem;
+  }
+}
+
+.article-container .article-wrapper .title {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #060606;
+}
+
+.article-container .article-wrapper .title {
+  font-size: 3.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .article-container .article-wrapper .title {
+    font-size: calc(3.2rem + 2.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .article-container .article-wrapper .title {
+    font-size: 5.6rem;
   }
 }
 
@@ -1131,6 +1131,467 @@ footer p {
 
 @media screen and (min-width: 960px) {
   .article-container .article-wrapper p {
+    font-size: 1.6rem;
+  }
+}
+
+.council-container {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 15rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.council-container .council-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20rem;
+}
+
+.council-container .council-wrapper a {
+  color: #5B4566;
+}
+
+.council-container .council-wrapper a:hover {
+  text-decoration: none;
+  color: #EA5A5A;
+}
+
+.council-container .council-wrapper a:active {
+  text-decoration: none;
+  color: #D02B2F;
+}
+
+.council-container .council-wrapper .council-header {
+  width: 60%;
+}
+
+.council-container .council-wrapper .council-header a {
+  color: #5B4566;
+}
+
+.council-container .council-wrapper .council-header a:hover {
+  text-decoration: none;
+  color: #EA5A5A;
+}
+
+.council-container .council-wrapper .council-header a:active {
+  text-decoration: none;
+  color: #D02B2F;
+}
+
+@media screen and (max-width: 960px) {
+  .council-container .council-wrapper .council-header {
+    width: 100%;
+  }
+  .council-container .council-wrapper .council-header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .council-container .council-wrapper .council-header {
+    padding-left: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .council-container .council-wrapper .council-header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.council-container .council-wrapper .council-image-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.council-container .council-wrapper .council-image-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-image-container {
+    margin-bottom: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    margin-top: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-image-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.council-container .council-wrapper .council-image-container .council-logo {
+  height: 24rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-image-container .council-logo {
+    height: calc(24rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-image-container .council-logo {
+    height: 24rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-crisis {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/crisis.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/crisis.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-crisis {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-crisis {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-crisis {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-disec {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/disec.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/disec.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-disec {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-disec {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-disec {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-unca {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/press.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/press.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-unca {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-unca {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-unca {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-unep {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/unep.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/unep.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-unep {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-unep {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-unep {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-unesco {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/unesco.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/unesco.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-unesco {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-unesco {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-unesco {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-unsc {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/unsc.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/unsc.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-unsc {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-unsc {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-unsc {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-background-wha {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(80%, rgba(0, 0, 0, 0.5)), to(#424242)), url(../assets/councils/gif/wha.gif);
+  background: linear-gradient(180deg, #424242 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, #424242 100%), url(../assets/councils/gif/wha.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.council-container .council-wrapper .council-background-wha {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .council-background-wha {
+    padding-bottom: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .council-background-wha {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper .council-content {
+  width: 60%;
+}
+
+@media screen and (max-width: 960px) {
+  .council-container .council-wrapper .council-content {
+    width: 100%;
+  }
+  .council-container .council-wrapper .council-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .council-container .council-wrapper .council-content {
+    padding-left: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .council-container .council-wrapper .council-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.council-container .council-wrapper .title {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #060606;
+}
+
+.council-container .council-wrapper .title {
+  font-size: 3.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper .title {
+    font-size: calc(3.2rem + 2.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper .title {
+    font-size: 5.6rem;
+  }
+}
+
+.council-container .council-wrapper h1 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  color: #242424;
+}
+
+.council-container .council-wrapper h1 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper h1 {
+    font-size: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper h1 {
+    font-size: 2.8rem;
+  }
+}
+
+.council-container .council-wrapper h2 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  color: #242424;
+}
+
+.council-container .council-wrapper h2 {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper h2 {
+    font-size: calc(1.8rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.council-container .council-wrapper h3 {
+  font-weight: 500;
+  font-family: 'Titillium Web', sans-serif;
+  color: #242424;
+}
+
+.council-container .council-wrapper h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper h3 {
+    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper h3 {
+    font-size: 2rem;
+  }
+}
+
+.council-container .council-wrapper p {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #424242;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.council-container .council-wrapper p {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .council-container .council-wrapper p {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .council-container .council-wrapper p {
     font-size: 1.6rem;
   }
 }
