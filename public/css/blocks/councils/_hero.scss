@@ -1,12 +1,12 @@
 .councils-hero{
     @include sectionProperties(60%);
-    background: linear-gradient(359.87deg, #000000 4.51%, rgba(50, 23, 64, 0.5) 85.49%), url(../assets/stock/Edited/councils.jpg);
+    background: linear-gradient(359.87deg, #000000 4.51%, rgba(50, 23, 64, 0.5) 85.49%), url(../assets/councils/sectionHero-bgHero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     @include fluidpadding(2rem, 5rem);
     display: flex;
     align-items: flex-end;
-    background-position-y: 40%;
+    background-position-y:20%;
 
     @media screen and (max-width:960px) {
         background-position-x: 60%;

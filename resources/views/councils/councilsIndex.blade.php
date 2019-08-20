@@ -27,7 +27,8 @@
 
     <section class="councils-body">
         <div class="row">
-            <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-12">
+            <div class="col-md-8 offset-md-2 col-12">
+                <h2>Select one of the councils below</h2>
                 <div class="councils-wrapper">
                     <a class="council" href='/councils/WHA'>
                         <img src="{{URL::asset('assets/councilLogos/Edited/White/WHA-white.png')}}">

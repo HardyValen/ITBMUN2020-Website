@@ -8,36 +8,51 @@
     }
  }
 
- @mixin h1titlearticle(){
+@mixin h2main(){
+   font-weight: 700;
+   @include fluidfontsize(1.8rem, 2.4rem);
+   @include titilliumWeb();
+   color: map-get($theme-colors, "heading-1-main" )
+}
+
+@mixin paragraphMain(){
+   font-weight: 400;
+   @include fluidfontsize(1.3rem, 1.6rem);
+   @include titilliumWeb();
+   color: map-get($theme-colors, "paragraph-main");
+   line-height: 1.8;
+   margin-bottom: 3rem;
+}
+
+@mixin h1titlearticle(){
     font-weight: 400;
     @include fluidfontsize(3.2rem, 5.6rem);
     @include titilliumWeb();
     color: map-get($theme-colors, "title-article")
  }
 
-
- @mixin h1article(){
+@mixin h1article(){
     font-weight: 700;
     @include fluidfontsize(2.0rem, 2.8rem);
     @include titilliumWeb();
     color: map-get($theme-colors, "heading-article" )
  }
 
- @mixin h2article(){
+@mixin h2article(){
     font-weight: 700;
     @include fluidfontsize(1.8rem, 2.4rem);
     @include titilliumWeb();
     color: map-get($theme-colors, "heading-article" )
  }
 
- @mixin h3article(){
+@mixin h3article(){
     font-weight: 500;
     @include fluidfontsize(1.6rem, 2.0rem);
     @include titilliumWeb();
     color: map-get($theme-colors, "heading-article"); 
  }
 
- @mixin paragraphArticle(){
+@mixin paragraphArticle(){
     font-weight: 400;
     @include fluidfontsize(1.3rem, 1.6rem);
     @include titilliumWeb();

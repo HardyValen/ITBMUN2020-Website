@@ -16,7 +16,7 @@
         
 <!-- ## END of Sidebar Navigation ========= -->
 
-<!-- ## 3. Council Hero Section ========= -->
+<!-- ## 3. Remark Hero Section ========= -->
     <section class='remark-hero' id='hero'>
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
@@ -24,7 +24,9 @@
             </div>
         </div>
     </section>
-
+<!-- ## END of Remark Hero ========= -->
+    
+<!-- ## 4. Remark Content Section ========= -->
     <section class="remark-body">
         <nav class="remark-nav">
             <ul>
@@ -88,7 +90,7 @@
             </div>
         </div>
     </section>
-<!-- ## END of Sidebar Navigation ========= -->
+<!-- ## END of Remark Content ========= -->
 
 <!-- ## 4. Footer Navigation ========= -->
         @include('components.footer-main')

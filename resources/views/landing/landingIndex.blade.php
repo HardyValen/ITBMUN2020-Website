@@ -66,12 +66,7 @@
             <p>
                 ITB MUN once again calls upon you to bridge this multipolar world in which we live in, are you up for the challange, delegate?
             </p>
-            <p>
-                ITB Model United Nations convened for its first session three years ago. The first ITB MUN had 2 councils, and it grew in size in its second session growing to 4 councils. The ITB MUN held in February 2019 developed even more, not only in size but also in terms of service, organizational and academic quality, and council variety by introducing the press into its councils, growing to 6 councils and 175 delegates, with delegates coming from over 24 different institutions across Indonesia.
-            </p>
-            <p>
-                In January 2020 ITB MUN will once again reconvene for its 4th annual session, presenting an even broader variety of councils, and set to be its best iteration yet.
-            </p>
+
         </div>
     </section>
         <!--<section class='main-venue'>
@@ -152,31 +147,31 @@
                         &mdash;
                     </h1>
                     <div class="main-councils-wrapper">
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/WHA'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/WHA-white.png')}}">
                             <p>WHA</p>
                         </a>
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/UNEP'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/UNEP-white-notext.png')}}">
                             <p>UNEP</p>
                         </a>
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/DISEC'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/DISEC-white-text.png')}}">
                             <p>DISEC</p>
                         </a>
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/UNESCO'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/UNESCO-white.png')}}">
                             <p>UNESCO</p>
                         </a>
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/CRISIS'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/CRISIS-white.png')}}">
                             <p>CRISIS</p>
                         </a>
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/UNSC'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/UNSC-white-text.png')}}">
                             <p>UNSC</p>
                         </a>
-                        <a class="council" href='#'>
+                        <a class="council" href='/councils/UNCA'>
                             <img src="{{URL::asset('assets/councilLogos/Edited/White/UNCA-white-notext.png')}}">
                             <p style='text-align:center'>UNCA PRESS</p>
                         </a>

@@ -1,7 +1,7 @@
 .main-hero{
     @import '../../../module/anchor';
     @include sectionProperties(100%);
-    background: linear-gradient(359.87deg, #000000 4.51%, rgba(35, 16, 45, 0.4) 85.49%), url(../assets/stock/Edited/bg-hero.jpg);
+        background: linear-gradient(359.87deg, #000000 4.51%, rgba(35, 16, 45, 0.4) 85.49%), url(../assets/main/mainSection-bgHero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
