@@ -16,43 +16,40 @@ footer{
            @include fluidpaddingx(2rem, 0rem)
         }
 
-        .contact-link{
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           min-height: 6rem;
-           transition: 0.3s;
+        .contact-wrapper{
+            display: flex;
+            flex-direction: row;
 
-           object{
-               @include fluidwidth(2.8rem, 4rem);
-           }
+            a{
+                color: #ffffff;
+                transition: all 0.3s;
+            }
+            
+            a:hover{
+                text-decoration: none;
+                color: map-get($theme-colors, "secondary-light" )
+            }
+            
+            a:active{
+                text-decoration: none;
+                color: map-get($theme-colors, "secondary" )
+            }
 
-           p{
-               @include montserrat();
-               @include fluidfontsize(1.2rem, 1.4rem);
-               @include fluidletterspacing(0px, 1px);
-               font-weight: 700;
-               margin-block-end: 0;
-           }
+            a:not(:first-child){
+                margin-left: 2rem;
+            }
         }
-
-        .contact-link:hover{
-            background-color: map-get($theme-colors, "secondary-light");
-        }
-
-        .contact-link:active{
-           background-color: map-get($theme-colors, "secondary");
-       }
     }
 
     h2{
         @include titilliumWeb();
         @include fluidfontsize(2.8rem, 3.6rem);
         font-weight: 700;
+        color: map-get($theme-colors, "heading-1-main") !important;
     }
 
     p{
         @include fluidfontsize(1.2rem, 1.6rem);
+        color: map-get($theme-colors, "paragraph-main") !important;
     }
 }

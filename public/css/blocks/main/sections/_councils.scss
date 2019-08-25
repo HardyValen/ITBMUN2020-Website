@@ -8,14 +8,17 @@
         }
 
         .main-councils-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             width:100%;
-            min-height:40rem;
+            min-height:15rem;
 
             .council{
-                @include fluidpaddingy(1rem, 4rem);
-                width:33.33%;
-                min-height:10rem;
-
+                @include fluidpaddingy(1rem, 2rem);
+                
+                min-height:100%;
+                max-width: 14.285%;
                 display: flex;
                 flex-wrap:nowrap;
                 flex-direction: column;
@@ -23,8 +26,12 @@
                 justify-content: center;
                 transition: 0.3s;
 
+                @media screen and (max-width:960px){
+                    max-width:33.33%;
+                }
+
                 img{
-                    @include fluidwidth(7rem, 18rem);
+                    width: 80%;
                 }
 
                 p{

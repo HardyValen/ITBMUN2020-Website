@@ -1,19 +1,15 @@
 .remark-body{
     @include fluidmarginbottom(2rem, 4rem);
     @include sectionProperties(100%);
-    @include fluidpaddingx(2rem, 5rem);
+    padding-right: 20%;
+    padding-left: 20%;
+
+    @media screen and (max-width: 960px){
+        @include fluidpaddingx(2rem, 5rem);
+    }
 
     h1{
         @include h1main();
-    }
-
-    .remark-content {
-        display: none;
-        padding: 0 18px;
-
-        &.is-active {
-          display: block;
-        }
     }
 
     .remark-nav{
@@ -50,6 +46,75 @@
                 color: map-get($theme-colors, "secondary-light");
                 border-bottom: 2px solid map-get($theme-colors, "secondary-light");
             }
+        }
+    }
+
+    .remark-wrapper{
+        width: 100%;
+        @include fluidpaddingy(2rem, 3rem);
+        
+
+        .remark-content {
+            display: none;
+            width: 100%;
+
+            &.is-active {
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: 960px){
+                    flex-direction: column;
+                }
+            }
+
+            .remark-image{
+                display: block;
+                width: 40%;
+                @include fluidpaddingx(2rem, 3rem);
+
+                @media screen and (max-width: 960px){
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    @include fluidpaddingy(2rem, 3rem);
+                }
+
+                img{
+                    width: 100%;
+
+                    @media screen and (max-width: 960px){
+                        width: 60%;
+                    }
+                }
+            }
+            
+
+            .remark-paragraph{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (max-width: 960px){
+                    width: 100%;
+                }
+
+                p{
+                    @include fluidfontsize(1.2rem, 1.6rem);
+    
+                    b{
+                        font-size: 115%;
+                    }
+                }
+    
+                .remark-signature{
+                    @include fluidmargintop(3rem, 4rem);
+                }
+    
+                img{
+                    @include fluidheight(12rem, 16rem);
+                }
+            }
+
         }
     }
 }

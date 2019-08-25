@@ -17,5 +17,13 @@
 Route::get('/', function() {return redirect()->to("/landing");});
 Route::get('/landing', 'PageRequestController@viewLanding');
 Route::get('/remark/secgen2020', 'PageRequestController@viewRemarkSecgen2020');
-Route::get('/remark/secgen2019', 'PageRequestController@viewRemarkSecgen2019');
-Route::get('/remark/gmunc-advisor', 'PageRequestController@viewRemarkGmuncAdvisor');
+Route::get('/remark/secgenGMUNC', 'PageRequestController@viewRemarkSecgenGmunc');
+Route::get('/about', 'PageRequestController@viewAbout');
+Route::get('/councils', 'PageRequestController@viewCouncils');
+Route::get('/councils/WHA', 'PageRequestController@viewCouncilsWHA');
+Route::get('/councils/UNEP', 'PageRequestController@viewCouncilsUNEP');
+Route::get('/councils/DISEC', 'PageRequestController@viewCouncilsDISEC');
+Route::get('/councils/UNESCO', 'PageRequestController@viewCouncilsUNESCO');
+Route::get('/councils/CRISIS', 'PageRequestController@viewCouncilsCRISIS');
+Route::get('/councils/UNSC', 'PageRequestController@viewCouncilsUNSC');
+Route::get('/councils/UNCA', 'PageRequestController@viewCouncilsUNCA');

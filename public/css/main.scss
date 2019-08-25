@@ -17,7 +17,12 @@
  *          -- 3. Date & Venue
  *          -- 4. Councils
  *          -- 5. Supports
-
+ *      # F. Remark Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # G. About Sections
+ *          -- 1. Hero
+ *          -- 2. Body
  *
  * =================================================================== */
 
@@ -87,6 +92,7 @@ h1 {
 
 // -- 1. Hero Section
     @import "blocks/main/sections/hero";
+    @import "blocks/main/sections/intro";
 
 // -- 2. Remark Section
     @import "blocks/main/sections/remark";
@@ -114,4 +120,30 @@ h1 {
     @import "blocks/main/remark/body";
 
 /* # End of Remark Sections
+ * ----------------------- */
+
+/* ===================================================================
+ * # G. Councils Sections
+ * ------------------------------------------------------------------- */
+
+// -- 1. Hero Section
+    @import "blocks/councils/hero";
+
+// -- 2. Body Content Section
+    @import "blocks/councils/body";
+
+/* # End of Councils Sections
+ * ----------------------- */
+
+/* ===================================================================
+ * # H. About Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Hero Section
+    @import "blocks/about/hero";
+
+// -- 2. Body Content Section
+    @import "blocks/about/body";
+
+/* # End of Councils Sections
  * ----------------------- */
