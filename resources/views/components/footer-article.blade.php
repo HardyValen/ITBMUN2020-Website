@@ -1,16 +1,13 @@
 <footer>
     <div class="footer-content">
         <div class="footer-section">
-            <h2>Contacts</h2>
-            <div class="row contact-wrapper">
-                <a class="contact-link col-md-2 col-4" href="#">
-                    <object data='{{URL::asset("assets/socmedIcons/line.svg")}}' type="image/svg+xml"></object>
+            <h2>Contacts<br></h2>
+            <div class="contact-wrapper">
+                <a href="https://line.me/R/ti/p/@itbmun">
+                    <i class="fab fa-line fa-3x"></i>
                 </a>
-                <a class="contact-link col-md-2 col-4" href="#">
-                    <object data='{{URL::asset("assets/socmedIcons/instagram.svg")}}' type="image/svg+xml"></object>
-                </a>
-                <a class="contact-link col-md-2 col-4" href="#">
-                    <object data='{{URL::asset("assets/socmedIcons/email.svg")}}' type="image/svg+xml"></object>
+                <a href="https://instagram.com/itbmun/">
+                    <i class="fab fa-instagram fa-3x"></i>
                 </a>
             </div>
         </div>

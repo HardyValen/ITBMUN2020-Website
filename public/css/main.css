@@ -23,6 +23,12 @@
  *      # G. About Sections
  *          -- 1. Hero
  *          -- 2. Body
+ *      # H. Council Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # I. Registration Sections
+ *          -- 1. Hero
+ *          -- 2. Body
  *
  * =================================================================== */
 /* ===================================================================
@@ -3103,6 +3109,452 @@ footer p {
     margin-right: 0rem;
     margin-bottom: 3rem;
   }
+}
+
+/* # End of Councils Sections
+ * ----------------------- */
+/* ===================================================================
+ * # H. Registration Section
+ * ------------------------------------------------------------------- */
+.registration-hero {
+  width: 100%;
+  min-height: 60%;
+  background: linear-gradient(359.87deg, #000000 4.51%, rgba(50, 23, 64, 0.5) 85.49%), url(../assets/registration/registrationBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-position-y: 70%;
+}
+
+.registration-hero {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-hero {
+    padding: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-hero {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .registration-hero {
+    background-position-x: 60%;
+    width: 100%;
+    min-height: 40%;
+  }
+}
+
+.registration-hero h1 {
+  font-family: 'Lemon/Milk Regular';
+  line-height: 1.4;
+}
+
+.registration-hero h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-hero h1 {
+    font-size: calc(2.4rem + 2.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-hero h1 {
+    font-size: 4.8rem;
+  }
+}
+
+.registration-hero h1 {
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-hero h1 {
+    letter-spacing: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-hero h1 {
+    letter-spacing: 4.8px;
+    padding-left: 4.8px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .registration-hero h1 {
+    line-height: 1.5;
+  }
+}
+
+.registration-body {
+  width: 100%;
+  min-height: 60%;
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.registration-body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .registration-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .registration-body {
+    padding-left: calc(2rem + 10 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 10 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .registration-body {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
+
+.registration-body .registration-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 15rem;
+}
+
+.registration-body .registration-wrapper h1 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.registration-body .registration-wrapper h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body .registration-wrapper h1 {
+    font-size: calc(2.8rem + 1.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body .registration-wrapper h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .registration-body .registration-wrapper h1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .registration-body .registration-wrapper h1 {
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .registration-body .registration-wrapper h1 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.registration-body .registration-wrapper h2 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  color: #F6F6F6;
+}
+
+.registration-body .registration-wrapper h2 {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body .registration-wrapper h2 {
+    font-size: calc(1.8rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body .registration-wrapper h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.registration-body .registration-wrapper p {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #E5E5E5;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.registration-body .registration-wrapper p {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body .registration-wrapper p {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body .registration-wrapper p {
+    font-size: 1.6rem;
+  }
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice {
+  height: 10rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice {
+    height: calc(10rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice {
+    height: 15rem;
+  }
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegate {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/registration/cardDelegate.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/registration/cardDelegate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%;
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/registration/cardDelegation.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/registration/cardDelegation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%;
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegate, .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegate:hover, .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation:hover {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  cursor: pointer;
+}
+
+.registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegate:hover h2, .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation:hover h2 {
+  color: #EA5A5A;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  min-height: 15rem;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper h1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10rem;
+  width: 100%;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col {
+  min-height: 100%;
+  display: block;
+  position: relative;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col.r-col-12 {
+  width: 100%;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col.r-col-6 {
+  width: 46%;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  color: #E5E5E5;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  margin-bottom: 0 !important;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row label {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row label {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row label {
+    font-size: 1.6rem;
+  }
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: transparent;
+  width: 100%;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #E5E5E5;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  margin-bottom: 0;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+    font-size: 1.6rem;
+  }
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:not(:placeholder-shown), .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:not(:placeholder-shown) {
+  outline: none;
+  border-bottom: 1px solid #EA5A5A;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:focus + label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:not(:placeholder-shown) + label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:focus + label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:not(:placeholder-shown) + label {
+  top: -20px;
+  color: #EA5A5A;
+  font-size: 11px;
 }
 
 /* # End of Councils Sections

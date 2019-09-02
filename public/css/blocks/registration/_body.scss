@@ -1,0 +1,158 @@
+.registration-body{
+    @include sectionProperties(60%);
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    @include fluidpaddingy(2rem, 3rem);
+    
+    @media screen and (max-width: 960px) {
+        @include fluidpaddingx(2rem, 12rem);
+    }
+
+    .registration-wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width:100%;
+        min-height:15rem;
+
+        h1{
+            @include h1main();
+        }
+
+        h2{
+            @include h2main();
+        }
+
+        p{
+            @include paragraphMain();
+        }
+
+        .registration-card-wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            width:100%;
+            overflow: hidden;
+
+            .registration-form__delegate-choice{
+                width: 100%;
+                @include fluidheight(10rem, 15rem);
+                display: flex;
+                align-items: center;
+    
+                &.delegate{
+                    background: 
+                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+                        rgba(50, 23, 64, 0.3) 80.76%), 
+                        url('../assets/registration/cardDelegate.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position-x: 100%;
+                }
+    
+                &.delegation{
+                    background: 
+                        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%,
+                        rgba(50, 23, 64, 0.3) 80.76%), 
+                        url('../assets/registration/cardDelegation.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position-x: 100%;
+                }
+    
+                &.delegate, &.delegation{
+                    transition: all 0.3s;
+                }
+    
+                &.delegate:hover, &.delegation:hover{
+                    transform: translateX(5%);
+                    cursor: pointer;
+                    
+                    h2{
+                        color: map-get($theme-colors, "secondary-light");
+                    }
+                }
+            }
+        }
+
+        .registration-form-wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width:100%;
+            min-height: 15rem;
+
+            h1{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .registration-row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 10rem;
+                width: 100%;
+
+                .registration-col{
+                    min-height: 100%;
+                    display: block;
+                    position: relative;
+
+                    &.r-col-12{
+                        width: 100%;
+                    }
+
+                    &.r-col-6{
+                        width: 46%;
+
+                    }
+                }
+
+                label{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 1;
+                    color: map-get($theme-colors, "paragraph-main");
+                    @include fluidfontsize(1.2rem, 1.6rem);
+                    transition:0.2s ease all;
+                    margin-bottom: 0 !important;
+                }
+
+                input[type=text], input[type=email]{
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid map-get($theme-colors, "paragraph-main");
+                    background-color: transparent;
+                    width: 100%;
+                    @include paragraphMain();
+                    margin-bottom: 0;
+                    transition:0.2s ease all;
+
+                    &:focus, &:not(:placeholder-shown){
+                        outline: none;
+                        border-bottom: 1px solid map-get($theme-colors, "secondary-light" )
+                    }
+
+                    &:focus+label, &:not(:placeholder-shown)+label{
+                        top: -20px;
+                        color: map-get($theme-colors, "secondary-light");
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

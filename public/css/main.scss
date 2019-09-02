@@ -23,6 +23,12 @@
  *      # G. About Sections
  *          -- 1. Hero
  *          -- 2. Body
+ *      # H. Council Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # I. Registration Sections
+ *          -- 1. Hero
+ *          -- 2. Body
  *
  * =================================================================== */
 
@@ -144,6 +150,19 @@ h1 {
 
 // -- 2. Body Content Section
     @import "blocks/about/body";
+
+/* # End of Councils Sections
+ * ----------------------- */
+
+/* ===================================================================
+ * # H. Registration Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Hero Section
+    @import "blocks/registration/hero";
+
+// -- 2. Body Content Section
+    @import "blocks/registration/body";
 
 /* # End of Councils Sections
  * ----------------------- */
