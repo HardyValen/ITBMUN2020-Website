@@ -73,8 +73,10 @@ class PageRequestController extends Controller
 
     // ## -- 14. View test Page
     public function viewTest(){
-        return view("test.database", [
-            'name' => NULL
-        ]);
-    } 
+        return view("test.database");
+    }
+
+    public function viewValidator(){
+        return view("test.validator");
+    }
 }

@@ -3,38 +3,49 @@
 namespace App\Http\Controllers;
 
 use App\delegations;
+use App\delegationsDelegates;
 use Illuminate\Http\Request;
 
 class DelegationsController extends Controller
 {
     public function sendDataDelegations(Request $request) {
-        $data = new Delegations;
+        $delegation = new Delegations([
+            "headDelegate" => $request->headDelegate,
+            "institution" => $request->institution,
+            "contactNumber" => $request->contactNumber,
+            "lineId" => $request->lineId,
+        ]);
+        $delegation->save();
 
-            $data->fullName = $request->fullName;
-            $data->institution = $request->institution;
-            $data->contactNumber = $request->contactNumber;
-            $data->lineId = $request->lineId;
-            $data->email = $request->email;
-            $data->nationality = $request->nationality;
-            $data->idNumber = $request->idNumber;
-            $data->gender = $request->gender;
-            $data->medicalConditions = $request->medicalConditions;
-            $data->munExperiences = $request->munExperiences;
-            $data->firstCouncilPreference = $request->firstCouncilPreference;
-            $data->firstCouncilCountryPreference = $request->firstCouncilCountryPreference;
-            $data->firstCouncilReason = $request->firstCouncilReason;
-            $data->secondCouncilPreference = $request->secondCouncilPreference;
-            $data->secondCouncilCountryPreference = $request->secondCouncilCountryPreference;
-            $data->secondCouncilReason = $request->secondCouncilReason;
-            $data->thirdCouncilPreference = $request->thirdCouncilPreference;
-            $data->thirdCouncilCountryPreference = $request->thirdCouncilCountryPreference;
-            $data->thirdCouncilReason = $request->thirdCouncilReason;
-            $data->foodRestrictions = $request->foodRestrictions;
-            $data->accomodation = $request->accomodation;
+        $id = \App\delegations::where('headDelegate', $request->headDelegate)->first()->delegationsId;
 
-        $data->save();
+        for($i = 1; $i <= ($request->delegatesCount); $i++){
+            $delegationDelegate = new DelegationsDelegates([
+                "delegationsId" => $id, 
+                "fullName" => $request->input('fullName'.$i), 
+                "email" => $request->input('email'.$i), 
+                "nationality" => $request->input('nationality'.$i), 
+                "idNumber" => $request->input('idNumber'.$i), 
+                "gender" => $request->input('gender'.$i), 
+                "medicalConditions" => $request->input('medicalConditions'.$i), 
+                "munExperiences" => $request->input('munExperiences'.$i), 
+                "firstCouncilPreference" => $request->input('firstCouncilPreference'.$i), 
+                "firstCouncilCountryPreference" => $request->input('firstCouncilCountryPreference'.$i), 
+                "firstCouncilReason" => $request->input('firstCouncilReason'.$i), 
+                "secondCouncilPreference" => $request->input('secondCouncilPreference'.$i), 
+                "secondCouncilCountryPreference" => $request->input('secondCouncilCountryPreference'.$i), 
+                "secondCouncilReason" => $request->input('secondCouncilReason'.$i), 
+                "thirdCouncilPreference" => $request->input('thirdCouncilPreference'.$i), 
+                "thirdCouncilCountryPreference" => $request->input('thirdCouncilCountryPreference'.$i), 
+                "thirdCouncilReason" => $request->input('thirdCouncilReason'.$i), 
+                "foodRestrictions" => $request->input('foodRestrictions'.$i), 
+                "accommodation" => $request->input('accommodation'.$i) 
+            ]);
+            $delegationDelegate->save();
+        }
+        
 
-        return view("test.database");
+        return view("landing.landingIndex");
     }
 
     /**

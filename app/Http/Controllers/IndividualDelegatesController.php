@@ -8,33 +8,32 @@ use Illuminate\Http\Request;
 class IndividualDelegatesController extends Controller
 {
     public function sendDataIndividualDelegate(Request $request) {
-        $data = new IndividualDelegates;
-
-            $data->fullName = $request->fullName;
-            $data->institution = $request->institution;
-            $data->contactNumber = $request->contactNumber;
-            $data->lineId = $request->lineId;
-            $data->email = $request->email;
-            $data->nationality = $request->nationality;
-            $data->idNumber = $request->idNumber;
-            $data->gender = $request->gender;
-            $data->medicalConditions = $request->medicalConditions;
-            $data->munExperiences = $request->munExperiences;
-            $data->firstCouncilPreference = $request->firstCouncilPreference;
-            $data->firstCouncilCountryPreference = $request->firstCouncilCountryPreference;
-            $data->firstCouncilReason = $request->firstCouncilReason;
-            $data->secondCouncilPreference = $request->secondCouncilPreference;
-            $data->secondCouncilCountryPreference = $request->secondCouncilCountryPreference;
-            $data->secondCouncilReason = $request->secondCouncilReason;
-            $data->thirdCouncilPreference = $request->thirdCouncilPreference;
-            $data->thirdCouncilCountryPreference = $request->thirdCouncilCountryPreference;
-            $data->thirdCouncilReason = $request->thirdCouncilReason;
-            $data->foodRestrictions = $request->foodRestrictions;
-            $data->accomodation = $request->accomodation;
-
+        $data = new IndividualDelegates([
+            "fullName" => $request->fullName,
+            "institution" => $request->institution,
+            "contactNumber" => $request->contactNumber,
+            "lineId" => $request->lineId,
+            "email" => $request->email,
+            "nationality" => $request->nationality,
+            "idNumber" => $request->idNumber,
+            "gender" => $request->gender,
+            "medicalConditions" => $request->medicalConditions,
+            "munExperiences" => $request->munExperiences,
+            "firstCouncilPreference" => $request->firstCouncilPreference,
+            "firstCouncilCountryPreference" => $request->firstCouncilCountryPreference,
+            "firstCouncilReason" => $request->firstCouncilReason,
+            "secondCouncilPreference" => $request->secondCouncilPreference,
+            "secondCouncilCountryPreference" => $request->secondCouncilCountryPreference,
+            "secondCouncilReason" => $request->secondCouncilReason,
+            "thirdCouncilPreference" => $request->thirdCouncilPreference,
+            "thirdCouncilCountryPreference" => $request->thirdCouncilCountryPreference,
+            "thirdCouncilReason" => $request->thirdCouncilReason,
+            "foodRestrictions" => $request->foodRestrictions,
+            "accommodation" => $request->accommodation
+        ]);
         $data->save();
 
-        return view("test.database");
+        return view("landing.landingIndex");
     }
 
     /**
