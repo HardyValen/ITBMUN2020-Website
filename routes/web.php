@@ -27,3 +27,10 @@ Route::get('/councils/UNESCO', 'PageRequestController@viewCouncilsUNESCO');
 Route::get('/councils/CRISIS', 'PageRequestController@viewCouncilsCRISIS');
 Route::get('/councils/UNSC', 'PageRequestController@viewCouncilsUNSC');
 Route::get('/councils/UNCA', 'PageRequestController@viewCouncilsUNCA');
+Route::get('/registration', 'PageRequestController@viewRegistrationLanding');
+
+Route::get('/test', 'PageRequestController@viewTest');
+Route::get('/validator', 'PageRequestController@viewValidator');
+
+Route::post('/registration/individual-delegate', 'IndividualDelegatesController@sendDataIndividualDelegate');
+Route::post('/registration/delegation', 'DelegationsController@sendDataDelegations');

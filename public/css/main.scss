@@ -23,6 +23,12 @@
  *      # G. About Sections
  *          -- 1. Hero
  *          -- 2. Body
+ *      # H. Council Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # I. Registration Sections
+ *          -- 1. Hero
+ *          -- 2. Body
  *
  * =================================================================== */
 
@@ -43,7 +49,7 @@
  * ----------------------- */
 
 /* ===================================================================
- * # B. Default Colors etc
+ * # B. Default Colors & Utilities
  * ------------------------------------------------------------------- */
 body {
     background-color: map-get($theme-colors, "black");
@@ -60,6 +66,13 @@ h1 {
 .title {
     color: map-get($theme-colors, "title-main");
     @include lemonMilkRegular();
+}
+
+.divider-main {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: map-get($theme-colors, "paragraph-main");
 }
 
 /* # End of Default Colors
@@ -147,3 +160,17 @@ h1 {
 
 /* # End of Councils Sections
  * ----------------------- */
+
+/* ===================================================================
+ * # H. Registration Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Hero Section
+    @import "blocks/registration/hero";
+
+// -- 2. Body Content Section
+    @import "blocks/registration/body";
+
+/* # End of Councils Sections
+ * ----------------------- */
+

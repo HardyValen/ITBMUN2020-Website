@@ -64,5 +64,19 @@ class PageRequestController extends Controller
     // ## -- 12. View Councils UNCA
     public function viewCouncilsUNCA(){
         return view("councils.UNCA");
-    }  
+    }
+
+    // ## -- 13. View Registration Page
+    public function viewRegistrationLanding(){
+        return view("registration.registrationLanding");
+    }
+
+    // ## -- 14. View test Page
+    public function viewTest(){
+        return view("test.database");
+    }
+
+    public function viewValidator(){
+        return view("test.validator");
+    }
 }
