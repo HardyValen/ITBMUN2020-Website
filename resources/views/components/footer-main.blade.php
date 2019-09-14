@@ -14,8 +14,8 @@
         
         <div class="footer-section">
             <p>
-                <big><b>Ganesha Model United Nation Conference</b></big><br>
-                Labtek V, Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132
+                <big><b>Ganesha Model United Nation Club</b></big><br>
+                Bandung Institute of Technology, Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132
             </p>
             <p>
                 <b><i class="far fa-copyright"></i>&ensp;ITB Model United Nation 2020</b>
