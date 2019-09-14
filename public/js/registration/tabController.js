@@ -139,7 +139,7 @@ function setDelegates(x){
                 "<div class='registration-row mb-5'>" +
                     "<div class='registration-col r-col-12'>" +
                         "<div class='registration-radio-wrapper'>" +
-                            "<p class='radio-header'>Council Preference 1</p>" +
+                            "<p class='radio-header'>First Council Preference</p>" +
                             "<label>" +
                                 "<span class='radio-description'>WHA</span>" +
                                 "<input type='radio' name='firstCouncilPreference" + i + "' value='WHA' checked>" +
@@ -182,7 +182,7 @@ function setDelegates(x){
                 "<div class='registration-row'>" +
                     "<div class='registration-col r-col-12'>" +
                         "<input type='text' class='form-input-delegation' name='firstCouncilCountryPreference" + i + "' id='firstCouncilCountryPreference" + i + "' placeholder=' ' required/>" +
-                        "<label class='text-label' for='firstCouncilCountryPreference" + i + "'>Country Preference 1</label>" +
+                        "<label class='text-label' for='firstCouncilCountryPreference" + i + "'>Country preference for 1st council (Max. 3 countries)</label>" +
                         "<p class='registration-info'>" +
                             "<span class='info'></span>" +
                             "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
@@ -194,7 +194,7 @@ function setDelegates(x){
                 "<div class='registration-row'>" +
                     "<div class='registration-col r-col-12'>" +
                         "<input type='text' class='form-input-delegation' name='firstCouncilReason" + i + "' id='firstCouncilReason" + i + "' placeholder=' ' required/>" +
-                        "<label class='text-label' for='firstCouncilReason" + i + "'>Council Reason 1</label>" +
+                        "<label class='text-label' for='firstCouncilReason" + i + "'>What makes you choose your 1st council preference ?</label>" +
                         "<p class='registration-info'>" +
                             "<span class='info'></span>" +
                             "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
@@ -206,7 +206,7 @@ function setDelegates(x){
                 "<div class='registration-row mb-5'>" +
                 "<div class='registration-col r-col-12'>" +
                     "<div class='registration-radio-wrapper'>" +
-                        "<p class='radio-header'>Council Preference 2</p>" +
+                        "<p class='radio-header'>Second Council Preference</p>" +
                         "<label>" +
                             "<span class='radio-description'>WHA</span>" +
                             "<input type='radio' name='secondCouncilPreference" + i + "' value='WHA' checked>" +
@@ -249,7 +249,7 @@ function setDelegates(x){
             "<div class='registration-row'>" +
                 "<div class='registration-col r-col-12'>" +
                     "<input type='text' class='form-input-delegation' name='secondCouncilCountryPreference" + i + "' id='secondCouncilCountryPreference" + i + "' placeholder=' ' required/>" +
-                    "<label class='text-label' for='secondCouncilCountryPreference" + i + "'>Country Preference 2</label>" +
+                    "<label class='text-label' for='secondCouncilCountryPreference" + i + "'>Country preference for 2nd council (Max. 3 countries)</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
                         "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
@@ -261,7 +261,7 @@ function setDelegates(x){
             "<div class='registration-row'>" +
                 "<div class='registration-col r-col-12'>" +
                     "<input type='text' class='form-input-delegation' name='secondCouncilReason" + i + "' id='secondCouncilReason" + i + "' placeholder=' ' required/>" +
-                    "<label class='text-label' for='secondCouncilReason" + i + "'>Council Reason 2</label>" +
+                    "<label class='text-label' for='secondCouncilReason" + i + "'>What makes you choose your 2nd council preference ?</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
                         "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
@@ -273,7 +273,7 @@ function setDelegates(x){
             "<div class='registration-row mb-5'>" +
                 "<div class='registration-col r-col-12'>" +
                     "<div class='registration-radio-wrapper'>" +
-                        "<p class='radio-header'>Council Preference 3</p>" +
+                        "<p class='radio-header'>Third Council Preference</p>" +
                         "<label>" +
                             "<span class='radio-description'>WHA</span>" +
                             "<input type='radio' name='thirdCouncilPreference" + i + "' value='WHA' checked>" +
@@ -316,7 +316,7 @@ function setDelegates(x){
             "<div class='registration-row'>" +
                 "<div class='registration-col r-col-12'>" +
                     "<input type='text' class='form-input-delegation' name='thirdCouncilCountryPreference" + i + "' id='thirdCouncilCountryPreference" + i + "' placeholder=' ' required/>" +
-                    "<label class='text-label' for='thirdCouncilCountryPreference" + i + "'>Country Preference 3</label>" +
+                    "<label class='text-label' for='thirdCouncilCountryPreference" + i + "'>Country preference for 3rd council (Max. 3 countries)</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
                         "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
@@ -328,7 +328,7 @@ function setDelegates(x){
             "<div class='registration-row'>" +
                 "<div class='registration-col r-col-12'>" +
                     "<input type='text' class='form-input-delegation' name='thirdCouncilReason" + i + "' id='thirdCouncilReason" + i + "' placeholder=' ' required/>" +
-                    "<label class='text-label' for='thirdCouncilReason" + i + "'>Council Reason 3</label>" +
+                    "<label class='text-label' for='thirdCouncilReason" + i + "'>What makes you choose your 3rd council preference ?</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
                         "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
