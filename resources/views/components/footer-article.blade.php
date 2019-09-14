@@ -14,7 +14,7 @@
         
         <div class="footer-section">
             <p>
-                <big><b>Ganesha Model United Nation Club</b></big><br>
+                <big><b>Ganesha Model United Nations Club</b></big><br>
                 Bandung Institute of Technology, Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132
             </p>
             <p>

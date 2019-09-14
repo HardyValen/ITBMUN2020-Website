@@ -46,12 +46,12 @@
                         <span class='radio-button'></span>
                     </label>
                     <label>
-                        <span class='radio-description'>CRISIS</span>
+                        <span class='radio-description'>Historical Crisis Council</span>
                         <input type="radio" name="firstCouncilPreference" value="CRISIS">
                         <span class='radio-button'></span>
                     </label>
                     <label>
-                        <span class='radio-description'>UNSC</span>
+                        <span class='radio-description'>Futuristic UNSC</span>
                         <input type="radio" name="firstCouncilPreference" value="UNSC">
                         <span class='radio-button'></span>
                     </label>
@@ -113,12 +113,12 @@
                         <span class='radio-button'></span>
                     </label>
                     <label>
-                        <span class='radio-description'>CRISIS</span>
+                        <span class='radio-description'>Historical Crisis Council</span>
                         <input type="radio" name="secondCouncilPreference" value="CRISIS">
                         <span class='radio-button'></span>
                     </label>
                     <label>
-                        <span class='radio-description'>UNSC</span>
+                        <span class='radio-description'>Futuristic UNSC</span>
                         <input type="radio" name="secondCouncilPreference" value="UNSC">
                         <span class='radio-button'></span>
                     </label>
@@ -180,12 +180,12 @@
                         <span class='radio-button'></span>
                     </label>
                     <label>
-                        <span class='radio-description'>CRISIS</span>
+                        <span class='radio-description'>Historical Crisis Council</span>
                         <input type="radio" name="thirdCouncilPreference" value="CRISIS">
                         <span class='radio-button'></span>
                     </label>
                     <label>
-                        <span class='radio-description'>UNSC</span>
+                        <span class='radio-description'>Futuristic UNSC</span>
                         <input type="radio" name="thirdCouncilPreference" value="UNSC">
                         <span class='radio-button'></span>
                     </label>
@@ -217,6 +217,32 @@
                 <p class="registration-info">
                         <span class='info'></span>
                         <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                </p>
+                <p class="registration-alert"></p>
+            </div>
+        </div>
+
+        <h2 class='my-5'>Double Delegate Option<br>&mdash;</h2>
+
+        <div class="registration-row">
+            <div class="registration-col r-col-12">
+                <input type="text" class="form-input" name="doubleDelegateName" id="doubleDelegateName" placeholder=' '/>
+                <label class="text-label" for="doubleDelegateName">Double Delegate's name</label>
+                <p class="registration-info">
+                        <span class='info'>(Fill if you choose WHA and/or UNSC)<br>Make sure that your double delegate also fill the registration form separately.</span>
+                        <span class='required'></span>
+                </p>
+                <p class="registration-alert"></p>
+            </div>
+        </div>
+
+        <div class="registration-row">
+            <div class="registration-col r-col-12">
+                <input type="text" class="form-input" name="doubleDelegateNationality" id="doubleDelegateNationality" placeholder=' '/>
+                <label class="text-label" for="doubleDelegateNationality">Double Delegate's institution</label>
+                <p class="registration-info">
+                        <span class='info'></span>
+                        <span class='required'></span>
                 </p>
                 <p class="registration-alert"></p>
             </div>
