@@ -27,7 +27,9 @@ class individualDelegates extends Model
         'thirdCouncilCountryPreference',
         'thirdCouncilReason',
         'foodRestrictions',
-        'accommodation'
+        'accommodation',
+        'doubleDelegateName',
+        'doubleDelegateNationality'
     ];
 
     protected $primaryKey = 'individualDelegatesId';

@@ -3421,6 +3421,7 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 100%;
+  background-position-y: 50%;
 }
 
 .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation {
@@ -3429,6 +3430,7 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 100%;
+  background-position-y: 50%;
 }
 
 .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation-choice-5, .registration-body .registration-wrapper .registration-card-wrapper .registration-form__delegate-choice.delegation-choice-8 {
@@ -3604,6 +3606,7 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 100%;
+  background-position-y: 50%;
 }
 
 .registration-body .registration-wrapper .registration-form-wrapper .registration-form-header.delegation {
@@ -3612,6 +3615,7 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 100%;
+  background-position-y: 50%;
 }
 
 .registration-body .registration-wrapper .registration-form-wrapper h1 {

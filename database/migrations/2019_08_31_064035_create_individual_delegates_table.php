@@ -21,7 +21,7 @@ class CreateIndividualDelegatesTable extends Migration
             $table->string('lineId', 200)->nullable()->default(NULL); //e
             $table->string('email', 200); //f
             $table->string('nationality', 200);  //g
-            $table->string('idNumber', 200); //h 
+            $table->string('idNumber', 200)->nullable()->default(NULL);; //h 
             $table->string('gender', 200); //i
             $table->text('medicalConditions')->nullable()->default(NULL); //j
             $table->text('munExperiences')->nullable()->default(NULL); //k
@@ -35,7 +35,9 @@ class CreateIndividualDelegatesTable extends Migration
             $table->string('thirdCouncilCountryPreference', 200);
             $table->text('thirdCouncilReason');
             $table->text('foodRestrictions');
-            $table->string('accommodation', 200);//v
+            $table->string('accommodation', 200);
+            $table->text('doubleDelegateName', 200)->nullable()->default(NULL);;
+            $table->text('doubleDelegateNationality', 200)->nullable()->default(NULL);;
             $table->timestamps();
         });
     }

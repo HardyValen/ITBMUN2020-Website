@@ -29,7 +29,9 @@ class IndividualDelegatesController extends Controller
             "thirdCouncilCountryPreference" => $request->thirdCouncilCountryPreference,
             "thirdCouncilReason" => $request->thirdCouncilReason,
             "foodRestrictions" => $request->foodRestrictions,
-            "accommodation" => $request->accommodation
+            "accommodation" => $request->accommodation,
+            "doubleDelegateName" => $request->doubleDelegateName,
+            "doubleDelegateNationality" => $request->doubleDelegateNationality
         ]);
         $data->save();
 
