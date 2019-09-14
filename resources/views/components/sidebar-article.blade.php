@@ -13,17 +13,23 @@
             <div class="row">
                 <div class="col-10 col-sm-8 col-md-6 offset-1 offset-sm-2 offset-md-3">
                     <div class="row">
-                        <a href="#" class="navigation-link col-4">
+                        <a href="/landing" class="navigation-link col-4">
                             <object data='{{URL::asset("assets/navigationIcons/home.svg")}}' type="image/svg+xml"></object>
                             <p>Home</p>
                         </a>
-                        <a href="#" class="navigation-link col-4">
+                        <a href="/councils" class="navigation-link col-4">
                             <object data='{{URL::asset("assets/navigationIcons/councils.svg")}}' type="image/svg+xml"></object>
                             <p>Councils</p>
                         </a>
-                        <a href="#" class="navigation-link col-4">
+                        <a href="/about" class="navigation-link col-4">
                             <object data='{{URL::asset("assets/navigationIcons/about.svg")}}' type="image/svg+xml"></object>  
                             <p>About</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="https://bit.ly/ITBMUN2020Regist" class="navigation-link col-4">
+                            <object data='{{URL::asset("assets/navigationIcons/home.svg")}}' type="image/svg+xml"></object>
+                            <p>Home</p>
                         </a>
                     </div>
                     <!--<div class="row">

@@ -30,8 +30,8 @@
     <section class="remark-body">
         <nav class="remark-nav">
             <ul>
-                <li id="secgen2020-nav"><a href="#secgen2020">Secgen ITBMUN 2020</a></li>
-                <li id="gmunc-nav"><a href="#secgenGMUNC">Secgen GMUNC</a></li>
+                <li id="secgen2020-nav"><a href="#secgen2020">Secretary General of ITBMUN 2020</a></li>
+                <li id="gmunc-nav"><a href="#secgenGMUNC">Secretary General of GMUNC</a></li>
             </ul>
         </nav>
         <div class="remark-wrapper">
