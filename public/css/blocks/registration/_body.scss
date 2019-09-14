@@ -191,19 +191,20 @@
                 @include fluidminheight(7.5rem, 9rem);
                 width: 100%;
 
+                @media screen and (max-width: 540px) {
+                    flex-direction: column;
+                }
+
                 .registration-col{
                     min-height: 100%;
                     display: block;
                     position: relative;
+                    @include fluidmarginy(1.5rem, 2rem);
 
                     &.r-col-12{
-                        width: 70%;
+                        width: 80%;
 
                         @media screen and (max-width: 960px){
-                            @include fluidwidth(26rem, 36rem);
-                        }
-
-                        @media screen and (max-width: 320px){
                             width: 100%;
                         }
 
@@ -219,19 +220,23 @@
                     &.r-col-6{
                         width: 46%;
 
-                        span.info{
+                        @media screen and (max-width: 960px){
                             width: 70%;
-
-                            @media screen and (max-width: 960px){
-                                width: 100%;
-                            }
                         }
 
-                        span.required{
-                            width: 30%;
+                        @media screen and (max-width: 540px){
+                            width: 100%;
+                        }
 
-                            @media screen and (max-width: 960px){
-                                width: 100%;
+                        .registration-info{
+                            display: flex;
+
+                            span.info{
+                                width: 70%;
+                            }
+    
+                            span.required{
+                                width: 30%;
                             }
                         }
                     }

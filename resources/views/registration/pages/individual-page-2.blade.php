@@ -26,7 +26,7 @@
                 <input type="text" class="form-input" name="foodRestrictions" id="foodRestrictions" placeholder=' '/>
                 <label class="text-label" for="foodRestrictions">Food Restrictions</label>
                 <p class="registration-info">
-                        <span class='info'></span>
+                        <span class='info'>(i.e. halal, vegetarian, etc.)</span>
                         <span class='required'></span>
                 </p>
                 <p class="registration-alert"></p>
@@ -47,11 +47,11 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-6">
-                <input type="text" class="form-input" name="contactNumber" id="contactNumber" placeholder=' '/>
+                <input type="text" class="form-input" name="contactNumber" id="contactNumber" placeholder=' ' required/>
                 <label class="text-label" for="contactNumber">Contact Number</label>
                 <p class="registration-info">
-                        <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='info'>Please write with area code (i.e. +62 812 xxxx xxx) We highly encourage you to install Whatsapp for the number you provided us with to ease future communication with the Committee.</span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>

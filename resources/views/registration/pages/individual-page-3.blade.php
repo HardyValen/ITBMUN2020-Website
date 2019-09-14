@@ -14,7 +14,7 @@
                 <input type="text" class="form-input" name="munExperiences" id="munExperiences" placeholder=' '/>
                 <label class="text-label" for="munExperiences">MUN Experiences</label>
                 <p class="registration-info">
-                        <span class='info'></span>
+                        <span class='info'>(MUN_Council_Year_Awards if any)</span>
                         <span class='required'></span>
                 </p>
                 <p class="registration-alert"></p>
@@ -24,7 +24,7 @@
         <div class="registration-row mb-5">
             <div class="registration-col r-col-12">
                 <div class="registration-radio-wrapper">
-                    <p class='radio-header'>Council Preference 1</p>
+                    <p class='radio-header'>First Council Preference</p>
                     <label>
                         <span class='radio-description'>WHA</span>
                         <input type="radio" name="firstCouncilPreference" value="WHA" checked>
@@ -67,10 +67,10 @@
         <div class="registration-row">
             <div class="registration-col r-col-12">
                 <input type="text" class="form-input" name="firstCouncilCountryPreference" id="firstCouncilCountryPreference" placeholder=' '/>
-                <label class="text-label" for="firstCouncilCountryPreference">Country Preference 1</label>
+                <label class="text-label" for="firstCouncilCountryPreference">Country preference for 1st council (Max. 3 countries)</label>
                 <p class="registration-info">
-                        <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='info'>please choose 3 countries and separate your answer by comma (i.e. Australia, United Kingdom, Croatia). If you chose Crisis council for your first preference, please write "-".</span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>
@@ -79,10 +79,10 @@
         <div class="registration-row">
             <div class="registration-col r-col-12">
                 <input type="text" class="form-input" name="firstCouncilReason" id="firstCouncilReason" placeholder=' '/>
-                <label class="text-label" for="firstCouncilReason">Council Reason 1</label>
+                <label class="text-label" for="firstCouncilReason">What makes you choose your 1st council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>
@@ -91,15 +91,15 @@
         <div class="registration-row mb-5">
             <div class="registration-col r-col-12">
                 <div class="registration-radio-wrapper">
-                    <p class='radio-header'>Council Preference 2</p>
+                    <p class='radio-header'>Second Council Preference</p>
                     <label>
                         <span class='radio-description'>WHA</span>
-                        <input type="radio" name="secondCouncilPreference" value="WHA" checked>
+                        <input type="radio" name="secondCouncilPreference" value="WHA">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNEP</span>
-                        <input type="radio" name="secondCouncilPreference" value="UNEP">
+                        <input type="radio" name="secondCouncilPreference" value="UNEP" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
@@ -134,10 +134,10 @@
         <div class="registration-row">
             <div class="registration-col r-col-12">
                 <input type="text" class="form-input" name="secondCouncilCountryPreference" id="secondCouncilCountryPreference" placeholder=' '/>
-                <label class="text-label" for="secondCouncilCountryPreference">Country Preference 2</label>
+                <label class="text-label" for="secondCouncilCountryPreference">Country preference for 2nd council (Max. 3 countries)</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>
@@ -146,10 +146,10 @@
         <div class="registration-row">
             <div class="registration-col r-col-12">
                 <input type="text" class="form-input" name="secondCouncilReason" id="secondCouncilReason" placeholder=' '/>
-                <label class="text-label" for="secondCouncilReason">Council Reason 2</label>
+                <label class="text-label" for="secondCouncilReason">What makes you choose your 2nd council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>
@@ -158,15 +158,15 @@
         <div class="registration-row mb-5">
             <div class="registration-col r-col-12">
                 <div class="registration-radio-wrapper">
-                    <p class='radio-header'>Council Preference 3</p>
+                    <p class='radio-header'>Third Council Preference</p>
                     <label>
                         <span class='radio-description'>WHA</span>
-                        <input type="radio" name="thirdCouncilPreference" value="WHA" checked>
+                        <input type="radio" name="thirdCouncilPreference" value="WHA">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNEP</span>
-                        <input type="radio" name="thirdCouncilPreference" value="UNEP">
+                        <input type="radio" name="thirdCouncilPreference" value="UNEP" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
@@ -201,10 +201,10 @@
         <div class="registration-row">
             <div class="registration-col r-col-12">
                 <input type="text" class="form-input" name="thirdCouncilCountryPreference" id="thirdCouncilCountryPreference" placeholder=' '/>
-                <label class="text-label" for="thirdCouncilCountryPreference">Country Preference 3</label>
+                <label class="text-label" for="thirdCouncilCountryPreference">Country preference for 3rd council (Max. 3 countries)</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>
@@ -213,10 +213,10 @@
         <div class="registration-row">
             <div class="registration-col r-col-12">
                 <input type="text" class="form-input" name="thirdCouncilReason" id="thirdCouncilReason" placeholder=' '/>
-                <label class="text-label" for="thirdCouncilReason">Council Reason 3</label>
+                <label class="text-label" for="thirdCouncilReason">What makes you choose your 3rd council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'></span>
+                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
             </div>

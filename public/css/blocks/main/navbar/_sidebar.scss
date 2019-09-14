@@ -57,7 +57,7 @@
 
             transition: 0.3s;
 
-            object{
+            img{
                 @include fluidwidth(3rem, 7rem);
                 @include fluidmarginbottom(0.5rem, 1.2rem);
             }

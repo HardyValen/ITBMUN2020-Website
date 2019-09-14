@@ -9,7 +9,7 @@
 
 <!-- ## END of Sidebar Navigation ========= -->
     
-<main>
+<main onbeforeunload="alert('you sure?')">
 
 <!-- ## 2. Sidebar Navigation ========= -->
     @include('components.navbar-top-main')
@@ -197,4 +197,10 @@
     <script src="{{URL::asset('js/registration/dictionary.js')}}"></script>
     <script src="{{URL::asset('js/registration/pageController.js')}}"></script>
     <script src="{{URL::asset('js/registration/tabController.js')}}"></script>
+
+    <script>
+        window.onbeforeunload = function (){
+            return "";
+        };
+    </script>
 @endsection
