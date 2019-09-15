@@ -18,7 +18,7 @@
                 Bandung Institute of Technology, Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132
             </p>
             <p>
-                <b><i class="far fa-copyright"></i>&ensp;ITB Model United Nation 2020</b>
+                <b><i class="far fa-copyright"></i>&ensp;ITB Model United Nations 2020</b>
             </p>
         </div>
         
