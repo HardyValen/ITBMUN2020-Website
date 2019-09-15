@@ -9,7 +9,7 @@
 
 <!-- ## END of Sidebar Navigation ========= -->
     
-<main onbeforeunload="alert('you sure?')">
+<main>
 
 <!-- ## 2. Sidebar Navigation ========= -->
     @include('components.navbar-top-main')

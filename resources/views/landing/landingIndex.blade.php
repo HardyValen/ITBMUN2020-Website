@@ -60,7 +60,7 @@
                 Save the Date!
             </h1>
             <h2>
-                January 31 &ndash; February 2, 2019<br>
+                January 31 &ndash; February 2, 2020<br>
                 <b>Bandung, Indonesia</b>
             </h2>
             <p>

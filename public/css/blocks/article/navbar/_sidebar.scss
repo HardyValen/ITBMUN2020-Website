@@ -10,6 +10,7 @@
     justify-content: flex-start;
     z-index: 2001;
     transition: 0.5s ease-in-out;
+    color: white;
 
     .navigation-sidebar-header{
         width:100%;
@@ -57,7 +58,7 @@
 
             transition: 0.3s;
 
-            object{
+            img{
                 @include fluidwidth(3rem, 7rem);
                 @include fluidmarginbottom(0.5rem, 1.2rem);
             }

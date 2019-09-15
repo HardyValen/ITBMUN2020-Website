@@ -508,6 +508,7 @@ h1 {
   z-index: 2001;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  color: white;
 }
 
 .navigation-sidebar .navigation-sidebar-header {
@@ -676,34 +677,34 @@ h1 {
   }
 }
 
-.navigation-sidebar .navigation-sidebar-body .navigation-link object {
+.navigation-sidebar .navigation-sidebar-body .navigation-link img {
   width: 3rem;
 }
 
 @media screen and (min-width: 320px) {
-  .navigation-sidebar .navigation-sidebar-body .navigation-link object {
+  .navigation-sidebar .navigation-sidebar-body .navigation-link img {
     width: calc(3rem + 4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .navigation-sidebar .navigation-sidebar-body .navigation-link object {
+  .navigation-sidebar .navigation-sidebar-body .navigation-link img {
     width: 7rem;
   }
 }
 
-.navigation-sidebar .navigation-sidebar-body .navigation-link object {
+.navigation-sidebar .navigation-sidebar-body .navigation-link img {
   margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
-  .navigation-sidebar .navigation-sidebar-body .navigation-link object {
+  .navigation-sidebar .navigation-sidebar-body .navigation-link img {
     margin-bottom: calc(0.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .navigation-sidebar .navigation-sidebar-body .navigation-link object {
+  .navigation-sidebar .navigation-sidebar-body .navigation-link img {
     margin-bottom: 1.2rem;
   }
 }
