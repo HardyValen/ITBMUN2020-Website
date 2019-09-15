@@ -4,10 +4,10 @@
             <h2>Contacts<br></h2>
             <div class="contact-wrapper">
                 <a href="https://line.me/R/ti/p/@itbmun">
-                    <i class="fab fa-line fa-3x"></i>
+                    <img src='{{URL::asset("assets/socmedIcons/line.svg")}}'>
                 </a>
                 <a href="https://instagram.com/itbmun/">
-                    <i class="fab fa-instagram fa-3x"></i>
+                    <img src='{{URL::asset("assets/socmedIcons/instagram.svg")}}'>
                 </a>
             </div>
         </div>

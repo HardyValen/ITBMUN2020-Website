@@ -38,6 +38,11 @@ footer{
             a:not(:first-child){
                 margin-left: 2rem;
             }
+
+            img{
+                @include fluidwidth(3rem, 7rem);
+                @include fluidmarginbottom(0.5rem, 1.2rem);
+            }
         }
     }
 
