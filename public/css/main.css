@@ -890,6 +890,38 @@ footer .footer-section .contact-wrapper a:not(:first-child) {
   margin-left: 2rem;
 }
 
+footer .footer-section .contact-wrapper img {
+  width: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-wrapper img {
+    width: calc(3rem + 4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-wrapper img {
+    width: 7rem;
+  }
+}
+
+footer .footer-section .contact-wrapper img {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  footer .footer-section .contact-wrapper img {
+    margin-bottom: calc(0.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-section .contact-wrapper img {
+    margin-bottom: 1.2rem;
+  }
+}
+
 footer h2 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
