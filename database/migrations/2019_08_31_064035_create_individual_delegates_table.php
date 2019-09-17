@@ -36,8 +36,8 @@ class CreateIndividualDelegatesTable extends Migration
             $table->text('thirdCouncilReason');
             $table->text('foodRestrictions');
             $table->string('accommodation', 200);
-            $table->text('doubleDelegateName', 200)->nullable()->default(NULL);;
-            $table->text('doubleDelegateNationality', 200)->nullable()->default(NULL);;
+            $table->text('doubleDelegateName', 200)->nullable()->default(NULL);
+            $table->text('doubleDelegateNationality', 200)->nullable()->default(NULL);
             $table->timestamps();
         });
     }

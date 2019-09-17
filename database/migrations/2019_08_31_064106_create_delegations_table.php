@@ -44,6 +44,8 @@ class CreateDelegationsTable extends Migration
             $table->text('thirdCouncilReason')->nullable()->default(NULL);
             $table->text('foodRestrictions')->nullable()->default(NULL);
             $table->string('accommodation', 200);
+            $table->text('doubleDelegateName', 200)->nullable()->default(NULL);
+            $table->text('doubleDelegateNationality', 200)->nullable()->default(NULL);
             $table->timestamps();
         });
 

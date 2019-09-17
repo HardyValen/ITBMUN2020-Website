@@ -33,5 +33,5 @@ Route::get('/registration', 'PageRequestController@viewRegistrationLanding');
 // Route::get('/validator', 'PageRequestController@viewValidator');
 
 Route::post('/registration/individual-delegate', 'IndividualDelegatesController@sendDataIndividualDelegate');
-Route::post('/registration/delegation', 'DelegationsController@sendDataDelegations');
+Route::post('/registration/delegations', 'DelegationsController@sendDataDelegations');
 

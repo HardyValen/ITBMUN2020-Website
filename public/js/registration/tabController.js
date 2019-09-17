@@ -337,6 +337,29 @@ function setDelegates(x){
                 "</div>" +
             "</div>" +
 
+            "<div class='registration-row'>" +
+                "<div class='registration-col r-col-12'>" +
+                    "<input type='text' class='form-input' name='doubleDelegateName" + i + "' id='doubleDelegateName" + i + "' placeholder=' '/>" +
+                    "<label class='text-label' for='doubleDelegateName" + i + "'>Double Delegate's name</label>" +
+                    "<p class='registration-info'>" +
+                        "<span class='info'>(Fill if you choose WHA and/or UNSC)<br>Make sure that your double delegate also fill the registration form separately.</span>" +
+                        "<span class='required'></span>" +
+                    "</p>" +
+                    "<p class='registration-alert'></p>" +
+                "</div>" +
+            "</div>" +
+            "<div class='registration-row'>" +
+                "<div class='registration-col r-col-12'>" +
+                    "<input type='text' class='form-input' name='doubleDelegateNationality" + i + "' id='doubleDelegateNationality" + i + "' placeholder=' '/>" +
+                    "<label class='text-label' for='doubleDelegateNationality" + i + "'>Double Delegate's institution</label>" +
+                    "<p class='registration-info'>" +
+                        "<span class='info'></span>" +
+                        "<span class='required'></span>" +
+                    "</p>" +
+                    "<p class='registration-alert'></p>" +
+                "</div>" +
+            "</div>" +
+
             "<div class='form-tabs-navigator'>" +
                 tabsController(i, x) +
             "</div>" +

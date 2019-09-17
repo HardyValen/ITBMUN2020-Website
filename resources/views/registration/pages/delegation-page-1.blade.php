@@ -12,7 +12,7 @@
                 <input type="text" class="form-input-delegation" name="headDelegate" id="headDelegate" placeholder=' ' required/>
                 <label class="text-label" for="headDelegate">Head Delegate Name</label>
                 <p class="registration-info">
-                    <span class='info'></span>
+                    <span class='info'>This will be the name printed on your certificate as well.</span>
                     <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
                 </p>
                 <p class="registration-alert"></p>
@@ -45,8 +45,8 @@
                 <input type="text" class="form-input-delegation" name="lineId" id="lineId" placeholder=' ' required/>
                 <label class="text-label" for="lineId">Head Delegate Line ID</label>
                 <p class="registration-info">
-                    <span class='info'></span>
-                    <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'>(National ID/ Passport Number)</span>
+                    <span class='required'></span>
                 </p>
                 <p class="registration-alert"></p>
             </div>

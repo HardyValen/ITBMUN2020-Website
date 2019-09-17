@@ -39,7 +39,9 @@ class DelegationsController extends Controller
                 "thirdCouncilCountryPreference" => $request->input('thirdCouncilCountryPreference'.$i), 
                 "thirdCouncilReason" => $request->input('thirdCouncilReason'.$i), 
                 "foodRestrictions" => $request->input('foodRestrictions'.$i), 
-                "accommodation" => $request->input('accommodation'.$i) 
+                "accommodation" => $request->input('accommodation'.$i),
+                "doubleDelegateName" => $request->input('doubleDelegateName'.$i),
+                "doubleDelegateNationality" => $request->input('doubleDelegateNationality'.$i)
             ]);
             $delegationDelegate->save();
         }
