@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class delegationsDelegates extends Model
 {
     protected $fillable = [
-        'delegationsId',
+        'delegationId',
         'fullName',
         'email',
         'nationality',
@@ -27,7 +27,7 @@ class delegationsDelegates extends Model
         'foodRestrictions',
         'accommodation', 
         'doubleDelegateName',
-        'doubleDelegateNationality'
+        'doubleDelegateInstitution'
     ];
 
     protected $primaryKey = 'delegationDelegatesId';

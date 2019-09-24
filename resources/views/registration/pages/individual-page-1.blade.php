@@ -60,17 +60,17 @@
                     <p class='radio-header'>Gender</p>
                     <label>
                         <span class='radio-description'>Male</span>
-                        <input type="radio" name="gender" value="Male" checked>
+                        <input type="radio" class="individual-radio" name="gender" value="Male" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Female</span>
-                        <input type="radio" name="gender" value="Female">
+                        <input type="radio" class="individual-radio" name="gender" value="Female">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Others</span>
-                        <input type="radio" name="gender" value="Others">
+                        <input type="radio" class="individual-radio" name="gender" value="Others">
                         <span class='radio-button'></span>
                     </label>
                 </div>

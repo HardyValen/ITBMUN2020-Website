@@ -72,12 +72,12 @@
                     <p class='radio-header'>Accommodation</p>
                     <label>
                         <span class='radio-description'>Full Accommodation</span>
-                        <input type="radio" name="accommodation" value="Full Accommodation" checked>
+                        <input type="radio" class="individual-radio" name="accommodation" value="Full Accommodation" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>No Accommodation</span>
-                        <input type="radio" name="accommodation" value="No Accommodation">
+                        <input type="radio" class="individual-radio" name="accommodation" value="No Accommodation">
                         <span class='radio-button'></span>
                     </label>
                 </div>

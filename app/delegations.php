@@ -13,7 +13,7 @@ class delegations extends Model
         'lineId'
     ];
 
-    protected $primaryKey = 'delegationsId';
+    protected $primaryKey = 'delegationId';
 
     public function delegationsDelegates(){
         return $this->hasMany('App\delegationsDelegates');

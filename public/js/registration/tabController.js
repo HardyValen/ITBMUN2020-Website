@@ -3,7 +3,7 @@ var tabs = "";
 var viewTab = 1;
 
 function headerDeterminer(i){
-    return i == 1 ? "Head delegates" : "Delegate " + i;
+    return i == 1 ? "Head Delegate" : "Delegate " + i;
 }
 
 // Tab Maker
@@ -67,17 +67,17 @@ function setDelegates(x){
                             "<p class='radio-header'>Gender</p>" +
                             "<label>" +
                                 "<span class='radio-description'>Male</span>" +
-                                "<input type='radio' name='gender" + i + "' value='Male' checked>" +
+                                "<input type='radio' class='delegation-radio' name='gender" + i + "' value='Male' checked>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>Female</span>" +
-                                "<input type='radio' name='gender" + i + "' value='Female'>" +
+                                "<input type='radio' class='delegation-radio' name='gender" + i + "' value='Female'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>Others</span>" +
-                                "<input type='radio' name='gender" + i + "' value='Others'>" +
+                                "<input type='radio' class='delegation-radio' name='gender" + i + "' value='Others'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                         "</div>" +
@@ -142,37 +142,37 @@ function setDelegates(x){
                             "<p class='radio-header'>First Council Preference</p>" +
                             "<label>" +
                                 "<span class='radio-description'>WHA</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='WHA' checked>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='WHA' checked>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>UNEP</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='UNEP'>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='UNEP'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>DISEC</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='DISEC'>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='DISEC'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>UNESCO</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='UNESCO'>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='UNESCO'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>CRISIS</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='CRISIS'>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='CRISIS'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>UNSC</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='UNSC'>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='UNSC'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>UNCA PRESS</span>" +
-                                "<input type='radio' name='firstCouncilPreference" + i + "' value='UNCA PRESS'>" +
+                                "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='UNCA PRESS'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                         "</div>" +
@@ -209,37 +209,37 @@ function setDelegates(x){
                         "<p class='radio-header'>Second Council Preference</p>" +
                         "<label>" +
                             "<span class='radio-description'>WHA</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='WHA' checked>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='WHA' checked>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNEP</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='UNEP'>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNEP'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>DISEC</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='DISEC'>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='DISEC'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNESCO</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='UNESCO'>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNESCO'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>CRISIS</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='CRISIS'>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='CRISIS'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNSC</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='UNSC'>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNSC'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNCA PRESS</span>" +
-                            "<input type='radio' name='secondCouncilPreference" + i + "' value='UNCA PRESS'>" +
+                            "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNCA PRESS'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                     "</div>" +
@@ -276,37 +276,37 @@ function setDelegates(x){
                         "<p class='radio-header'>Third Council Preference</p>" +
                         "<label>" +
                             "<span class='radio-description'>WHA</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='WHA' checked>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='WHA' checked>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNEP</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='UNEP'>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='UNEP'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>DISEC</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='DISEC'>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='DISEC'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNESCO</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='UNESCO'>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='UNESCO'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>CRISIS</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='CRISIS'>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='CRISIS'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNSC</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='UNSC'>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='UNSC'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                         "<label>" +
                             "<span class='radio-description'>UNCA PRESS</span>" +
-                            "<input type='radio' name='thirdCouncilPreference" + i + "' value='UNCA PRESS'>" +
+                            "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='UNCA PRESS'>" +
                             "<span class='radio-button'></span>" +
                         "</label>" +
                     "</div>" +
@@ -339,7 +339,7 @@ function setDelegates(x){
 
             "<div class='registration-row'>" +
                 "<div class='registration-col r-col-12'>" +
-                    "<input type='text' class='form-input' name='doubleDelegateName" + i + "' id='doubleDelegateName" + i + "' placeholder=' '/>" +
+                    "<input type='text' class='form-input-delegation' name='doubleDelegateName" + i + "' id='doubleDelegateName" + i + "' placeholder=' '/>" +
                     "<label class='text-label' for='doubleDelegateName" + i + "'>Double Delegate's name</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'>(Fill if you choose WHA and/or UNSC)<br>Make sure that your double delegate also fill the registration form separately.</span>" +
@@ -350,8 +350,8 @@ function setDelegates(x){
             "</div>" +
             "<div class='registration-row'>" +
                 "<div class='registration-col r-col-12'>" +
-                    "<input type='text' class='form-input' name='doubleDelegateNationality" + i + "' id='doubleDelegateNationality" + i + "' placeholder=' '/>" +
-                    "<label class='text-label' for='doubleDelegateNationality" + i + "'>Double Delegate's institution</label>" +
+                    "<input type='text' class='form-input-delegation' name='doubleDelegateInstitution" + i + "' id='doubleDelegateInstitution" + i + "' placeholder=' '/>" +
+                    "<label class='text-label' for='doubleDelegateInstitution" + i + "'>Double Delegate's institution</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
                         "<span class='required'></span>" +

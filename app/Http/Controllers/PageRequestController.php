@@ -81,4 +81,8 @@ class PageRequestController extends Controller
     public function viewValidator(){
         return view("test.validator");
     }
+
+    public function viewADT(){
+        return view("test.adt");
+    }
 }

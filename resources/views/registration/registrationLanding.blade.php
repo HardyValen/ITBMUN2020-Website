@@ -29,15 +29,15 @@
         <div class="registration-wrapper">
 
             <div class="form-page is-active registration-card-wrapper" id='form-landing'>
-                <a class='registration-form__delegate-choice delegate' onclick="showPage('#form-individual-page-1')" href="#hero">
+                <a class='registration-form__delegate-choice delegate' onclick="individualDelegate()" href="#hero">
                     <h2>INDIVIDUAL DELEGATE</h2>
                 </a>
-                <a class='registration-form__delegate-choice delegation' onclick="showPage('#form-delegation-page-1')" href="#hero">
+                <a class='registration-form__delegate-choice delegation' onclick="delegation()" href="#hero">
                     <h2>DELEGATION</h2>
                 </a>
             </div>
 
-            <form action="/registration/individual-delegate" method="post" style="width: 100%;">
+            <form action="/registration/individual-delegate" method="post" style="width: 100%;" class="validate">
             @csrf
                 @include('registration.pages.individual-page-1')
                 @include('registration.pages.individual-page-2')
@@ -45,7 +45,7 @@
                 @include('registration.pages.individual-page-4')
             </form>
 
-            <form action="/registration/delegations" method="post" style="width: 100%;">
+            <form action="/registration/delegations" method="post" style="width: 100%;" class="validate"    >
             @csrf
                 @include('registration.pages.delegation-page-1')
                 @include('registration.pages.delegation-page-2')
