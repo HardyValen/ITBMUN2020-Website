@@ -17,7 +17,7 @@
                         <span class='info'>(MUN_Council_Year_Awards if any)</span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -27,37 +27,37 @@
                     <p class='radio-header'>First Council Preference</p>
                     <label>
                         <span class='radio-description'>WHA</span>
-                        <input type="radio" name="firstCouncilPreference" value="WHA" checked>
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="WHA" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNEP</span>
-                        <input type="radio" name="firstCouncilPreference" value="UNEP">
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="UNEP">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>DISEC</span>
-                        <input type="radio" name="firstCouncilPreference" value="DISEC">
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="DISEC">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNESCO</span>
-                        <input type="radio" name="firstCouncilPreference" value="UNESCO">
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="UNESCO">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Historical Crisis Council</span>
-                        <input type="radio" name="firstCouncilPreference" value="CRISIS">
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="CRISIS">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Futuristic UNSC</span>
-                        <input type="radio" name="firstCouncilPreference" value="UNSC">
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="UNSC">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNCA PRESS</span>
-                        <input type="radio" name="firstCouncilPreference" value="UNCA PRESS">
+                        <input type="radio" class="individual-radio" name="firstCouncilPreference" value="UNCA PRESS">
                         <span class='radio-button'></span>
                     </label>
                 </div>
@@ -66,25 +66,25 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="firstCouncilCountryPreference" id="firstCouncilCountryPreference" placeholder=' '/>
+                <input type="text" class="form-input" name="firstCouncilCountryPreference" id="firstCouncilCountryPreference" placeholder=' ' required/>
                 <label class="text-label" for="firstCouncilCountryPreference">Country preference for 1st council (Max. 3 countries)</label>
                 <p class="registration-info">
-                        <span class='info'>please choose 3 countries and separate your answer by comma (i.e. Australia, United Kingdom, Croatia). If you chose Crisis council for your first preference, please write "-".</span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'>please choose 3 countries and separate your answer by comma (i.e. Australia, United Kingdom, Croatia). If you chose Crisis council for your first preference, please write "-".</span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="firstCouncilReason" id="firstCouncilReason" placeholder=' '/>
+                <input type="text" class="form-input" name="firstCouncilReason" id="firstCouncilReason" placeholder=' ' required/>
                 <label class="text-label" for="firstCouncilReason">What makes you choose your 1st council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -94,37 +94,37 @@
                     <p class='radio-header'>Second Council Preference</p>
                     <label>
                         <span class='radio-description'>WHA</span>
-                        <input type="radio" name="secondCouncilPreference" value="WHA">
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="WHA">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNEP</span>
-                        <input type="radio" name="secondCouncilPreference" value="UNEP" checked>
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="UNEP" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>DISEC</span>
-                        <input type="radio" name="secondCouncilPreference" value="DISEC">
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="DISEC">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNESCO</span>
-                        <input type="radio" name="secondCouncilPreference" value="UNESCO">
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="UNESCO">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Historical Crisis Council</span>
-                        <input type="radio" name="secondCouncilPreference" value="CRISIS">
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="CRISIS">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Futuristic UNSC</span>
-                        <input type="radio" name="secondCouncilPreference" value="UNSC">
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="UNSC">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNCA PRESS</span>
-                        <input type="radio" name="secondCouncilPreference" value="UNCA PRESS">
+                        <input type="radio" class="individual-radio" name="secondCouncilPreference" value="UNCA PRESS">
                         <span class='radio-button'></span>
                     </label>
                 </div>
@@ -133,25 +133,25 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="secondCouncilCountryPreference" id="secondCouncilCountryPreference" placeholder=' '/>
+                <input type="text" class="form-input" name="secondCouncilCountryPreference" id="secondCouncilCountryPreference" placeholder=' ' required/>
                 <label class="text-label" for="secondCouncilCountryPreference">Country preference for 2nd council (Max. 3 countries)</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="secondCouncilReason" id="secondCouncilReason" placeholder=' '/>
+                <input type="text" class="form-input" name="secondCouncilReason" id="secondCouncilReason" placeholder=' ' required/>
                 <label class="text-label" for="secondCouncilReason">What makes you choose your 2nd council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -161,37 +161,37 @@
                     <p class='radio-header'>Third Council Preference</p>
                     <label>
                         <span class='radio-description'>WHA</span>
-                        <input type="radio" name="thirdCouncilPreference" value="WHA">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="WHA">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNEP</span>
-                        <input type="radio" name="thirdCouncilPreference" value="UNEP" checked>
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="UNEP" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>DISEC</span>
-                        <input type="radio" name="thirdCouncilPreference" value="DISEC">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="DISEC">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNESCO</span>
-                        <input type="radio" name="thirdCouncilPreference" value="UNESCO">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="UNESCO">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Historical Crisis Council</span>
-                        <input type="radio" name="thirdCouncilPreference" value="CRISIS">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="CRISIS">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Futuristic UNSC</span>
-                        <input type="radio" name="thirdCouncilPreference" value="UNSC">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="UNSC">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>UNCA PRESS</span>
-                        <input type="radio" name="thirdCouncilPreference" value="UNCA PRESS">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="UNCA PRESS">
                         <span class='radio-button'></span>
                     </label>
                 </div>
@@ -200,25 +200,25 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="thirdCouncilCountryPreference" id="thirdCouncilCountryPreference" placeholder=' '/>
+                <input type="text" class="form-input" name="thirdCouncilCountryPreference" id="thirdCouncilCountryPreference" placeholder=' ' required/>
                 <label class="text-label" for="thirdCouncilCountryPreference">Country preference for 3rd council (Max. 3 countries)</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="thirdCouncilReason" id="thirdCouncilReason" placeholder=' '/>
+                <input type="text" class="form-input" name="thirdCouncilReason" id="thirdCouncilReason" placeholder=' ' required/>
                 <label class="text-label" for="thirdCouncilReason">What makes you choose your 3rd council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -232,19 +232,19 @@
                         <span class='info'>(Fill if you choose WHA and/or UNSC)<br>Make sure that your double delegate also fill the registration form separately.</span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="doubleDelegateNationality" id="doubleDelegateNationality" placeholder=' '/>
-                <label class="text-label" for="doubleDelegateNationality">Double Delegate's institution</label>
+                <input type="text" class="form-input" name="doubleDelegateInstitution" id="doubleDelegateInstitution" placeholder=' '/>
+                <label class="text-label" for="doubleDelegateInstitution">Double Delegate's institution</label>
                 <p class="registration-info">
                         <span class='info'></span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 

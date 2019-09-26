@@ -10,7 +10,7 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12 nav-button-wrapper">
-                <a class="button-white-transparent" onclick='back()'>Back</a>
+                <a class="button-white-transparent" onclick='backFromSummary()'>Back</a>
                 <input type="submit" value="Send Data" class="button-white-transparent" />
             </div>
         </div>

@@ -17,11 +17,11 @@ class DelegationsController extends Controller
         ]);
         $delegation->save();
 
-        $id = \App\delegations::where('headDelegate', $request->headDelegate)->first()->delegationsId;
+        $id = \App\delegations::where('headDelegate', $request->headDelegate)->first()->delegationId;
 
         for($i = 1; $i <= ($request->delegatesCount); $i++){
             $delegationDelegate = new DelegationsDelegates([
-                "delegationsId" => $id, 
+                "delegationId" => $id, 
                 "fullName" => $request->input('fullName'.$i), 
                 "email" => $request->input('email'.$i), 
                 "nationality" => $request->input('nationality'.$i), 
@@ -39,7 +39,9 @@ class DelegationsController extends Controller
                 "thirdCouncilCountryPreference" => $request->input('thirdCouncilCountryPreference'.$i), 
                 "thirdCouncilReason" => $request->input('thirdCouncilReason'.$i), 
                 "foodRestrictions" => $request->input('foodRestrictions'.$i), 
-                "accommodation" => $request->input('accommodation'.$i) 
+                "accommodation" => $request->input('accommodation'.$i),
+                "doubleDelegateName" => $request->input('doubleDelegateName'.$i),
+                "doubleDelegateInstitution" => $request->input('doubleDelegateInstitution'.$i)
             ]);
             $delegationDelegate->save();
         }

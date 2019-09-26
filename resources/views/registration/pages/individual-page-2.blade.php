@@ -17,7 +17,7 @@
                         <span class='info'></span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -29,19 +29,19 @@
                         <span class='info'>(i.e. halal, vegetarian, etc.)</span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="email" id="email" placeholder=' '/>
+                <input type="email" class="form-input" name="email" id="email" placeholder=' ' required/>
                 <label class="text-label" for="email">Email</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -51,9 +51,9 @@
                 <label class="text-label" for="contactNumber">Contact Number</label>
                 <p class="registration-info">
                         <span class='info'>Please write with area code (i.e. +62 812 xxxx xxx) We highly encourage you to install Whatsapp for the number you provided us with to ease future communication with the Committee.</span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
             <div class="registration-col r-col-6">
                 <input type="text" class="form-input" name="lineId" id="lineId" placeholder=' '/>
@@ -62,7 +62,7 @@
                         <span class='info'></span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -72,12 +72,12 @@
                     <p class='radio-header'>Accommodation</p>
                     <label>
                         <span class='radio-description'>Full Accommodation</span>
-                        <input type="radio" name="accommodation" value="Full Accommodation" checked>
+                        <input type="radio" class="individual-radio" name="accommodation" value="Full Accommodation" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>No Accommodation</span>
-                        <input type="radio" name="accommodation" value="No Accommodation">
+                        <input type="radio" class="individual-radio" name="accommodation" value="No Accommodation">
                         <span class='radio-button'></span>
                     </label>
                 </div>

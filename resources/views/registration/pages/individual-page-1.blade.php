@@ -14,10 +14,10 @@
                 <input type="text" class="form-input" name="fullName" id="fullName" placeholder=' ' required/>
                 <label class="text-label" for="fullName">Full Name</label>
                 <p class="registration-info">
-                        <span class='info'>This will be the name printed on your certificate as well.</span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'>This will be the name printed on your certificate as well.</span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -26,10 +26,10 @@
                 <input type="text" class="form-input" name="institution" id="institution" placeholder=' ' required/>
                 <label class="text-label" for="institution">Institution</label>
                 <p class="registration-info">
-                        <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'></span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -38,10 +38,10 @@
                 <input type="text" class="form-input" name="nationality" id="nationality" placeholder=' ' required/>
                 <label class="text-label" for="nationality">Nationality</label>
                 <p class="registration-info">
-                        <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'></span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
             <div class="registration-col r-col-6">
                 <input type="text" class="form-input" name="idNumber" id="idNumber" placeholder=' '/>
@@ -50,7 +50,7 @@
                         <span class='info'>(National ID/ Passport Number)</span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -60,17 +60,17 @@
                     <p class='radio-header'>Gender</p>
                     <label>
                         <span class='radio-description'>Male</span>
-                        <input type="radio" name="gender" value="Male" checked>
+                        <input type="radio" class="individual-radio" name="gender" value="Male" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Female</span>
-                        <input type="radio" name="gender" value="Female">
+                        <input type="radio" class="individual-radio" name="gender" value="Female">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>Others</span>
-                        <input type="radio" name="gender" value="Others">
+                        <input type="radio" class="individual-radio" name="gender" value="Others">
                         <span class='radio-button'></span>
                     </label>
                 </div>

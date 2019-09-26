@@ -29,7 +29,7 @@ class individualDelegates extends Model
         'foodRestrictions',
         'accommodation',
         'doubleDelegateName',
-        'doubleDelegateNationality'
+        'doubleDelegateInstitution'
     ];
 
     protected $primaryKey = 'individualDelegatesId';

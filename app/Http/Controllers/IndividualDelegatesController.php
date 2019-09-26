@@ -31,7 +31,7 @@ class IndividualDelegatesController extends Controller
             "foodRestrictions" => $request->foodRestrictions,
             "accommodation" => $request->accommodation,
             "doubleDelegateName" => $request->doubleDelegateName,
-            "doubleDelegateNationality" => $request->doubleDelegateNationality
+            "doubleDelegateInstitution" => $request->doubleDelegateInstitution
         ]);
         $data->save();
 

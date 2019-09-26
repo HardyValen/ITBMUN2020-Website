@@ -14,17 +14,22 @@ class CreateIndividualDelegatesTable extends Migration
     public function up()
     {
         Schema::create('individual_delegates', function (Blueprint $table) {
-            $table->bigIncrements('individualDelegatesId'); //a
-            $table->string('fullName', 200); //b
-            $table->string('institution', 200); //c
-            $table->string('contactNumber', 200);  //d
-            $table->string('lineId', 200)->nullable()->default(NULL); //e
-            $table->string('email', 200); //f
-            $table->string('nationality', 200);  //g
-            $table->string('idNumber', 200)->nullable()->default(NULL);; //h 
-            $table->string('gender', 200); //i
-            $table->text('medicalConditions')->nullable()->default(NULL); //j
-            $table->text('munExperiences')->nullable()->default(NULL); //k
+            $table->bigIncrements('individualDelegatesId');
+             
+            $table->string('fullName', 200); 
+            $table->string('institution', 200); 
+            $table->string('nationality', 200);  
+            $table->string('idNumber', 200)->nullable()->default(NULL);
+            $table->string('gender', 200);
+
+            $table->string('lineId', 200)->nullable()->default(NULL);
+            $table->string('contactNumber', 200);
+            $table->string('email', 200); 
+            $table->text('medicalConditions')->nullable()->default(NULL); 
+            $table->text('foodRestrictions')->nullable()->default(NULL);
+            $table->string('accommodation', 200);
+
+            $table->text('munExperiences')->nullable()->default(NULL); 
             $table->string('firstCouncilPreference', 200);
             $table->string('firstCouncilCountryPreference', 200);
             $table->text('firstCouncilReason');
@@ -34,10 +39,8 @@ class CreateIndividualDelegatesTable extends Migration
             $table->string('thirdCouncilPreference', 200);
             $table->string('thirdCouncilCountryPreference', 200);
             $table->text('thirdCouncilReason');
-            $table->text('foodRestrictions');
-            $table->string('accommodation', 200);
-            $table->text('doubleDelegateName', 200)->nullable()->default(NULL);;
-            $table->text('doubleDelegateNationality', 200)->nullable()->default(NULL);;
+            $table->text('doubleDelegateName', 200)->nullable()->default(NULL);
+            $table->text('doubleDelegateInstitution', 200)->nullable()->default(NULL);
             $table->timestamps();
         });
     }
