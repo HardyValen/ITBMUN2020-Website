@@ -69,29 +69,31 @@
 
         </div>
     </section>
-        <!--<section class='main-venue'>
-            <div class="row">
-                <div class="col-md-8 offset-md-2 col-12">
-                    <h1>
-                        DATE & VENUE<br>
-                        &mdash;
-                    </h1>
-                    <div class="main-venue-wrapper">
-                        <div class="main-venue-image"></div>
-                        <div class="main-venue-content">
-                            <h2>
-                                Month XX-XX, 2019<br>
-                                Building Name, City<br>
-                                <b>Indonesia</b>
-                            </h2>
-                            <p>
-                                Nulla semper, libero a ultricies varius, ipsum turpis consequat nibh, bibendum maximus elit nisi blandit est 
-                            </p>
+
+    <section class='main-venue'>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-12">
+                <h1>
+                    VENUE<br>
+                    &mdash;
+                </h1>
+                <div class="main-venue-wrapper">
+                    <div class="main-venue-image"></div>
+                    <div class="main-venue-content">
+                        <h2>
+                            Courtyard Marriott
+                            
+                        </h2>
+                        <div>
+                            <p>Strategically placed in the heart of the city, Courtyard Bandung Dago offers contemporary accommodation in a vibrant travel destination.</p>
+                            <p>Jl. Ir. H. Juanda No.33, Tamansari, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40116</p>
+                            <a href="https://g.page/CourtyardBandungDago?share" class='button-white-transparent' target="_blank">See on Maps</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>-->
+        </div>
+    </section>
 <!-- ## END of Main Venue Section ========= -->
 
 <!-- ## 5. Main Remark Section ========= -->
