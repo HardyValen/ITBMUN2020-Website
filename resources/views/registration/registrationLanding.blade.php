@@ -29,10 +29,10 @@
         <div class="registration-wrapper">
 
             <div class="form-page is-active registration-card-wrapper" id='form-landing'>
-                <a class='registration-form__delegate-choice delegate' onclick="individualDelegate()" href="#hero">
+                <a class='registration-form__delegate-choice delegate' onclick="individualDelegate()">
                     <h2>INDIVIDUAL DELEGATE</h2>
                 </a>
-                <a class='registration-form__delegate-choice delegation' onclick="delegation()" href="#hero">
+                <a class='registration-form__delegate-choice delegation' onclick="delegation()">
                     <h2>DELEGATION</h2>
                 </a>
             </div>
@@ -45,7 +45,7 @@
                 @include('registration.pages.individual-page-4')
             </form>
 
-            <form action="/registration/delegations" method="post" style="width: 100%;" class="validate"    >
+            <form action="/registration/delegations" method="post" style="width: 100%;" class="validate">
             @csrf
                 @include('registration.pages.delegation-page-1')
                 @include('registration.pages.delegation-page-2')
@@ -70,6 +70,7 @@
     <script src="{{URL::asset('js/registration/dictionary.js')}}"></script>
     <script src="{{URL::asset('js/registration/pageController.js')}}"></script>
     <script src="{{URL::asset('js/registration/tabController.js')}}"></script>
+    <script src="{{URL::asset('js/registration/validation.js')}}"></script>
 
     <script>
         window.onbeforeunload = function (){

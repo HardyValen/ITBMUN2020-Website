@@ -21,10 +21,10 @@ function setDelegates(x){
                         "<input type='text' class='form-input-delegation' name='fullName" + i + "' id='fullName" + i + "' placeholder=' ' required/>" +
                         "<label class='text-label' for='fullName" + i + "'>Full Name</label>" +
                         "<p class='registration-info'>" +
-                            "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='info'>This will be the name printed on your certificate as well.</span>" +
+                            "<span class='required'>*Required</span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
@@ -34,9 +34,9 @@ function setDelegates(x){
                         "<label class='text-label' for='email" + i + "'>Email</label>" +
                         "<p class='registration-info'>" +
                             "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='required'>*Required</span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
@@ -46,18 +46,18 @@ function setDelegates(x){
                         "<label class='text-label' for='nationality" + i + "'>Nationality</label>" +
                         "<p class='registration-info'>" +
                             "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='required'>*Required</span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                     "<div class='registration-col r-col-6'>" +
                         "<input type='text' class='form-input-delegation' name='idNumber" + i + "' id='idNumber" + i + "' placeholder=' ' required/>" +
                         "<label class='text-label' for='idNumber" + i + "'>ID Number</label>" +
                         "<p class='registration-info'>" +
-                            "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='info'>(National ID/ Passport Number)</span>" +
+                            "<span class='required'>*Required</span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
@@ -88,37 +88,43 @@ function setDelegates(x){
 
                  "<div class='registration-row'>" +
                     "<div class='registration-col r-col-12'>" +
-                        "<input type='text' class='form-input-delegation' name='medicalConditions" + i + "' id='medicalConditions" + i + "' placeholder=' ' required/>" +
+                        "<input type='text' class='form-input-delegation' name='medicalConditions" + i + "' id='medicalConditions" + i + "' placeholder=' '/>" +
                         "<label class='text-label' for='medicalConditions" + i + "'>Medical Conditions</label>" +
                         "<p class='registration-info'>" +
                             "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='required'></span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
                 "<div class='registration-row'>" +
                     "<div class='registration-col r-col-12'>" +
-                        "<input type='text' class='form-input-delegation' name='foodRestrictions" + i + "' id='foodRestrictions" + i + "' placeholder=' ' required/>" +
+                        "<input type='text' class='form-input-delegation' name='foodRestrictions" + i + "' id='foodRestrictions" + i + "' placeholder=' '/>" +
                         "<label class='text-label' for='foodRestrictions" + i + "'>Food Restrictions</label>" +
                         "<p class='registration-info'>" +
-                            "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='info'>(i.e. halal, vegetarian, etc.)</span>" +
+                            "<span class='required'></span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
                 "<div class='registration-row'>" +
                     "<div class='registration-col r-col-12'>" +
-                        "<input type='text' class='form-input-delegation' name='accommodation" + i + "' id='accommodation" + i + "' placeholder=' ' required/>" +
-                        "<label class='text-label' for='accommodation" + i + "'>Accomodation</label>" +
-                        "<p class='registration-info'>" +
-                            "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
-                        "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        "<div class='registration-radio-wrapper'>" +
+                            "<p class='radio-header'>Accommodation</p>" +
+                            "<label>" +
+                                "<span class='radio-description'>Full Accommodation</span>" +
+                                "<input type='radio' class='individual-radio' name=`accommodation" + i + "` value='Full Accommodation' checked>" +
+                                "<span class='radio-button'></span>" +
+                            "</label>" +
+                            "<label>" +
+                                "<span class='radio-description'>No Accommodation</span>" +
+                                "<input type='radio' class='individual-radio' name=`accommodation" + i + "` value='No Accommodation'>" +
+                                "<span class='radio-button'></span>" +
+                            "</label>" +
+                        "</div>" +
                     "</div>" +
                 "</div>" +
 
@@ -126,13 +132,13 @@ function setDelegates(x){
 
                 "<div class='registration-row'>" +
                     "<div class='registration-col r-col-12'>" +
-                        "<input type='text' class='form-input-delegation' name='munExperiences" + i + "' id='munExperiences" + i + "' placeholder=' ' required/>" +
+                        "<input type='text' class='form-input-delegation' name='munExperiences" + i + "' id='munExperiences" + i + "' placeholder=' '/>" +
                         "<label class='text-label' for='munExperiences" + i + "'>MUN Experiences</label>" +
                         "<p class='registration-info'>" +
-                            "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='info'>(MUN_Council_Year_Awards if any)</span>" +
+                            "<span class='required'></span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
@@ -184,10 +190,10 @@ function setDelegates(x){
                         "<input type='text' class='form-input-delegation' name='firstCouncilCountryPreference" + i + "' id='firstCouncilCountryPreference" + i + "' placeholder=' ' required/>" +
                         "<label class='text-label' for='firstCouncilCountryPreference" + i + "'>Country preference for 1st council (Max. 3 countries)</label>" +
                         "<p class='registration-info'>" +
-                            "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='info'>please choose 3 countries and separate your answer by comma (i.e. Australia, United Kingdom, Croatia). If you chose Crisis council for your first preference, please write "-".</span>" +
+                            "<span class='required'>*Required</span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
@@ -197,9 +203,9 @@ function setDelegates(x){
                         "<label class='text-label' for='firstCouncilReason" + i + "'>What makes you choose your 1st council preference ?</label>" +
                         "<p class='registration-info'>" +
                             "<span class='info'></span>" +
-                            "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                            "<span class='required'>*Required</span>" +
                         "</p>" +
-                        "<p class='registration-alert'></p>" +
+                        
                     "</div>" +
                 "</div>" +
 
@@ -252,9 +258,9 @@ function setDelegates(x){
                     "<label class='text-label' for='secondCouncilCountryPreference" + i + "'>Country preference for 2nd council (Max. 3 countries)</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
-                        "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                        "<span class='required'>*Required</span>" +
                     "</p>" +
-                    "<p class='registration-alert'></p>" +
+                    
                 "</div>" +
             "</div>" +
 
@@ -264,9 +270,9 @@ function setDelegates(x){
                     "<label class='text-label' for='secondCouncilReason" + i + "'>What makes you choose your 2nd council preference ?</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
-                        "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                        "<span class='required'>*Required</span>" +
                     "</p>" +
-                    "<p class='registration-alert'></p>" +
+                    
                 "</div>" +
             "</div>" +
 
@@ -319,9 +325,9 @@ function setDelegates(x){
                     "<label class='text-label' for='thirdCouncilCountryPreference" + i + "'>Country preference for 3rd council (Max. 3 countries)</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
-                        "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                        "<span class='required'>*Required</span>" +
                     "</p>" +
-                    "<p class='registration-alert'></p>" +
+                    
                 "</div>" +
             "</div>" +
 
@@ -331,9 +337,9 @@ function setDelegates(x){
                     "<label class='text-label' for='thirdCouncilReason" + i + "'>What makes you choose your 3rd council preference ?</label>" +
                     "<p class='registration-info'>" +
                         "<span class='info'></span>" +
-                        "<span class='required'><i class='fas fa-exclamation-circle'></i>&ensp;Required</span>" +
+                        "<span class='required'>*Required</span>" +
                     "</p>" +
-                    "<p class='registration-alert'></p>" +
+                    
                 "</div>" +
             "</div>" +
 
@@ -345,7 +351,7 @@ function setDelegates(x){
                         "<span class='info'>(Fill if you choose WHA and/or UNSC)<br>Make sure that your double delegate also fill the registration form separately.</span>" +
                         "<span class='required'></span>" +
                     "</p>" +
-                    "<p class='registration-alert'></p>" +
+                    
                 "</div>" +
             "</div>" +
             "<div class='registration-row'>" +
@@ -356,7 +362,7 @@ function setDelegates(x){
                         "<span class='info'></span>" +
                         "<span class='required'></span>" +
                     "</p>" +
-                    "<p class='registration-alert'></p>" +
+                    
                 "</div>" +
             "</div>" +
 

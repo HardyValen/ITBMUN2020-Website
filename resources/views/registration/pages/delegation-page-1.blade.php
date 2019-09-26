@@ -13,9 +13,9 @@
                 <label class="text-label" for="headDelegate">Head Delegate Name</label>
                 <p class="registration-info">
                     <span class='info'>This will be the name printed on your certificate as well.</span>
-                    <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -25,9 +25,9 @@
                 <label class="text-label" for="institution">Institution</label>
                 <p class="registration-info">
                     <span class='info'></span>
-                    <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -36,19 +36,19 @@
                 <input type="text" class="form-input-delegation" name="contactNumber" id="contactNumber" placeholder=' ' required/>
                 <label class="text-label" for="contactNumber">Contact Number</label>
                 <p class="registration-info">
-                    <span class='info'></span>
-                    <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'>Please write with area code (i.e. +62 812 xxxx xxx) We highly encourage you to install Whatsapp for the number you provided us with to ease future communication with the Committee.</span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
             <div class="registration-col r-col-6">
-                <input type="text" class="form-input-delegation" name="lineId" id="lineId" placeholder=' ' required/>
+                <input type="text" class="form-input-delegation" name="lineId" id="lineId" placeholder=' '/>
                 <label class="text-label" for="lineId">Head Delegate Line ID</label>
                 <p class="registration-info">
-                    <span class='info'>(National ID/ Passport Number)</span>
+                    <span class='info'></span>
                     <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 

@@ -178,10 +178,10 @@
             var label;
             if (field.type === 'radio' || field.type === 'checkbox') {
                 label = field.form.querySelector(`label[for=${id}]`) || field.parentNode;
-                if (label) label.parentNode.insertBefore( message, label.nextSibling );
+                if (label) label.parentNode.insertBefore( message, label.lastSibling );
             }
             
-            if (!label) field.parentNode.insertBefore( message, field.nextSibling );
+            if (!label) field.parentNode.insertBefore( message, field.lastSibling );
         }
 
         // Add ARIA role to the field

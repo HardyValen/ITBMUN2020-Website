@@ -3910,25 +3910,35 @@ footer p {
           align-items: baseline;
 }
 
-.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .registration-alert {
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .error {
+  border-color: #D02B2F;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .error + label {
+  color: #D02B2F;
+}
+
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .error-message {
+  color: #D02B2F;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
   margin-bottom: 0px;
   padding-bottom: 10px;
+  font-weight: 700;
 }
 
-.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .registration-alert {
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .error-message {
   font-size: 1.1rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .registration-alert {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .error-message {
     font-size: calc(1.1rem + 0.1 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .registration-alert {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row .registration-col .error-message {
     font-size: 1.2rem;
   }
 }

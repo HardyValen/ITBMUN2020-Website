@@ -17,7 +17,7 @@
                         <span class='info'>(MUN_Council_Year_Awards if any)</span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -66,25 +66,25 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="firstCouncilCountryPreference" id="firstCouncilCountryPreference" placeholder=' '/>
+                <input type="text" class="form-input" name="firstCouncilCountryPreference" id="firstCouncilCountryPreference" placeholder=' ' required/>
                 <label class="text-label" for="firstCouncilCountryPreference">Country preference for 1st council (Max. 3 countries)</label>
                 <p class="registration-info">
-                        <span class='info'>please choose 3 countries and separate your answer by comma (i.e. Australia, United Kingdom, Croatia). If you chose Crisis council for your first preference, please write "-".</span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                    <span class='info'>please choose 3 countries and separate your answer by comma (i.e. Australia, United Kingdom, Croatia). If you chose Crisis council for your first preference, please write "-".</span>
+                    <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="firstCouncilReason" id="firstCouncilReason" placeholder=' '/>
+                <input type="text" class="form-input" name="firstCouncilReason" id="firstCouncilReason" placeholder=' ' required/>
                 <label class="text-label" for="firstCouncilReason">What makes you choose your 1st council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -133,25 +133,25 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="secondCouncilCountryPreference" id="secondCouncilCountryPreference" placeholder=' '/>
+                <input type="text" class="form-input" name="secondCouncilCountryPreference" id="secondCouncilCountryPreference" placeholder=' ' required/>
                 <label class="text-label" for="secondCouncilCountryPreference">Country preference for 2nd council (Max. 3 countries)</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="secondCouncilReason" id="secondCouncilReason" placeholder=' '/>
+                <input type="text" class="form-input" name="secondCouncilReason" id="secondCouncilReason" placeholder=' ' required/>
                 <label class="text-label" for="secondCouncilReason">What makes you choose your 2nd council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -200,25 +200,25 @@
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="thirdCouncilCountryPreference" id="thirdCouncilCountryPreference" placeholder=' '/>
+                <input type="text" class="form-input" name="thirdCouncilCountryPreference" id="thirdCouncilCountryPreference" placeholder=' ' required/>
                 <label class="text-label" for="thirdCouncilCountryPreference">Country preference for 3rd council (Max. 3 countries)</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
         <div class="registration-row">
             <div class="registration-col r-col-12">
-                <input type="text" class="form-input" name="thirdCouncilReason" id="thirdCouncilReason" placeholder=' '/>
+                <input type="text" class="form-input" name="thirdCouncilReason" id="thirdCouncilReason" placeholder=' ' required/>
                 <label class="text-label" for="thirdCouncilReason">What makes you choose your 3rd council preference ?</label>
                 <p class="registration-info">
                         <span class='info'></span>
-                        <span class='required'><i class="fas fa-exclamation-circle"></i>&ensp;Required</span>
+                        <span class='required'>*Required</span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -232,7 +232,7 @@
                         <span class='info'>(Fill if you choose WHA and/or UNSC)<br>Make sure that your double delegate also fill the registration form separately.</span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
@@ -244,7 +244,7 @@
                         <span class='info'></span>
                         <span class='required'></span>
                 </p>
-                <p class="registration-alert"></p>
+                
             </div>
         </div>
 
