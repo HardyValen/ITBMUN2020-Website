@@ -71,10 +71,4 @@
     <script src="{{URL::asset('js/registration/pageController.js')}}"></script>
     <script src="{{URL::asset('js/registration/tabController.js')}}"></script>
     <script src="{{URL::asset('js/registration/validation.js')}}"></script>
-
-    <script>
-        window.onbeforeunload = function (){
-            return "";
-        };
-    </script>
 @endsection
