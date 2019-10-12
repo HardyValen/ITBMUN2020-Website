@@ -29,6 +29,8 @@
  *      # I. Registration Sections
  *          -- 1. Hero
  *          -- 2. Body
+ *      # J. Admin Sections
+ *          -- 1. Login
  *
  * =================================================================== */
 /* ===================================================================
@@ -244,15 +246,15 @@
 
 @media screen and (min-width: 320px) {
   .button-white-transparent {
-    padding-left: calc(1rem + 2 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-white-transparent {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 }
 
@@ -263,15 +265,15 @@
 
 @media screen and (min-width: 320px) {
   .button-white-transparent {
-    padding-bottom: calc(0.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-white-transparent {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
   }
 }
 
@@ -3200,10 +3202,10 @@ footer p {
   }
 }
 
-/* # End of Councils Sections
+/* # End of About Sections
  * ----------------------- */
 /* ===================================================================
- * # H. Registration Section
+ * # I. Registration Section
  * ------------------------------------------------------------------- */
 .registration-hero {
   width: 100%;
@@ -4091,6 +4093,429 @@ footer p {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* # End of Councils Sections
+/* # End of Registration Sections
+ * ----------------------- */
+/* ===================================================================
+ * # J. Admin Section
+ * ------------------------------------------------------------------- */
+.login-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), to(#000000)), url(../assets/main/introSection-bgWrapper.png);
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, #000000 100%), url(../assets/main/introSection-bgWrapper.png);
+}
+
+.login-hero {
+  padding: 0rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero {
+    padding: calc(0rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-hero {
+    background: #2e2e2e;
+  }
+}
+
+.login-hero .login-container {
+  min-height: 15rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: .8rem;
+  background-color: #2e2e2e;
+}
+
+.login-hero .login-container {
+  min-width: 28rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container {
+    min-width: calc(28rem + 24 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container {
+    min-width: 52rem;
+  }
+}
+
+.login-hero .login-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container {
+    padding-left: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.login-hero .login-container .login-title {
+  width: 100%;
+  text-align: center;
+}
+
+.login-hero .login-container .login-title h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  letter-spacing: .7px;
+}
+
+.login-hero .login-container .login-title h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container .login-title h1 {
+    font-size: calc(2.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container .login-title h1 {
+    font-size: 2.8rem;
+  }
+}
+
+.login-hero .login-container .login-title h2 {
+  color: #72767D;
+  font-weight: 600;
+  letter-spacing: .7px;
+}
+
+.login-hero .login-container .login-title h2 {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container .login-title h2 {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container .login-title h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.login-hero .login-container .login-body {
+  width: 100%;
+}
+
+.login-hero .login-container .login-body .login-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.login-hero .login-container .login-body .login-row {
+  min-height: 6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container .login-body .login-row {
+    min-height: calc(6rem + 2.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container .login-body .login-row {
+    min-height: 8.5rem;
+  }
+}
+
+.login-hero .login-container .login-body .login-row.login-submit {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.login-hero .login-container .login-body .login-row .text-label {
+  position: absolute;
+  z-index: 1;
+  color: #E5E5E5;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  margin-bottom: 0 !important;
+}
+
+.login-hero .login-container .login-body .login-row .text-label {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container .login-body .login-row .text-label {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container .login-body .login-row .text-label {
+    font-size: 1.6rem;
+  }
+}
+
+.login-hero .login-container .login-body .login-row .form-input-login {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: transparent;
+  width: 100%;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #E5E5E5;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  margin-bottom: 0;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.login-hero .login-container .login-body .login-row .form-input-login {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .login-hero .login-container .login-body .login-row .form-input-login {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .login-hero .login-container .login-body .login-row .form-input-login {
+    font-size: 1.6rem;
+  }
+}
+
+.login-hero .login-container .login-body .login-row .form-input-login:focus, .login-hero .login-container .login-body .login-row .form-input-login:not(:placeholder-shown) {
+  outline: none;
+  border-bottom: 1px solid #EA5A5A;
+}
+
+.login-hero .login-container .login-body .login-row .form-input-login:focus + .text-label, .login-hero .login-container .login-body .login-row .form-input-login:not(:placeholder-shown) + .text-label {
+  color: #EA5A5A;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.dashboard-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .dashboard-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.dashboard-body .dashboard-navigation {
+  width: 20%;
+  height: 100%;
+  background-color: #120817;
+}
+
+@media screen and (max-width: 540px) {
+  .dashboard-body .dashboard-navigation {
+    width: 100%;
+    height: 18%;
+  }
+}
+
+.dashboard-body .dashboard-container {
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+}
+
+.dashboard-body .dashboard-container .dashboard-topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: #0c0c0c;
+}
+
+.dashboard-body .dashboard-container .dashboard-topbar {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+@media screen and (min-width: 320px) {
+  .dashboard-body .dashboard-container .dashboard-topbar {
+    padding-left: calc(1.75rem + 1.25 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1.75rem + 1.25 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .dashboard-body .dashboard-container .dashboard-topbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .dashboard-body .dashboard-container .dashboard-topbar {
+    height: 12%;
+  }
+}
+
+.dashboard-body .dashboard-container .dashboard-topbar {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .dashboard-body .dashboard-container .dashboard-topbar {
+    font-size: calc(1.8rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .dashboard-body .dashboard-container .dashboard-topbar {
+    font-size: 2.2rem;
+  }
+}
+
+.dashboard-body .dashboard-container .dashboard-topbar .dashboard-topbar-icons a:not(:first-child) {
+  padding-left: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .dashboard-body .dashboard-container .dashboard-topbar .dashboard-topbar-icons a:not(:first-child) {
+    padding-left: calc(1.2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .dashboard-body .dashboard-container .dashboard-topbar .dashboard-topbar-icons a:not(:first-child) {
+    padding-left: 2rem;
+  }
+}
+
+.dashboard-body .dashboard-container .dashboard-content {
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.dashboard-body .dashboard-container .dashboard-content {
+  padding: 1.75rem;
+}
+
+@media screen and (min-width: 320px) {
+  .dashboard-body .dashboard-container .dashboard-content {
+    padding: calc(1.75rem + 1.25 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .dashboard-body .dashboard-container .dashboard-content {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .dashboard-body .dashboard-container .dashboard-content {
+    height: 88%;
+  }
+}
+
+.dashboard-body .dashboard-container .dashboard-content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .dashboard-body .dashboard-container .dashboard-content::-webkit-scrollbar {
+    width: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .dashboard-body .dashboard-container .dashboard-content::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+}
+
+.dashboard-body .dashboard-container .dashboard-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dashboard-body .dashboard-container .dashboard-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2.5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.dashboard-body .dashboard-container .dashboard-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* # End of Admin Sections
  * ----------------------- */
 /*# sourceMappingURL=main.css.map */
