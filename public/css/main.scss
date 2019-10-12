@@ -29,6 +29,8 @@
  *      # I. Registration Sections
  *          -- 1. Hero
  *          -- 2. Body
+ *      # J. Admin Sections
+ *          -- 1. Login
  *
  * =================================================================== */
 
@@ -158,11 +160,11 @@ h1 {
 // -- 2. Body Content Section
     @import "blocks/about/body";
 
-/* # End of Councils Sections
+/* # End of About Sections
  * ----------------------- */
 
 /* ===================================================================
- * # H. Registration Section
+ * # I. Registration Section
  * ------------------------------------------------------------------- */
 
 // -- 1. Hero Section
@@ -171,6 +173,18 @@ h1 {
 // -- 2. Body Content Section
     @import "blocks/registration/body";
 
-/* # End of Councils Sections
+/* # End of Registration Sections
  * ----------------------- */
 
+/* ===================================================================
+ * # J. Admin Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Login Section
+    @import "blocks/admin/signin";
+
+// -- 2. Dashboard
+    @import "blocks/admin/dashboard";
+
+/* # End of Admin Sections
+ * ----------------------- */

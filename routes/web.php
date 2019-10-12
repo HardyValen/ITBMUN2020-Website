@@ -31,8 +31,15 @@ Route::get('/registration', 'PageRequestController@viewRegistrationLanding');
 
 // Route::get('/test', 'PageRequestController@viewTest');
 // Route::get('/validator', 'PageRequestController@viewValidator');
-Route::get('/adt', 'PageRequestController@viewADT');
+// Route::get('/adt', 'PageRequestController@viewADT');
+Route::get('/admin', 'AdminController@viewAdminLanding');
+
+
+// Nanti ganti ke route::post('/admin')
+Route::get('/admindashboard', 'AdminController@viewAdminDashboard');
+
 
 Route::post('/registration/individual-delegate', 'IndividualDelegatesController@sendDataIndividualDelegate');
 Route::post('/registration/delegations', 'DelegationsController@sendDataDelegations');
-
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');

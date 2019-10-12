@@ -1,0 +1,98 @@
+.dashboard-body{
+    // Positioning
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+
+    @media screen and (max-width: 540px){
+        flex-direction: column-reverse;
+    }
+
+    // Sizing, Margin, Padding
+    width: 100%;
+    height: 100%;
+
+    // Content Style
+
+    .dashboard-navigation{
+        // Sizing, Margin, Padding
+        width: 20%;
+        height: 100%;
+
+        @media screen and (max-width: 540px){
+            width: 100%;
+            height: 18%;
+        }
+
+        // Content Style
+        background-color: map-get($theme-colors, "primary-darkest");
+    }
+
+    .dashboard-container{
+        // Sizing, Margin, Padding
+        width: 100%;
+        height: 100%;
+
+        // Content Style
+        background-color: #111111;
+
+        .dashboard-topbar{
+            // Positioning
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // Sizing, Margin, Padding
+            width: 100%;
+            height: 10%;
+            @include fluidpaddingx(1.75rem, 3rem);
+
+            @media screen and (max-width: 540px){
+                height: 12%;
+            }
+
+            // Content Style
+            background-color: #0c0c0c;
+            color: map-get($theme-colors, "heading-main");
+            @include fluidfontsize(1.8rem, 2.2rem);
+
+            .dashboard-topbar-icons{
+                a:not(:first-child){
+                    @include fluidpaddingleft(1.2rem, 2rem);
+                }
+            }
+        }
+
+        .dashboard-content{
+            // Sizing, Margin, Padding
+            width: 100%;
+            height: 90%;
+            @include fluidpadding(1.75rem, 3rem);
+
+            @media screen and (max-width: 540px){
+                height: 88%;
+            }
+
+            // Scrolling
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar{
+                @include fluidwidth(.5rem, .8rem);
+            }
+
+            &::-webkit-scrollbar-track{
+                background: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb{
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 2.5px;
+                transition: all 0.2s;
+
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+    }
+}
