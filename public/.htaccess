@@ -18,4 +18,13 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # Browser Caching, expires in 2 weeks
+    <filesMatch ".(png|svg|jpg|jpeg)$">
+    Header set Cache-control "max-age=1209600, public"
+    </filesMatch>
+
+    # Enabling Keep-Alive
+    <ifModule mod_headers.c> Header set Connection keep-alive </ifModule>
+    
 </IfModule>
