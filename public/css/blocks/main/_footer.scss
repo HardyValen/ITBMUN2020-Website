@@ -50,7 +50,7 @@ footer{
         @include titilliumWeb();
         @include fluidfontsize(2.8rem, 3.6rem);
         font-weight: 700;
-        color: map-get($theme-colors, "heading-1-main") !important;
+        color: map-get($theme-colors, "heading-main") !important;
     }
 
     p{

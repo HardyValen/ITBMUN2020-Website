@@ -1,0 +1,44 @@
+.dashboard-content{
+    // Sizing, Margin, Padding
+    width: 100%;
+    height: 100%;
+    @include fluidpadding(1.75rem, 3rem);
+
+    // Scrolling
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        @include fluidwidth(.5rem, .8rem);
+    }
+
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2.5px;
+        transition: all 0.2s;
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    // CONTENT
+    //  1. landing
+    // ================
+    @import 'contentModules/landing';
+
+    //  2. registration
+    // ================
+    @import 'contentModules/registration';
+
+    //  3. announcement
+    // ================
+    @import 'contentModules/announcement';
+
+    //  4. press
+    // ================
+    @import 'contentModules/press';
+}
