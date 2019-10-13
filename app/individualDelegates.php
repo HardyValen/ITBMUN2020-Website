@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class individualDelegates extends Model
 {
+    protected $table = 'individual_delegates';
+
     protected $fillable = [
         'fullName',
         'institution',

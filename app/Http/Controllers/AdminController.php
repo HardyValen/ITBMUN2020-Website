@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\individualDelegates;
+use App\delegations;
+use App\delegationsDelegates;
 
 class AdminController extends Controller
 {
@@ -14,5 +17,20 @@ class AdminController extends Controller
     // ## -- 2. View Admin Dashboard
     public function viewAdminDashboard(){
         return view("admin.dashboardContents.landing");
+    }
+
+    // ## -- 4. View Delegation Dashboard
+    public function viewDelegationDashboard(){
+        return view("admin.dashboardContents.delegation");
+    }
+
+    // ## -- 5. View Announcement Dashboard
+    public function viewAnnouncementDashboard(){
+        return view("admin.dashboardContents.announcement");
+    }
+
+    // ## -- 6. View Press Dashboard
+    public function viewPressDashboard(){
+        return view("admin.dashboardContents.press");
     }
 }

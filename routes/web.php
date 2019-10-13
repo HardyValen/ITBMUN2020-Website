@@ -36,7 +36,15 @@ Route::get('/admin', 'AdminController@viewAdminLanding');
 
 
 // Nanti ganti ke route::post('/admin')
-Route::get('/admindashboard', 'AdminController@viewAdminDashboard');
+Route::get('/admin-dashboard', 'AdminController@viewAdminDashboard');
+
+Route::get('/admin-delegate', 'IndividualDelegatesController@index');
+Route::post('/admin-delegate/{$delegate->id}', 'IndividualDelegatesController@show');
+
+Route::get('/admin-delegation', 'AdminController@viewDelegationDashboard');
+Route::get('/admin-announcement', 'AdminController@viewAnnouncementDashboard');
+Route::get('/admin-press', 'AdminController@viewPressDashboard');
+
 
 
 Route::post('/registration/individual-delegate', 'IndividualDelegatesController@sendDataIndividualDelegate');

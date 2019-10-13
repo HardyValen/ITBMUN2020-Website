@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class delegationsDelegates extends Model
 {
+    protected $table = 'delegations_delegates';
+
     protected $fillable = [
         'delegationId',
         'fullName',

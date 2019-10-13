@@ -1,129 +1,133 @@
-<body>
-<h2>Try It Out</h2>
-<p>Tab through the form fields to see it in action.</p>
-<form class="validate">
-    <div>
-        <label for="text">Name</label>
-        <input type="text" id="text" >
-        <p>Hello World</p>
-    </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Sheets API Quickstart</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p>Google Sheets API Quickstart</p>
 
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-        <p>Hello World</p>
-    </div>
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
 
-    <div>
-        <label for="url">URL</label>
-        <input type="url" id="url" title="The URL is a missing a TLD (for example, .com)." pattern="^(?:(?:https?|HTTPS?|ftp|FTP):\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-zA-Z\u00a1-\uffff0-9]-*)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]-*)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))\.?)(?::\d{2,5})?(?:[/?#]\S*)?$" required>
-    </div>
+    <pre id="content" style="white-space: pre-wrap;"></pre>
 
-    <div>
-        <strong>Radio Buttons</strong>
-        <label class="label-normal">
-            <input type="radio" name="radio" id="radio-1" required>
-            Yes
-        </label>
-        <label class="label-normal">
-            <input type="radio" name="radio" id="radio-2" required>
-            No
-        </label>
-    </div>
+    <script type="text/javascript">
+      // Client ID and API key from the Developer Console
+      var CLIENT_ID = '139173845571-5ch3qlf0ic3sia84u6hq8iref4ksearo.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyBqZL6w3aj3GYvmXUMYAymmUkuUWCTJZpU';
 
-    <input type="submit" class="button" value="Submit">
-</form> 
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
 
-</body>
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 112.5%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 40em;
-    width: 88%;
-}  
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
 
-/**
- * Form Styles
- */
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+      }
 
-.label-normal {
-    font-weight: normal;
-}
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
 
-.description-date {
-    color: #808080;
-    font-size: 0.8em;
-    font-weight: normal;
-}
+          // Handle the initial sign-in state.
+          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
 
-.supports-date .description-date {
-    display: none;
-}
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'block';
+          listMajors();
+        } else {
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
 
-input,
-select {
-    display: inline-block;
-    font-size: 1em;
-    margin-bottom: 1em;
-    padding: 0.25em 0.5em;
-    width: 100%;
-}
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+        gapi.auth2.getAuthInstance().signIn();
+      }
 
-[type="checkbox"],
-[type="radio"] {
-    margin-bottom: 0.5em;
-    width: auto;
-}
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
 
-.button {
-    background-color: #0088cc;
-    border: 1px solid #0088cc;
-    border-radius: 1px;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 0.9375em;
-    font-weight: normal;
-    line-height: 1.2;
-    margin-right: 0.3125em;
-    margin-bottom: 0.3125em;
-    padding: 0.5em 0.6875em;
-    width: auto;
-}
+      /**
+       * Append a pre element to the body containing the given message
+       * as its text node. Used to display the results of the API call.
+       *
+       * @param {string} message Text to be placed in pre element.
+       */
+      function appendPre(message) {
+        var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
 
-.button:active,
-.button:focus,
-.button:hover {
-    background-color: #005580;
-    border-color: #005580;
-    color: #ffffff;
-    text-decoration: none;
-}
+      /**
+       * Print the names and majors of students in a sample spreadsheet:
+       * https://docs.google.com/spreadsheets/d/1mB1B8DOgX2n_BXucFjE3nxxPtQHbcz6PQm1CSq_CgIM/edit
+       */
+      function listMajors() {
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1mB1B8DOgX2n_BXucFjE3nxxPtQHbcz6PQm1CSq_CgIM',
+          range: 'Sheet1',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              // Print columns A and E, which correspond to indices 0 and 4.
+              appendPre(row[0] + ', ' + row[4]);
+            }
+          } else {
+            appendPre('No data found.');
+          }
+        }, function(response) {
+          appendPre('Error: ' + response.result.error.message);
+        });
+      }
 
-.button:active {
-    box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
-}
+    </script>
 
-/**
- * Errors
- */
-.error {
-    border-color: red;
-}
-
-.error-message {
-    color: red;
-    font-style: italic;
-    margin-bottom: 1em;
-}
-</style>
-
-<script src="{{URL::asset('js/registration/validation.js')}}"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  </body>
+</html>

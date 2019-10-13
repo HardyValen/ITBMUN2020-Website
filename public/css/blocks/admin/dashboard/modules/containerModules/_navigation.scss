@@ -68,11 +68,11 @@
                 @include fluidfontsize(1.0rem, 1.2rem);
             }
 
-            &:hover{
+            &:hover, &.active-nav:hover{
                 background-color: map-get($theme-colors, "primary-dark")
             }
 
-            &:active{
+            &:active, &.active-nav{
                 background-color: map-get($theme-colors, "primary-darker")
             }
         }
