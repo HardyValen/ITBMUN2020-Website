@@ -12,7 +12,7 @@
    font-weight: 700;
    @include fluidfontsize(1.8rem, 2.4rem);
    @include titilliumWeb();
-   color: map-get($theme-colors, "heading-1-main" )
+   color: map-get($theme-colors, "heading-main" )
 }
 
 @mixin paragraphMain(){

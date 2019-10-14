@@ -19,6 +19,7 @@ class CreateDelegationsTable extends Migration
             $table->string('headDelegate', 200);
             $table->string('contactNumber', 100);
             $table->string('lineId', 200)->nullable()->default(NULL);
+            $table->string('email', 200); 
             $table->timestamps();
         });
 

@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class delegationsDelegates extends Model
 {
+    protected $table = 'delegations_delegates';
+
     protected $fillable = [
         'delegationId',
         'fullName',
@@ -33,6 +35,6 @@ class delegationsDelegates extends Model
     protected $primaryKey = 'delegationDelegatesId';
 
     public function delegations(){
-        return $this->belongsTo('App\delegations');
+        return $this->belongsTo('App\delegations', 'delegationId');
     }
 }

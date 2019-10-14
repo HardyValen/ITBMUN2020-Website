@@ -32,8 +32,8 @@
                 <label for="foodRestrictions">Food Restrictions</label>
                 <input type="text" class='form-input' name="foodRestrictions" id="foodRestrictions" /><br>
 
-                <label for="accomodation">Accomodation</label>
-                <input type="text" class='form-input' name="accomodation" id="accomodation" /><br>
+                <label for="accommodation">accommodation</label>
+                <input type="text" class='form-input' name="accommodation" id="accommodation" /><br>
 
             <a class="button" onclick='backtoMain()'>Back</a>
             <a class="button" onclick="showPage('#form-individual-page-2')">next</a>
@@ -228,8 +228,8 @@ function setDelegates(x){
                 "<label for='foodRestrictions" + i + "'>Food Restrictions</label>" +
                 "<input type='text' class='form-input-delegation' name='foodRestrictions" + i + "' id='foodRestrictions" + i + "' /><br>" +
 
-                "<label for='accomodation" + i + "'>Accomodation</label>" +
-                "<input type='text' class='form-input-delegation' name='accomodation" + i + "' id='accomodation" + i + "' /><br>" +
+                "<label for='accommodation" + i + "'>accommodation</label>" +
+                "<input type='text' class='form-input-delegation' name='accommodation" + i + "' id='accommodation" + i + "' /><br>" +
 
                 tabsController(i, x)+
             "</div>";
@@ -309,8 +309,8 @@ function dictionary(x){
         case "foodRestrictions":
             e = "Food Restrictions";
             break;
-        case "accomodation":
-            e = "Accomodation";
+        case "accommodation":
+            e = "accommodation";
             break;
         case "contactNumber":
             e = "Contact Number";

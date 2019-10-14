@@ -281,8 +281,10 @@
 
         // If there are errrors, don't submit form and focus on first element with error
         if (hasErrors) {
+            error = dictionary(hasErrors.getAttribute("name"));
             event.preventDefault();
             hasErrors.focus();
+            alert(`You have an error on this field: ${error}`);
         }
 
         // Otherwise, let the form submit normally

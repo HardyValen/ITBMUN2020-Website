@@ -1,7 +1,7 @@
 @extends("admin.dashboard")
 
-@section('title', 'Admin Dashboard - ITBMUN 2020')
-@section('topbar', 'Admin Dashboard')
+@section('title', 'Announcement - ITBMUN 2020')
+@section('topbar', 'Announcement')
 
 @section("dashboardContent")
 <div class="content-landing">
