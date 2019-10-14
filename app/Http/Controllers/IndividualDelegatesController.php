@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\individualDelegates;
+use App\Mail\IndividualDelegateRegist;
 use Illuminate\Http\Request;
 
 class IndividualDelegatesController extends Controller
@@ -34,6 +35,8 @@ class IndividualDelegatesController extends Controller
             "doubleDelegateInstitution" => $request->doubleDelegateInstitution
         ]);
         $data->save();
+
+        \Mail::to($request->email)->send(new IndividualDelegateRegist);
 
         return view("landing.landingIndex");
     }
