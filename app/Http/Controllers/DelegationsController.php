@@ -14,6 +14,7 @@ class DelegationsController extends Controller
             "institution" => $request->institution,
             "contactNumber" => $request->contactNumber,
             "lineId" => $request->lineId,
+            "email" => $request->input('email1')
         ]);
         $delegation->save();
 
@@ -27,8 +28,10 @@ class DelegationsController extends Controller
                 "nationality" => $request->input('nationality'.$i), 
                 "idNumber" => $request->input('idNumber'.$i), 
                 "gender" => $request->input('gender'.$i), 
-                "medicalConditions" => $request->input('medicalConditions'.$i), 
-                "munExperiences" => $request->input('munExperiences'.$i), 
+                "medicalConditions" => $request->input('medicalConditions'.$i),
+                "foodRestrictions" => $request->input('foodRestrictions'.$i), 
+                "accommodation" => $request->input('accommodation'.$i),
+                "munExperiences" => $request->input('munExperiences'.$i),
                 "firstCouncilPreference" => $request->input('firstCouncilPreference'.$i), 
                 "firstCouncilCountryPreference" => $request->input('firstCouncilCountryPreference'.$i), 
                 "firstCouncilReason" => $request->input('firstCouncilReason'.$i), 
@@ -38,15 +41,12 @@ class DelegationsController extends Controller
                 "thirdCouncilPreference" => $request->input('thirdCouncilPreference'.$i), 
                 "thirdCouncilCountryPreference" => $request->input('thirdCouncilCountryPreference'.$i), 
                 "thirdCouncilReason" => $request->input('thirdCouncilReason'.$i), 
-                "foodRestrictions" => $request->input('foodRestrictions'.$i), 
-                "accommodation" => $request->input('accommodation'.$i),
                 "doubleDelegateName" => $request->input('doubleDelegateName'.$i),
                 "doubleDelegateInstitution" => $request->input('doubleDelegateInstitution'.$i)
             ]);
             $delegationDelegate->save();
         }
         
-
         return view("landing.landingIndex");
     }
 
@@ -57,7 +57,8 @@ class DelegationsController extends Controller
      */
     public function index()
     {
-        //
+        $delegations = Delegations::all();
+        return view("admin.dashboardContents.delegation")->with('delegations', $delegations);
     }
 
     /**

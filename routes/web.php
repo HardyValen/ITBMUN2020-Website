@@ -39,9 +39,11 @@ Route::get('/admin', 'AdminController@viewAdminLanding');
 Route::get('/admin-dashboard', 'AdminController@viewAdminDashboard');
 
 Route::get('/admin-delegate', 'IndividualDelegatesController@index');
-Route::post('/admin-delegate/{$delegate->id}', 'IndividualDelegatesController@show');
+Route::get('/admin-delegate/{$delegate->id}', 'IndividualDelegatesController@show');
 
-Route::get('/admin-delegation', 'AdminController@viewDelegationDashboard');
+Route::get('/admin-delegation', 'DelegationsController@index');
+Route::get('/admin-delegation/{$delegate->id}', 'DelegationsController@show');
+
 Route::get('/admin-announcement', 'AdminController@viewAnnouncementDashboard');
 Route::get('/admin-press', 'AdminController@viewPressDashboard');
 

@@ -35,6 +35,6 @@ class delegationsDelegates extends Model
     protected $primaryKey = 'delegationDelegatesId';
 
     public function delegations(){
-        return $this->belongsTo('App\delegations');
+        return $this->belongsTo('App\delegations', 'delegationId');
     }
 }
