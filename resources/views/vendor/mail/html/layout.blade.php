@@ -4,17 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body>
-    <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+<body style='background-color:#f8f8f8;'>
+    <table class="wrapper" style='background-color:#f8f8f8;' width="100%" cellpadding="0" cellspacing="0" role="presentation">
         <tr>
             <td align="center">
                 <table class="content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                     <!-- Email Body -->
                     <tr>
                         <td class="body" width="60%" cellpadding="0" cellspacing="0">
-                            <table class="inner-body" style='background-color:#f8f8f8;' align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
+                            <table class="inner-body" style='background-color:#ffffff;' align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
                                 <!-- Body content -->
                                 {{ $header ?? '' }}
+                                <tr>
+                                    <td class="content-cell" align="center">
+                                        <img style="width: 100%" src='https://lh3.googleusercontent.com/zBlphGpKwVVboPqYBFk_BoFrS2l1FfkU3-kVHDks1JkIaY9KSMM-7HziQYiB9XpP-iHDGdNGwWy7ekl-6lXpc8pkIfKJHiSsZPbGr_b7BrCusF7nP_3blN9GaC7ZDIh-EUQo4-iU0Q=w2400' />
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td class="content-cell">
                                         {{ Illuminate\Mail\Markdown::parse($slot) }}
