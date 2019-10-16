@@ -53,3 +53,5 @@ Route::post('/registration/individual-delegate', 'IndividualDelegatesController@
 Route::post('/registration/delegations', 'DelegationsController@sendDataDelegations');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/mail', 'PageRequestController@viewADT');

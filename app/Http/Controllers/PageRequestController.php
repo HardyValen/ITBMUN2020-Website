@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\IndividualDelegateRegist;
+use App\Mail\DelegationRegist;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 
@@ -83,6 +85,7 @@ class PageRequestController extends Controller
     }
 
     public function viewADT(){
-        return view("test.adt");
+        \Mail::to('hardyvalen@gmail.com')->send(new IndividualDelegateRegist);
+        return view("emails.individualDelegateRegist");
     }
 }
