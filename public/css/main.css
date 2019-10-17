@@ -4093,6 +4093,134 @@ footer p {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.registration-after {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), to(#000000)), url(../assets/main/introSection-bgWrapper.png);
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, #000000 100%), url(../assets/main/introSection-bgWrapper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.registration-after h1 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Lemon/Milk Regular';
+  text-align: center;
+}
+
+.registration-after h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-after h1 {
+    font-size: calc(2.8rem + 1.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-after h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .registration-after h1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .registration-after h1 {
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .registration-after h1 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.registration-after h1 {
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-after h1 {
+    letter-spacing: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-after h1 {
+    letter-spacing: 4.8px;
+    padding-left: 4.8px;
+  }
+}
+
+.registration-after p {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #C6C6C6;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.registration-after p {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-after p {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-after p {
+    font-size: 1.6rem;
+  }
+}
+
+.registration-after p {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-after p {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-after p {
+    font-size: 1.6rem;
+  }
+}
+
 /* # End of Registration Sections
  * ----------------------- */
 /* ===================================================================

@@ -50,7 +50,7 @@ class DelegationsController extends Controller
             \Mail::to($request->input('email'.$i))->send(new DelegationRegist($delegationDelegate));
         }
         
-        return view("registration.delegationRegistSent");
+        return view("registration.delegationRegistSent")->with('data', $request);
     }
 
     /**

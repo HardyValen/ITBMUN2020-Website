@@ -52,7 +52,6 @@ Route::get('/admin-press', 'AdminController@viewPressDashboard');
 
 Route::post('/registration/individual-delegate', 'IndividualDelegatesController@sendDataIndividualDelegate');
 Route::post('/registration/delegations', 'DelegationsController@sendDataDelegations');
-Route::get('/registAfterTest', 'PageRequestController@viewRegistSent');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

@@ -38,7 +38,7 @@ class IndividualDelegatesController extends Controller
 
         \Mail::to($request->email)->send(new IndividualDelegateRegist($data));
 
-        return view("registration.individualRegistSent");
+        return view("registration.individualRegistSent")->with('data', $request);
     }
 
     /**

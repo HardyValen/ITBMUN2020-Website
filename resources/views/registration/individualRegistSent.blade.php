@@ -17,11 +17,17 @@
 <!-- ## END of Topbar Navigation ========= -->
 
 <!-- ## 3. Content Section ========= -->
-    Hello World
+    <section class="registration-after">
+        <h1>Registration Success</h1>
+        <p>
+            Please check to your email for the confirmation:<br>
+            {{$data->email}}
+        </p>
+    </section>
 <!-- ## END of Content Navigation ========= -->
 
 <!-- ## 4. Footer Navigation ========= -->
-        @include('components.footer-main')
+    @include('components.footer-main')
 <!-- ## END of Footer Navigation ========= -->
 
 </main>
