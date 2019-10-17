@@ -166,12 +166,12 @@
                     </label>
                     <label>
                         <span class='radio-description'>UNEP</span>
-                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="UNEP" checked>
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="UNEP">
                         <span class='radio-button'></span>
                     </label>
                     <label>
                         <span class='radio-description'>DISEC</span>
-                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="DISEC">
+                        <input type="radio" class="individual-radio" name="thirdCouncilPreference" value="DISEC" checked>
                         <span class='radio-button'></span>
                     </label>
                     <label>

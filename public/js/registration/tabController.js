@@ -167,12 +167,12 @@ function setDelegates(x){
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
-                                "<span class='radio-description'>CRISIS</span>" +
+                                "<span class='radio-description'>Historical Crisis Council</span>" +
                                 "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='CRISIS'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
-                                "<span class='radio-description'>UNSC</span>" +
+                                "<span class='radio-description'>Futuristic UNSC</span>" +
                                 "<input type='radio' class='delegation-radio' name='firstCouncilPreference" + i + "' value='UNSC'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
@@ -214,12 +214,12 @@ function setDelegates(x){
                             "<p class='radio-header'>Second Council Preference</p>" +
                             "<label>" +
                                 "<span class='radio-description'>WHA</span>" +
-                                "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='WHA' checked>" +
+                                "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='WHA'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>UNEP</span>" +
-                                "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNEP'>" +
+                                "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNEP' checked>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
@@ -233,12 +233,12 @@ function setDelegates(x){
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
-                                "<span class='radio-description'>CRISIS</span>" +
+                                "<span class='radio-description'>Historical Crisis Council</span>" +
                                 "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='CRISIS'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
-                                "<span class='radio-description'>UNSC</span>" +
+                                "<span class='radio-description'>Futuristic UNSC</span>" +
                                 "<input type='radio' class='delegation-radio' name='secondCouncilPreference" + i + "' value='UNSC'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
@@ -281,7 +281,7 @@ function setDelegates(x){
                             "<p class='radio-header'>Third Council Preference</p>" +
                             "<label>" +
                                 "<span class='radio-description'>WHA</span>" +
-                                "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='WHA' checked>" +
+                                "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='WHA'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
@@ -291,7 +291,7 @@ function setDelegates(x){
                             "</label>" +
                             "<label>" +
                                 "<span class='radio-description'>DISEC</span>" +
-                                "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='DISEC'>" +
+                                "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='DISEC' checked>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
@@ -300,12 +300,12 @@ function setDelegates(x){
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
-                                "<span class='radio-description'>CRISIS</span>" +
+                                "<span class='radio-description'>Historical Crisis Council</span>" +
                                 "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='CRISIS'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +
                             "<label>" +
-                                "<span class='radio-description'>UNSC</span>" +
+                                "<span class='radio-description'>Futuristic UNSC</span>" +
                                 "<input type='radio' class='delegation-radio' name='thirdCouncilPreference" + i + "' value='UNSC'>" +
                                 "<span class='radio-button'></span>" +
                             "</label>" +

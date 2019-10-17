@@ -88,4 +88,8 @@ class PageRequestController extends Controller
         \Mail::to('hardyvalen@gmail.com')->send(new IndividualDelegateRegist);
         return view("emails.individualDelegateRegist");
     }
+
+    public function viewRegistSent(){
+        return view("registration.individualRegistSent");
+    }
 }
