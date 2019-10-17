@@ -27,6 +27,20 @@
                                         {{ $subcopy ?? '' }}
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td class="content-cell" align="center">
+                                        <big><b>Thank you for your cooperation</b></big><br>
+                                        <b>We sincerely hope to welcome you in Bandung!</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-cell">
+                                        <p>
+                                            Best regards,<br>Andiva Liesty Amelia<br>Under-Secretary-General of Delegates' Affair and Accommodations<br>ITBMUN 2020<br>
+                                            <a href="tel:+6281269630500">Telp: +62 812 6963 0500</a>
+                                        </p>
+                                    </td>
+                                </tr>
                                 {{ $footer ?? '' }}
                             </table>
                         </td>

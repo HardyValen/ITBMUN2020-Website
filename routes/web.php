@@ -32,6 +32,7 @@ Route::get('/registration', 'PageRequestController@viewRegistrationLanding');
 // Route::get('/test', 'PageRequestController@viewTest');
 // Route::get('/validator', 'PageRequestController@viewValidator');
 // Route::get('/adt', 'PageRequestController@viewADT');
+// Route::get('/mail', 'PageRequestController@viewADT');
 Route::get('/admin', 'AdminController@viewAdminLanding');
 
 
@@ -51,7 +52,8 @@ Route::get('/admin-press', 'AdminController@viewPressDashboard');
 
 Route::post('/registration/individual-delegate', 'IndividualDelegatesController@sendDataIndividualDelegate');
 Route::post('/registration/delegations', 'DelegationsController@sendDataDelegations');
+Route::get('/registAfterTest', 'PageRequestController@viewRegistSent');
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/mail', 'PageRequestController@viewADT');

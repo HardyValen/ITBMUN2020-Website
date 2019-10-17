@@ -36,9 +36,9 @@ class IndividualDelegatesController extends Controller
         ]);
         $data->save();
 
-        \Mail::to($request->email)->send(new IndividualDelegateRegist);
+        \Mail::to($request->email)->send(new IndividualDelegateRegist($data));
 
-        return view("landing.landingIndex");
+        return view("registration.individualRegistSent");
     }
 
     /**

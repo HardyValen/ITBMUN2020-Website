@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\delegations;
 use App\delegationsDelegates;
+use App\Mail\DelegationRegist;
 use Illuminate\Http\Request;
 
 class DelegationsController extends Controller
@@ -45,9 +46,11 @@ class DelegationsController extends Controller
                 "doubleDelegateInstitution" => $request->input('doubleDelegateInstitution'.$i)
             ]);
             $delegationDelegate->save();
+
+            \Mail::to($request->input('email'.$i))->send(new DelegationRegist($delegationDelegate));
         }
         
-        return view("landing.landingIndex");
+        return view("registration.delegationRegistSent");
     }
 
     /**

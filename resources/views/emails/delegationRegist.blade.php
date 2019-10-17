@@ -1,23 +1,47 @@
+@php ($delegates = App\Delegations::find($data->delegationId)->delegationsDelegates()->get())
+
 @component('mail::message')
-## Dear, Hardy Valenthio Amansyah
+## Dear {{$data->fullName}},
 
 We are very pleased to welcome you to ITBMUN 2020! We have accepted your
 registration with the following summary:
 
-<big><b>1. Personal Information</b></big>
-    * __Name:__ Hardy Valenthio Amansyah
-    * __Institution:__ Institut Teknologi Bandung
+<big><b>1. Delegation</b></big>
+@if($data->fullName == $data->delegations->headDelegate)
+    * __Head Delegate:__ {{$data->delegations->headDelegate}}
+@else
+    * __Delegate Name:__ {{$data->fullName}}
+    * __Head Delegate:__ {{$data->delegations->headDelegate}}
+@endif
 
 <big><b>2. Council Preferences</b></big>
-    * __1st:__ UNCA (Indonesia, Malaysia, Singapore)
-    * __2nd:__ WHA (Thailand, Laos, Myanmar)
-    * __3nd:__ DISEC (Brunei, Timor Leste, Vietnam)
+    * __1st:__ {{$data->firstCouncilPreference}} ({{$data->firstCouncilCountryPreference}})
+    * __2nd:__ {{$data->secondCouncilPreference}} ({{$data->secondCouncilCountryPreference}})
+    * __3nd:__ {{$data->thirdCouncilPreference}} ({{$data->thirdCouncilCountryPreference}})
 
-<big><b>3. Package:</b> Full Accommodation</big>
+<big><b>3. Package:</b> {{$data->accommodation}}</big>
 @component('mail::panel')
-<b>International Delegate:</b> US$112,90<br>
-<b>National Delegate:</b> Rp1.490.000,00
+@if($data->accommodation == 'Full Accommodation')
+<b>International Delegate:</b> US$122,00<br>
+<b>National Delegate:</b> Rp1.660.000,00
+@else
+<b>International Delegate:</b> US$65,00<br>
+<b>National Delegate:</b> Rp865.000,00
+@endif
+
 @endcomponent
+
+@if(isset($data->doubleDelegateName) && isset($data->doubleDelegateInstitution))
+<big><b>4. Double Delegate</b></big>
+
+<b>Delegate Name:</b> {{$data->doubleDelegateName}}<br>
+<b>Delegate Institution:</b> {{$data->doubleDelegateInstitution}}
+@endif
+
+Should there be any changes to the mentioned details, please report to the Delegates’ Affair
+and Accommodation Team through itbmodelunitednations@gmail.com with the subject :
+“[Your Full Name]_Info Change_DAA”.
+
 ---
 
 ## Payment Mechanism
@@ -28,9 +52,9 @@ Please proceed to fulfill your payment to the following account
 
 | <big><b>Account Info</b></big>        | <big><b>Values</b></big>                                                                                                                                                        |
 |:------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <small><b>Account No</b></small>      | <small>7772148677</small>                                                                                                                                                       |
-| <small><b>Account Holder</b></small>  | <small>Josephine Emmanuel</small>                                                                                                                                               |
-| <small><b>Bank Issuer</b></small>     | <small>Bank Central Asia (BCA) Menara BCA,<br>Grand Indonesia MH Thamrin St. No. 1<br>Jakarta, Indonesia 10310<br><b>(p)</b> (021) 235 88000 <b>(f)</b> (021) 235 88300 </small>|
+| <small style='padding-right: 8px'><b>Account No</b></small>      | <small style='padding-right: 8px'>7772148677</small>                                                                                                                                                       |
+| <small style='padding-right: 8px'><b>Account Holder</b></small>  | <small style='padding-right: 8px'>Josephine Emmanuel</small>                                                                                                                                               |
+| <small style='padding-right: 8px'><b>Bank Issuer</b></small>     | <small style='padding-right: 8px'>Bank Central Asia (BCA) Menara BCA,<br>Grand Indonesia MH Thamrin St. No. 1<br>Jakarta, Indonesia 10310<br><b>(p)</b> (021) 235 88000 <b>(f)</b> (021) 235 88300 </small>|
 
 @endcomponent
 
@@ -44,7 +68,5 @@ Please note that there’s no refund policy after the payment has been made. For
 substitution matters please contact our email by the following format to receive substitution
 form : “[Your Full Name]_Request To Subsitute_DAA”.
 
-Thanks,<br>
-{{ config('app.name') }}
-
+---
 @endcomponent

@@ -2,6 +2,8 @@
 
 namespace App\Mail;
 
+use App\Delegations;
+use App\DelegationsDelegates;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -11,14 +13,11 @@ class DelegationRegist extends Mailable
 {
     use Queueable, SerializesModels;
 
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $data;
+
+    public function __construct(DelegationsDelegates $data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -28,6 +27,7 @@ class DelegationRegist extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.delegationRegist');
+        return $this->subject('ITBMUN 2020 Registration Confirmation')
+            ->markdown('emails.delegationRegist');
     }
 }
