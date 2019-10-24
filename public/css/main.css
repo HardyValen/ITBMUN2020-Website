@@ -1477,6 +1477,220 @@ footer p {
   background-size: cover;
 }
 
+.main-registration {
+  width: 100%;
+  min-height: 50%;
+}
+
+.main-registration {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-registration {
+    margin-bottom: calc(3rem + 5.5 * ((100vw - 32rem) / (96 - 32)));
+    margin-top: calc(3rem + 5.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-registration {
+    margin-top: 8.5rem;
+    margin-bottom: 8.5rem;
+  }
+}
+
+.main-registration h1 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-registration h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-registration h1 {
+    font-size: calc(2.8rem + 1.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-registration h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main-registration h1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .main-registration h1 {
+    padding-left: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + -2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .main-registration h1 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.main-registration .main-registration-wrapper {
+  width: 100%;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 960px) {
+  .main-registration .main-registration-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main-registration .main-registration-wrapper .main-registration-card {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+  .main-registration .main-registration-wrapper .main-registration-card {
+    height: 10rem;
+  }
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+    padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register, .main-registration .main-registration-wrapper .main-registration-card .bg-information, .main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register h2, .main-registration .main-registration-wrapper .main-registration-card .bg-information h2, .main-registration .main-registration-wrapper .main-registration-card .bg-policy h2 {
+  font-weight: 700;
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register h2, .main-registration .main-registration-wrapper .main-registration-card .bg-information h2, .main-registration .main-registration-wrapper .main-registration-card .bg-policy h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register h2, .main-registration .main-registration-wrapper .main-registration-card .bg-information h2, .main-registration .main-registration-wrapper .main-registration-card .bg-policy h2 {
+    font-size: calc(2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register h2, .main-registration .main-registration-wrapper .main-registration-card .bg-information h2, .main-registration .main-registration-wrapper .main-registration-card .bg-policy h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register:hover, .main-registration .main-registration-wrapper .main-registration-card .bg-information:hover, .main-registration .main-registration-wrapper .main-registration-card .bg-policy:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #EA5A5A;
+}
+
+@media screen and (max-width: 960px) {
+  .main-registration .main-registration-wrapper .main-registration-card .bg-register:hover, .main-registration .main-registration-wrapper .main-registration-card .bg-information:hover, .main-registration .main-registration-wrapper .main-registration-card .bg-policy:hover {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-register {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/main/registration/registration.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/main/registration/registration.jpg");
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-information {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/main/registration/information.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/main/registration/information.jpg");
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-registration .main-registration-wrapper .main-registration-card .bg-policy {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, color-stop(25.19%, #000000), color-stop(63.39%, rgba(20, 9, 25, 0.75)), color-stop(80.76%, rgba(50, 23, 64, 0.3))), url("../assets/main/registration/policy.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90deg, #000000 25.19%, rgba(20, 9, 25, 0.75) 63.39%, rgba(50, 23, 64, 0.3) 80.76%), url("../assets/main/registration/policy.jpg");
+  background-position-y: 47%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-venue {
   width: 100%;
   min-height: 50%;
@@ -1582,8 +1796,8 @@ footer p {
 
 .main-venue .main-venue-wrapper .main-venue-image {
   width: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(../assets/main/venue.jpg);
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%, #000000 100%), url(../assets/main/venue.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%, rgba(91, 69, 102, 0.4)), to(#000000)), url(../assets/main/venue.jpg);
+  background: linear-gradient(180deg, #000000 0%, rgba(91, 69, 102, 0.4) 50%, #000000 100%), url(../assets/main/venue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 80%;
@@ -4218,6 +4432,181 @@ footer p {
 @media screen and (min-width: 960px) {
   .registration-after p {
     font-size: 1.6rem;
+  }
+}
+
+.registration-info {
+  width: 100%;
+  min-height: 60%;
+  width: 100%;
+}
+
+.registration-info {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-info {
+    padding-bottom: calc(3rem + 5.5 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 5.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-info {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+  }
+}
+
+.registration-info {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-info {
+    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-info {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.registration-info h1 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.registration-info h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-info h1 {
+    font-size: calc(2.4rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-info h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.registration-info h2 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  color: #F6F6F6;
+}
+
+.registration-info h2 {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-info h2 {
+    font-size: calc(1.8rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-info h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.registration-info h3 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  color: #F6F6F6;
+}
+
+.registration-info h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-info h3 {
+    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-info h3 {
+    font-size: 2rem;
+  }
+}
+
+.registration-info p, .registration-info li {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #C6C6C6;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.registration-info p, .registration-info li {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-info p, .registration-info li {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-info p, .registration-info li {
+    font-size: 1.6rem;
+  }
+}
+
+.registration-info p a, .registration-info li a {
+  color: #BF8CD9;
+  font-weight: 700;
+}
+
+.registration-info p a:hover, .registration-info li a:hover {
+  color: #5B4566;
+}
+
+.registration-info li {
+  margin-bottom: 0rem;
+}
+
+.registration-info .info-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 960px) {
+  .registration-info .info-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.registration-info .info-row .info-column {
+  width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+  .registration-info .info-row .info-column {
+    width: 100%;
   }
 }
 

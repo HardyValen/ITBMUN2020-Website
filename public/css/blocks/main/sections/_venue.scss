@@ -26,7 +26,7 @@
         .main-venue-image{
             width:50%;
             @include fluidheight(15rem, 25rem);
-            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%, #000000 100%), url(../assets/main/venue.jpg);                
+            background: linear-gradient(180deg, #000000 0%, rgba(91, 69, 102, 0.4) 50%, #000000 100%), url(../assets/main/venue.jpg);                
             background-repeat: no-repeat;
             background-size: cover;
             background-position-y: 80%;
