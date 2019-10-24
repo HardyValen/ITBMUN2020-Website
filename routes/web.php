@@ -28,6 +28,8 @@ Route::get('/councils/CRISIS', 'PageRequestController@viewCouncilsCRISIS');
 Route::get('/councils/UNSC', 'PageRequestController@viewCouncilsUNSC');
 Route::get('/councils/UNCA', 'PageRequestController@viewCouncilsUNCA');
 Route::get('/registration', 'PageRequestController@viewRegistrationLanding');
+Route::get('/registration/information', 'PageRequestController@viewRegistrationInformation');
+Route::get('/registration/policy', 'PageRequestController@viewRegistrationPolicy');
 
 // Route::get('/test', 'PageRequestController@viewTest');
 // Route::get('/validator', 'PageRequestController@viewValidator');

@@ -72,7 +72,14 @@ class PageRequestController extends Controller
     // ## -- 13. View Registration Page
     public function viewRegistrationLanding(){
         return view("registration.registrationLanding");
-        // return redirect('https://bit.ly/ITBMUN2020Regist');
+    }
+
+    public function viewRegistrationInformation(){
+        return view("registration.registrationInformation");
+    }
+
+    public function viewRegistrationPolicy(){
+        return view("registration.registrationPolicy");
     }
 
     // ## -- 14. View test Page

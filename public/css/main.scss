@@ -112,13 +112,16 @@ h1 {
 // -- 2. Remark Section
     @import "blocks/main/sections/remark";
 
-// -- 3. Date & Venue Section
+// -- 3. Registration Section
+    @import "blocks/main/sections/registration";
+
+// -- 4. Date & Venue Section
     @import "blocks/main/sections/venue";
 
-// -- 4. Councils Section
+// -- 5. Councils Section
     @import "blocks/main/sections/councils";
 
-// -- 5. Supports Section
+// -- 6. Supports Section
     @import "blocks/main/sections/supports";
 
 /* # End of Main Sections
@@ -175,6 +178,9 @@ h1 {
 
 // -- 3. After Registration Section
     @import "blocks/registration/after";
+
+// -- 4. Registration Information
+    @import "blocks/registration/info";
 
 /* # End of Registration Sections
  * ----------------------- */

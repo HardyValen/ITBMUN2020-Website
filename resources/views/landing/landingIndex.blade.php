@@ -70,6 +70,35 @@
         </div>
     </section>
 
+    <section class='main-registration'>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-12">
+                <h1>
+                    REGISTRATION<br>
+                    &mdash;
+                </h1>
+                    <div class="main-registration-wrapper">
+                        <a href='/registration' class="main-registration-card">
+                            <div class="bg-register">
+                                <h2>REGISTER&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                            </div>
+                        </a>
+                        <a href='/registration/information' class="main-registration-card">
+                            <div class="bg-information">
+                                <h2>INFORMATION&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                            </div>
+                        </a>
+                        <a href='/registration/policy' class="main-registration-card">
+                            <div class="bg-policy">
+                                <h2>POLICIES&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                            </div>
+                        </a>
+                    </div>
+                </h1>
+            </div>
+        </div>
+    </section>
+
     <section class='main-venue'>
         <div class="row">
             <div class="col-md-8 offset-md-2 col-12">
@@ -183,7 +212,7 @@
         </section>
 <!-- ## END of Main Councils Section ========= -->
 
-<!-- ## 7. Main Supports Section ========= 
+<!-- ## 7. Main Supports Section =========  
         <section class='main-supports'>
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-12">
@@ -212,7 +241,7 @@
                 </div>
             </div>
         </section>
-<--- ## END of Main Supports Section ========= -->
+     ## END of Main Supports Section ========= -->
 
 <!-- ## 8. Footer Navigation ========= -->
         @include('components.footer-main')
