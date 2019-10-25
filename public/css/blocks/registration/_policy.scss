@@ -1,0 +1,37 @@
+.registration-policy{
+    @include sectionProperties(60%);
+    width: 100%;
+    @include fluidpaddingy(3.0rem, 8.5rem);
+    @include fluidpaddingx(2rem, 3rem);
+
+    h1{
+        font-weight: 700;
+        @include titilliumWeb();
+        @include fluidfontsize(2.4rem, 3.6rem);
+    }
+
+    h2{
+        @include h2main();
+    }
+
+    h3{
+        @include h3main();
+    }
+
+    p, li{
+        @include paragraphMain();
+
+        a {
+            color: map-get($theme-colors, "primary-light");
+            font-weight: 700;
+
+            &:hover{
+                color: map-get($theme-colors, "primary");
+            }
+        }
+    }
+
+    li{
+        margin-bottom: 0rem;
+    }
+}
