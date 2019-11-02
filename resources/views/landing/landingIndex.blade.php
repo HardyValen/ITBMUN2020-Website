@@ -88,7 +88,7 @@
                                 <h2>INFORMATION&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
                             </div>
                         </a>
-                        <a href='/registration/policy' class="main-registration-card">
+                        <a href='https://drive.google.com/open?id=1_gZ1UqaqHwKJYBUPHtkatmQymDwxWo_N' class="main-registration-card">
                             <div class="bg-policy">
                                 <h2>POLICIES&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
                             </div>

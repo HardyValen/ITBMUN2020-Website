@@ -36,6 +36,9 @@ Should there be any changes to the mentioned details, please report to the Deleg
 and Accommodation Team through itbmodelunitednations@gmail.com with the subject :
 “[Your Full Name]_Info Change_DAA”.
 
+
+You should check this conference policy beforehand.
+<a href="https://drive.google.com/file/d/1_gZ1UqaqHwKJYBUPHtkatmQymDwxWo_N/view?usp=sharing">Conference Policy</a>
 ---
 
 ## Payment Mechanism
