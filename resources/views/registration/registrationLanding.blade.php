@@ -26,7 +26,8 @@
     </section>
 
     <section class="registration-body" id='body'>
-        <div class="registration-wrapper">
+        <h2>Registration is now closed</h2>
+        <!-- <div class="registration-wrapper">
 
             <div class="form-page is-active registration-card-wrapper" id='form-landing'>
                 <a class='registration-form__delegate-choice delegate' onclick="individualDelegate()">
@@ -52,7 +53,7 @@
                 @include('registration.pages.delegation-page-3')
                 @include('registration.pages.delegation-page-4')
             </form>
-        </div>
+        </div> -->
     </section>
 <!-- ## END of Sidebar Navigation ========= -->
 
