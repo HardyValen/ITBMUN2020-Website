@@ -26,14 +26,13 @@
     </section>
 
     <section class="registration-body" id='body'>
-        <h2>Registration is now closed</h2>
-        <!-- <div class="registration-wrapper">
+        <div class="registration-wrapper">
 
             <div class="form-page is-active registration-card-wrapper" id='form-landing'>
-                <a class='registration-form__delegate-choice delegate' onclick="individualDelegate()">
+                <a class='registration-form__delegate-choice delegate' href="https://form.jotform.me/93293074744463">
                     <h2>INDIVIDUAL DELEGATE</h2>
                 </a>
-                <a class='registration-form__delegate-choice delegation' onclick="delegation()">
+                <a class='registration-form__delegate-choice delegation' href="https://form.jotform.me/93302695827465">
                     <h2>DELEGATION</h2>
                 </a>
             </div>
@@ -53,7 +52,7 @@
                 @include('registration.pages.delegation-page-3')
                 @include('registration.pages.delegation-page-4')
             </form>
-        </div> -->
+        </div>
     </section>
 <!-- ## END of Sidebar Navigation ========= -->
 
