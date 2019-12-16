@@ -87,6 +87,10 @@ class PageRequestController extends Controller
         return view("test.database");
     }
 
+    public function viewBlogTest() {
+        return view("test.blog");
+    }
+
     public function viewValidator(){
         return view("test.validator");
     }

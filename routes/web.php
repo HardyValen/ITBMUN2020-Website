@@ -32,6 +32,7 @@ Route::get('/registration/information', 'PageRequestController@viewRegistrationI
 Route::get('/registration/policy', 'PageRequestController@viewRegistrationPolicy');
 
 // Route::get('/test', 'PageRequestController@viewTest');
+Route::get('/blog', 'PageRequestController@viewBlogTest');
 // Route::get('/validator', 'PageRequestController@viewValidator');
 // Route::get('/adt', 'PageRequestController@viewADT');
 // Route::get('/mail', 'PageRequestController@viewADT');

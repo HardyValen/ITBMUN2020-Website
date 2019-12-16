@@ -32,6 +32,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- END of Bootstrap CDN -->
 
+    <!-- Medium WYSIWYG Editor -->
+    <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+    <!-- End of Medium WYSIWYG Editor -->
+
     <!-- FontAwesome CDN -->
     <script src="https://kit.fontawesome.com/9ef1e16e2c.js"></script>
     <!-- END of FontAwesome CDN -->
