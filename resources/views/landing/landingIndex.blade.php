@@ -77,23 +77,23 @@
                     REGISTRATION<br>
                     &mdash;
                 </h1>
-                    <div class="main-registration-wrapper">
-                        <a href='/registration' class="main-registration-card">
-                            <div class="bg-register">
-                                <h2>REGISTER&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                            </div>
-                        </a>
-                        <a href='/registration/information' class="main-registration-card">
-                            <div class="bg-information">
-                                <h2>INFORMATION&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                            </div>
-                        </a>
-                        <a href='/registration/policy' class="main-registration-card">
-                            <div class="bg-policy">
-                                <h2>POLICIES&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
-                            </div>
-                        </a>
-                    </div>
+                <div class="main-registration-wrapper">
+                    <a href='/registration' class="main-registration-card">
+                        <div class="bg-register">
+                            <h2>REGISTER&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                        </div>
+                    </a>
+                    <a href='/registration/information' class="main-registration-card">
+                        <div class="bg-information">
+                            <h2>INFORMATION&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                        </div>
+                    </a>
+                    <a href='/registration/policy' class="main-registration-card">
+                        <div class="bg-policy">
+                            <h2>POLICIES&emsp;<br><i class="fas fa-long-arrow-alt-right"></i></h2>
+                        </div>
+                    </a>
+                </div>
                 </h1>
             </div>
         </div>
@@ -116,7 +116,7 @@
                         <div>
                             <p>Strategically placed in the heart of the city, Courtyard Bandung Dago offers contemporary accommodation in a vibrant travel destination.</p>
                             <p>Jl. Ir. H. Juanda No.33, Tamansari, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40116</p>
-                            <a href="https://g.page/CourtyardBandungDago?share" class='button-white-transparent' target="_blank">See on Maps</a>
+                            <a href="/landing/hotel" class='button-white-transparent' target="_blank">See on Maps</a>
                         </div>
                     </div>
                 </div>

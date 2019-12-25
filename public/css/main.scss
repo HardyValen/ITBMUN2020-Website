@@ -124,6 +124,11 @@ h1 {
 // -- 6. Supports Section
     @import "blocks/main/sections/supports";
 
+// -- 7. Hotel Section
+    @import "blocks/main/hotel/hero";
+    @import "blocks/main/hotel/blurb";
+    @import "blocks/main/hotel/facilities";
+
 /* # End of Main Sections
  * ----------------------- */
 

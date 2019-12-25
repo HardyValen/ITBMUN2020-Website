@@ -103,4 +103,8 @@ class PageRequestController extends Controller
     public function viewRegistSent(){
         return view("registration.individualRegistSent");
     }
+
+    public function viewHotelPage(){
+        return view("landing.hotel");
+    }
 }
