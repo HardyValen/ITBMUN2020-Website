@@ -21,6 +21,8 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "node-sass": "^4.13.0"
+        "node-sass": "^4.13.0",
+        "medium-editor-insert-plugin": "^2.5.1",
+        "medium-editor-markdown": "^3.0.1"
     }
 }
