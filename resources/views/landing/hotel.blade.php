@@ -98,7 +98,7 @@
                 <h1>DELUXE TWIN</h1>
                 <div class="guest-room-desc">
                     <p>A room perfect for conference and business, which provides two beds for all the space and comfort you deserve</p>
-                    <a href="https://www.marriott.com/reservation/rateListMenu.mi?defaultTab=standard" class="button-white-transparent">MORE INFO</a>
+                    <a href="https://www.marriott.com/hotels/hotel-rooms/bdocy-courtyard-bandung-dago/" class="button-white-transparent">MORE INFO</a>
                 </div>
             </div>
 
