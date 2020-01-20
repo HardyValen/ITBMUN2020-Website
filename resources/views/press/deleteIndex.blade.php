@@ -67,7 +67,7 @@ Delete Post Index - ITBMUN Admin Dashboard
                         @foreach ($posts as $post)
                             <div class='row'>
                                 <div class="col-12">
-                                    <a href="/home/delete/{{$post->id}}" style="text-decoration: none !important" data-toggle="modal" data-target="#alertModal">
+                                    <a style="text-decoration: none !important" data-toggle="modal" data-target="#alertModal" onclick="modalPopup('{{$post->title}}', {!!$post->id!!})">
                                         <div class="card buttoncard shadow-sm p-3 my-2">
                                             <h6>{{$post->title}}</h6>
                                         <small class="text-secondary">Created: {{$post->created_at}}</small>
@@ -75,28 +75,7 @@ Delete Post Index - ITBMUN Admin Dashboard
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-
-                            <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Delete "{{$post->title}}"</h5>
-                                            <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Are you sure want to delete this post? <b>You cannot undo this operation.</b>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a class="btn btn-secondary" data-dismiss="modal">Cancel</a>
-                                            <a class="btn btn-link" href="/home/delete/{{$post->id}}">I'm sure</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                            </div>                            
                         @endforeach
 
                         <div class="row">
@@ -114,4 +93,37 @@ Delete Post Index - ITBMUN Admin Dashboard
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure want to delete this post? <b>You cannot undo this operation.</b>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+                <a class="btn btn-link" href="">I'm sure</a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('script')
+    <script>
+        function modalPopup(title, id){
+            var modalTitle = "Delete " + title;
+            var modalLink = "/home/delete/" + id;
+
+            document.querySelector(".modal-title").innerHTML = modalTitle;
+            document.querySelector(".modal-footer a.btn-link").href = modalLink;
+        }
+        
+    </script>
 @endsection
