@@ -16,6 +16,7 @@ class CreatePressTable extends Migration
         Schema::create('press', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
+            $table->string('imgurl', 4096)->nullable();
             $table->text('body');
             $table->timestamps();
         });

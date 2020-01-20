@@ -19,17 +19,17 @@ class AdminController extends Controller
         return view("admin.dashboardContents.landing");
     }
 
-    // ## -- 4. View Delegation Dashboard
+    // ## -- 3. View Delegation Dashboard
     public function viewDelegationDashboard(){
         return view("admin.dashboardContents.delegation");
     }
 
-    // ## -- 5. View Announcement Dashboard
+    // ## -- 4. View Announcement Dashboard
     public function viewAnnouncementDashboard(){
         return view("admin.dashboardContents.announcement");
     }
 
-    // ## -- 6. View Press Dashboard
+    // ## -- 5. View Press Dashboard
     public function viewPressDashboard(){
         return view("admin.dashboardContents.press");
     }

@@ -3,146 +3,87 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\individualDelegates;
-use App\delegations;
-use App\delegationsDelegates;
+use App\Press;
 
-class PressController extends BaseController {
- 
-    // /**
-    //  * Post Repository
-    //  *
-    //  * @var Post
-    //  */
-    // protected $post;
- 
-    // public function __construct(Post $post)
-    // {
-    //     $this-&gt;post = $post;
-    // }
- 
-    // /**
-    //  * Display a listing of the resource.
-    //  *
-    //  * @return Response
-    //  */
-    // public function index()
-    // {
-    //     $posts = $this-&gt;post-&gt;all();
- 
-    //     return View::make('posts.index', compact('posts'));
-    // }
- 
-    // /**
-    //  * Show the form for creating a new resource.
-    //  *
-    //  * @return Response
-    //  */
-    // public function create()
-    // {
-    //     return View::make('posts.create');
-    // }
- 
-    // /**
-    //  * Store a newly created resource in storage.
-    //  *
-    //  * @return Response
-    //  */
-    // public function store()
-    // {
-    //     $input = Input::all();
-    //     $validation = Validator::make($input, Post::$rules);
- 
-    //     if ($validation-&gt;passes())
-    //     {
-    //         $this-&gt;post-&gt;create($input);
-    //         return Response::json(array('success' =&gt; true, 'errors' =&gt; '', 'message' =&gt; 'Post created successfully.'));
-    //     }
-    //     return Response::json(array('success' =&gt; false, 'errors' =&gt; $validation, 'message' =&gt; 'All fields are required.'));
-    // }
- 
-    // /**
-    //  * Display the specified resource.
-    //  *
-    //  * @param  int  $id
-    //  * @return Response
-    //  */
-    // public function show($id)
-    // {
-    //     $post = $this-&gt;post-&gt;findOrFail($id);
- 
-    //     return View::make('posts.show', compact('post'));
-    // }
- 
-    // /**
-    //  * Show the form for editing the specified resource.
-    //  *
-    //  * @param  int  $id
-    //  * @return Response
-    //  */
-    // public function edit($id)
-    // {
-    //     $post = $this-&gt;post-&gt;find($id);
- 
-    //     if (is_null($post))
-    //     {
-    //         return Redirect::route('posts.index');
-    //     }
- 
-    //     return View::make('posts.edit', compact('post'));
-    // }
- 
-    // /**
-    //  * Update the specified resource in storage.
-    //  *
-    //  * @param  int  $id
-    //  * @return Response
-    //  */
-    // public function update($id)
-    // {
-    //     $input = array_except(Input::all(), '_method');
-    //     $validation = Validator::make($input, Post::$rules);
- 
-    //     if ($validation-&gt;passes())
-    //     {
-    //         $post = Post::find($id);
-    //         $post-&gt;update($input);
- 
-    //         return Response::json(array('success' =&gt; true, 'errors' =&gt; '', 'message' =&gt; 'Post updated successfully.'));
-    //     }
- 
-    //     return Response::json(array('success' =&gt; false, 'errors' =&gt; $validation, 'message' =&gt; 'All fields are required.'));
-    // }
- 
-    // /**
-    //  * Remove the specified resource from storage.
-    //  *
-    //  * @param  int  $id
-    //  * @return Response
-    //  */
-    // public function destroy($id)
-    // {
-    //     $this-&gt;post-&gt;find($id)-&gt;delete();
- 
-    //     return Redirect::route('posts.index');
-    // }
- 
-    // public function upload()
-    // {
-    //     $file = Input::file('file');
-    //     $input = array('image' =&gt; $file);
-    //     $rules = array(
-    //         'image' =&gt; 'image'
-    //     );
-    //     $validator = Validator::make($input, $rules);
-    //     if ( $validator-&gt;fails()) {
-    //         return Response::json(array('success' =&gt; false, 'errors' =&gt; $validator-&gt;getMessageBag()-&gt;toArray()));
-    //     }
- 
-    //     $fileName = time() . '-' . $file-&gt;getClientOriginalName();
-    //     $destination = public_path() . '/uploads/';
-    //     $file-&gt;move($destination, $fileName);
- 
-    //     echo url('/uploads/'. $fileName);
-    // }
+class PressController extends Controller
+{
+    protected $redirectTo = '/login';
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        $posts = Press::orderBy('updated_at', 'desc')->paginate(4)->onEachSide(1);
+        return view("press.updateIndex")->with('posts', $posts);
+    }
+
+    public function updateIndex()
+    {
+        $posts = Press::orderBy('updated_at', 'desc')->paginate(4)->onEachSide(1);
+        return view("press.updateIndex")->with('posts', $posts);
+    }
+
+    public function deleteIndex()
+    {
+        $posts = Press::orderBy('updated_at', 'desc')->paginate(4)->onEachSide(1);
+        return view("press.deleteIndex")->with('posts', $posts);
+    }
+
+    public function create()
+    {
+        return view('press.create');
+    }
+
+    public function store(Request $request)
+    {
+        $imgurl = isset($request->imgurl) ? $request->imgurl : 'https://drive.google.com/uc?id=1S_mT3ne6FW3mpA9ubpqpNqqdfHSV86Th';
+        $data = new Press([
+            'title' => $request->title,
+            'body' => $request->editor1,
+            'imgurl' => $imgurl,
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        $data->save();
+
+        $request->session()->flash('status', "{$request->title} successfully posted!");
+        return view('home');
+    }
+
+    public function show($id)
+    {
+        $post = Press::find($id);
+        return view("press.updatePost")->with('post', $post);
+    }
+
+    public function edit($id)
+    {
+        $post = Press::find($id);
+        return view("press.updatePost")->with('post', $post);
+    }
+
+    public function update(Request $request, $id)
+    {        
+        $imgurl = isset($request->imgurl) ? $request->imgurl : 'https://drive.google.com/uc?id=1S_mT3ne6FW3mpA9ubpqpNqqdfHSV86Th';
+        $data = Press::find($id);
+        $dataUpdate = $data->update([
+                'title' => $request->title,
+                'body' => $request->editor1,
+                'imgurl' => $imgurl,
+                'created_at' => $data->created_at,
+                'updated_at' => date('Y-m-d H:i:s')
+        ]);
+
+        $request->session()->flash('status', "{$request->title} successfully updated!");
+        return redirect('/home/update');   
+    }
+
+    public function delete(Request $request, $id)
+    {
+        $title = Press::find($id)->title;
+        Press::destroy($id);
+        return redirect("/home/delete")->with('status', "{$title} has been deleted successfully.");
+    }
 }

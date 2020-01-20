@@ -22,7 +22,7 @@
     <title>@yield('title')</title>
 
     <!-- Metadata -->
-    <meta name="description" content="ITB MUN once again calls upon you to bridge this multipolar world in which we live in, are you up for the challange, delegate?">
+    <meta name="description" content="ITBMUN once again calls upon you to bridge this multipolar world in which we live in, are you up for the challange, delegate?">
     <!-- END of Metadata -->
 
     <!-- Bootstrap CDN -->
