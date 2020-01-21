@@ -28,7 +28,8 @@ Editing {{$post->title}} - ITBMUN Admin Dashboard
                                 </div>
                                 <div class="form-group">
                                     <label for="imgurl">Image URL</label>
-                                    <input type="text" class="form-control" id="imgurl" name="imgurl" value="{{$post->imgurl}}" placeholder="Enter a hosted image url, like ...">
+                                    <input type="text" class="form-control" id="imgurl" name="imgurl" value="{{$post->imgurl}}" placeholder="Enter a hosted image url">
+                                    <small><a href='/home/help'>Learn more about Custom Image URL</a></small>
                                 </div>
                                 <div class="form-group">
                                     <textarea name="editor1">

@@ -69,3 +69,5 @@ Route::get('/home/delete/{id}', 'PressController@delete');
 
 Route::get('/press', 'PageRequestController@viewPressIndex');
 Route::get('/press/{id}', 'PageRequestController@viewPress');
+
+Route::get('/home/help', 'PressController@viewHelp');

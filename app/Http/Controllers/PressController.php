@@ -86,4 +86,9 @@ class PressController extends Controller
         Press::destroy($id);
         return redirect("/home/delete")->with('status', "{$title} has been deleted successfully.");
     }
+
+    public function viewHelp()
+    {
+        return view('press.help');
+    }
 }

@@ -29,10 +29,12 @@ Create Post - ITBMUN Admin Dashboard
                                 </div>
                                 <div class="form-group">
                                     <label for="imgurl">Image URL</label>
-                                    <input type="text" class="form-control" id="imgurl" name="imgurl" placeholder="Enter a hosted image url, like ...">
+                                    <input type="text" class="form-control" id="imgurl" name="imgurl" placeholder="Enter a hosted image url">
+                                    <small><a href='/home/help'>Learn more about Custom Image URL</a></small>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="editor1"></textarea>
+                                    <label for="editor1">Content</label>
+                                    <textarea name="editor1" id='editor1'></textarea>
                                     <script>
                                             CKEDITOR.replace( 'editor1' );
                                     </script>
