@@ -124,6 +124,11 @@ h1 {
 // -- 6. Supports Section
     @import "blocks/main/sections/supports";
 
+// -- 7. Hotel Section
+    @import "blocks/main/hotel/hero";
+    @import "blocks/main/hotel/blurb";
+    @import "blocks/main/hotel/facilities";
+
 /* # End of Main Sections
  * ----------------------- */
 
@@ -196,4 +201,33 @@ h1 {
     @import "blocks/admin/dashboard/main";
 
 /* # End of Admin Sections
+ * ----------------------- */
+
+ /* ===================================================================
+ * # K. Press Index Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Press Hero Section
+    @import "blocks/press/hero";
+
+// -- 2. Index
+    @import "blocks/press/index";
+
+// -- 3. Post
+    @import "blocks/press/post";
+
+/* # End of Press Sections
+ * ----------------------- */
+
+  /* ===================================================================
+ * # L. Gossip Index Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Press Hero Section
+    @import "blocks/gossip/hero";
+
+// -- 2. Index
+    @import "blocks/gossip/index";
+
+/* # End of Press Sections
  * ----------------------- */

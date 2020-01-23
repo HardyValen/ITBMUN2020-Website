@@ -6,6 +6,7 @@ use App\Mail\IndividualDelegateRegist;
 use App\Mail\DelegationRegist;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
+use App\Press;
 
 class PageRequestController extends Controller
 {
@@ -87,6 +88,10 @@ class PageRequestController extends Controller
         return view("test.database");
     }
 
+    public function viewBlogTest() {
+        return view("test.blog");
+    }
+
     public function viewValidator(){
         return view("test.validator");
     }
@@ -98,5 +103,19 @@ class PageRequestController extends Controller
 
     public function viewRegistSent(){
         return view("registration.individualRegistSent");
+    }
+
+    public function viewHotelPage(){
+        return view("landing.hotel");
+    }
+
+    public function viewPressIndex(){
+        $posts = Press::orderBy('updated_at', 'desc')->paginate(4)->onEachSide(1);
+        return view("press.pressIndex")->with('posts', $posts);
+    }
+
+    public function viewPress($id){
+        $post = Press::find($id);
+        return view("press.pressPost")->with('post', $post);
     }
 }

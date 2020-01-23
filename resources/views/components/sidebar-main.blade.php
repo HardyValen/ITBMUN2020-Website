@@ -32,7 +32,16 @@
                             <img src='{{URL::asset("assets/navigationIcons/registration.svg")}}'>
                             <p>Registration</p>
                         </a>
+                        <a href="/press" class="navigation-link col-4">
+                            <img src='{{URL::asset("assets/navigationIcons/press.svg")}}'>
+                            <p>Press</p>
+                        </a>
+                        <a href="/gossip" class="navigation-link col-4">
+                            <img src='{{URL::asset("assets/navigationIcons/gossip.svg")}}'>
+                            <p>Gossip Box</p>
+                        </a>
                     </div>
+                    
                     <!--<div class="row">
                         <a href="#" class="navigation-link col-4">
                             <object data='{{URL::asset("assets/navigationIcons/articles.svg")}}' type="image/svg+xml"></object>
@@ -41,10 +50,6 @@
                         <a href="#" class="navigation-link col-4">
                             <object data='{{URL::asset("assets/navigationIcons/documents.svg")}}' type="image/svg+xml"></object>
                             <p>Documents</p>
-                        </a>
-                        <a href="#" class="navigation-link col-4">
-                            <object data='{{URL::asset("assets/navigationIcons/press.svg")}}' type="image/svg+xml"></object>
-                            <p>Press</p>
                         </a>
                     </div>-->
                 </div>

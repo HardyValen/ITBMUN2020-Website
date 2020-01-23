@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section class="registration-info" id='body'>
+    <section class="registration-information" id='body'>
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12 mb-5">
                 <h1>Delegation FAQ <br> &mdash;</h1>

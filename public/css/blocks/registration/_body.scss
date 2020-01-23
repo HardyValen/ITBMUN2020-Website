@@ -290,7 +290,6 @@
                                         display: inline-block;
                                         border-radius: 50%;
                                         background-color: map-get($theme-colors, 'secondary-light');
-                                        content: '\00a0';
                                         transition: all .2s;
                                     }
                                 }
@@ -348,7 +347,7 @@
                     margin-bottom: 0 !important;
                 }
 
-                input[type=text], input[type=email]{
+                input[type=text], input[type=email], .txta{
                     display: block;
                     position: relative;
                     z-index: 2;
