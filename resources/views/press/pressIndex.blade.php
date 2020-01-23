@@ -18,7 +18,6 @@
         </section>
 
         <section class='press-index' id='index'>
-
             @if(count($posts) > 0)
                 @foreach ($posts as $post)
                 <div class="post post-{{$post->id}}">

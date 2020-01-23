@@ -1,5 +1,5 @@
 .post-hero{
-    @include sectionProperties(70%);
+    @include sectionProperties(50%);
     background-repeat: no-repeat;
     background-size: cover;
     @include fluidpaddingy(2rem, 3rem);
@@ -9,7 +9,7 @@
 
     @media screen and (max-width:960px) {
         background-position-x: 60%;
-        @include sectionProperties(80%);
+        @include sectionProperties(60%);
     }
 
     .post-title{

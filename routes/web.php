@@ -71,3 +71,6 @@ Route::get('/press', 'PageRequestController@viewPressIndex');
 Route::get('/press/{id}', 'PageRequestController@viewPress');
 
 Route::get('/home/help', 'PressController@viewHelp');
+Route::get('/gossip', 'GossipController@viewGossipIndex');
+Route::get('/gossip/create', 'GossipController@create');
+Route::post('/gossip/create', 'GossipController@store');

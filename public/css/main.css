@@ -5819,7 +5819,6 @@ footer p {
   display: inline-block;
   border-radius: 50%;
   background-color: #EA5A5A;
-  content: '\00a0';
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -5931,7 +5930,7 @@ footer p {
   }
 }
 
-.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email], .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta {
   display: block;
   position: relative;
   z-index: 2;
@@ -5950,28 +5949,28 @@ footer p {
   transition: 0.2s ease all;
 }
 
-.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email], .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta {
   font-size: 1.3rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email], .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta {
     font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email] {
+  .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text], .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email], .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta {
     font-size: 1.6rem;
   }
 }
 
-.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:not(:placeholder-shown), .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:not(:placeholder-shown) {
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:not(:placeholder-shown), .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:not(:placeholder-shown), .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta:focus, .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta:not(:placeholder-shown) {
   outline: none;
   border-bottom: 1px solid #EA5A5A;
 }
 
-.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:focus + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:not(:placeholder-shown) + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:focus + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:not(:placeholder-shown) + .text-label {
+.registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:focus + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=text]:not(:placeholder-shown) + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:focus + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row input[type=email]:not(:placeholder-shown) + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta:focus + .text-label, .registration-body .registration-wrapper .registration-form-wrapper .registration-row .txta:not(:placeholder-shown) + .text-label {
   top: -20px;
   color: #EA5A5A;
   font-size: 11px;
@@ -6130,116 +6129,116 @@ footer p {
   }
 }
 
-.registration-info {
+.registration-information {
   width: 100%;
   min-height: 60%;
   width: 100%;
 }
 
-.registration-info {
+.registration-information {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-info {
+  .registration-information {
     padding-bottom: calc(3rem + 5.5 * ((100vw - 32rem) / (96 - 32)));
     padding-top: calc(3rem + 5.5 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-info {
+  .registration-information {
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
   }
 }
 
-.registration-info {
+.registration-information {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-info {
+  .registration-information {
     padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
     padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-info {
+  .registration-information {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
-.registration-info h1 {
+.registration-information h1 {
   font-weight: 700;
   font-family: 'Titillium Web', sans-serif;
 }
 
-.registration-info h1 {
+.registration-information h1 {
   font-size: 2.4rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-info h1 {
+  .registration-information h1 {
     font-size: calc(2.4rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-info h1 {
+  .registration-information h1 {
     font-size: 3.6rem;
   }
 }
 
-.registration-info h2 {
+.registration-information h2 {
   font-weight: 700;
   font-family: 'Titillium Web', sans-serif;
   color: #F6F6F6;
 }
 
-.registration-info h2 {
+.registration-information h2 {
   font-size: 1.8rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-info h2 {
+  .registration-information h2 {
     font-size: calc(1.8rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-info h2 {
+  .registration-information h2 {
     font-size: 2.4rem;
   }
 }
 
-.registration-info h3 {
+.registration-information h3 {
   font-weight: 700;
   font-family: 'Titillium Web', sans-serif;
   color: #F6F6F6;
 }
 
-.registration-info h3 {
+.registration-information h3 {
   font-size: 1.6rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-info h3 {
+  .registration-information h3 {
     font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-info h3 {
+  .registration-information h3 {
     font-size: 2rem;
   }
 }
 
-.registration-info p, .registration-info li {
+.registration-information p, .registration-information li {
   font-weight: 400;
   font-family: 'Titillium Web', sans-serif;
   color: #C6C6C6;
@@ -6247,36 +6246,36 @@ footer p {
   margin-bottom: 3rem;
 }
 
-.registration-info p, .registration-info li {
+.registration-information p, .registration-information li {
   font-size: 1.3rem;
 }
 
 @media screen and (min-width: 320px) {
-  .registration-info p, .registration-info li {
+  .registration-information p, .registration-information li {
     font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .registration-info p, .registration-info li {
+  .registration-information p, .registration-information li {
     font-size: 1.6rem;
   }
 }
 
-.registration-info p a, .registration-info li a {
+.registration-information p a, .registration-information li a {
   color: #BF8CD9;
   font-weight: 700;
 }
 
-.registration-info p a:hover, .registration-info li a:hover {
+.registration-information p a:hover, .registration-information li a:hover {
   color: #5B4566;
 }
 
-.registration-info li {
+.registration-information li {
   margin-bottom: 0rem;
 }
 
-.registration-info .info-row {
+.registration-information .info-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6287,7 +6286,7 @@ footer p {
 }
 
 @media screen and (max-width: 960px) {
-  .registration-info .info-row {
+  .registration-information .info-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -6295,12 +6294,12 @@ footer p {
   }
 }
 
-.registration-info .info-row .info-column {
+.registration-information .info-row .info-column {
   width: 50%;
 }
 
 @media screen and (max-width: 960px) {
-  .registration-info .info-row .info-column {
+  .registration-information .info-row .info-column {
     width: 100%;
   }
 }
@@ -7583,7 +7582,7 @@ footer p {
 
 .post-hero {
   width: 100%;
-  min-height: 70%;
+  min-height: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -7618,7 +7617,7 @@ footer p {
   .post-hero {
     background-position-x: 60%;
     width: 100%;
-    min-height: 80%;
+    min-height: 60%;
   }
 }
 
@@ -8048,6 +8047,587 @@ footer p {
   }
 }
 
-/* # End of Admin Sections
+/* # End of Press Sections
+ * ----------------------- */
+/* ===================================================================
+ * # L. Gossip Index Section
+ * ------------------------------------------------------------------- */
+.gossip-hero {
+  width: 100%;
+  min-height: 45%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4.51%, #0c0c0c), color-stop(85.49%, rgba(50, 23, 64, 0.5))), url(../assets/gossip/gossipHero.jpg);
+  background: linear-gradient(0deg, #0c0c0c 4.51%, rgba(50, 23, 64, 0.5) 85.49%), url(../assets/gossip/gossipHero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-position-y: 45%;
+}
+
+@media screen and (max-width: 960px) {
+  .gossip-hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .gossip-hero {
+    padding-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .gossip-hero {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.gossip-hero.gossip-create {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 960px) {
+  .gossip-hero.gossip-create {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    min-height: 30%;
+  }
+}
+
+.gossip-hero .hero-desc h1 {
+  font-family: 'Lemon/Milk Regular';
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+.gossip-hero .hero-desc h1 {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-hero .hero-desc h1 {
+    font-size: calc(2.4rem + 2.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-hero .hero-desc h1 {
+    font-size: 4.8rem;
+  }
+}
+
+.gossip-hero .hero-desc h1 {
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-hero .hero-desc h1 {
+    letter-spacing: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(1.8px + 3 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-hero .hero-desc h1 {
+    letter-spacing: 4.8px;
+    padding-left: 4.8px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gossip-hero .hero-desc h1 {
+    line-height: 1.5;
+  }
+}
+
+.gossip-hero .hero-backicon {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.gossip-hero .hero-backicon {
+  width: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-hero .hero-backicon {
+    width: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-hero .hero-backicon {
+    width: 3rem;
+  }
+}
+
+.gossip-hero .hero-backicon:hover {
+  -webkit-filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+          filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.txta {
+  width: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  min-height: 1.6rem;
+  line-height: 1.4;
+  overflow: hidden;
+  resize: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #eeeeee;
+}
+
+.txta {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .txta {
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .txta {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+}
+
+.txta {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .txta {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .txta {
+    font-size: 1.6rem;
+  }
+}
+
+.gossip-index {
+  width: 100%;
+  min-height: 50%;
+  background-color: #0c0c0c;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.gossip-index {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index {
+    padding-bottom: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gossip-index {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.gossip-index .gossip-none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gossip-index .gossip-none h2 {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  color: #F6F6F6;
+  padding-bottom: 2rem;
+}
+
+.gossip-index .gossip-none h2 {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-none h2 {
+    font-size: calc(1.8rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-none h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.gossip-index .gossip-navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.gossip-index .gossip-navigation {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-navigation {
+    margin-bottom: calc(2rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+    margin-top: calc(2rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-navigation {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.gossip-index .gossip-navigation {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-navigation {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-navigation {
+    font-size: 1.4rem;
+  }
+}
+
+.gossip-index .gossip-navigation .page-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #0c0c0c;
+  border-radius: 5px;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.gossip-index .gossip-navigation .page-link {
+  width: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-navigation .page-link {
+    width: calc(3rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-navigation .page-link {
+    width: 3.5rem;
+  }
+}
+
+.gossip-index .gossip-navigation .page-link {
+  height: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-navigation .page-link {
+    height: calc(3rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-navigation .page-link {
+    height: 3.5rem;
+  }
+}
+
+.gossip-index .gossip-navigation .page-link:hover {
+  border: none;
+  color: white;
+  background-color: #EA5A5A;
+}
+
+.gossip-index .gossip-navigation .page-item.active .page-link {
+  background-color: #e95151;
+}
+
+.gossip-index .gossip-navigation .page-item.disabled .page-link {
+  color: #545454;
+}
+
+.gossip-index .gossip-container {
+  width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.gossip-index .gossip-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container {
+    padding-bottom: calc(3rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gossip-index .gossip-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .gossip-index .gossip-container {
+    padding-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .gossip-index .gossip-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.gossip-index .gossip-container .gossip {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #111111;
+  -webkit-box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05), 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05), 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gossip-index .gossip-container .gossip {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container .gossip {
+    padding-left: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container .gossip {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
+.gossip-index .gossip-container .gossip {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container .gossip {
+    padding-bottom: calc(1.2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1.2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container .gossip {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.gossip-index .gossip-container .gossip .gossip-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gossip-index .gossip-container .gossip .gossip-header {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container .gossip .gossip-header {
+    font-size: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container .gossip .gossip-header {
+    font-size: 1.2rem;
+  }
+}
+
+.gossip-index .gossip-container .gossip .gossip-header .gossip-sender {
+  color: white;
+  font-weight: 700;
+}
+
+.gossip-index .gossip-container .gossip .gossip-header .gossip-sender-council {
+  color: #dedede;
+  font-weight: 400;
+}
+
+.gossip-index .gossip-container .gossip .gossip-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 800;
+  color: white;
+}
+
+.gossip-index .gossip-container .gossip .gossip-title {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container .gossip .gossip-title {
+    font-size: calc(1.6rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container .gossip .gossip-title {
+    font-size: 2.2rem;
+  }
+}
+
+.gossip-index .gossip-container .gossip .gossip-body {
+  color: #dedede;
+  line-height: 1.2;
+}
+
+.gossip-index .gossip-container .gossip .gossip-body {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container .gossip .gossip-body {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container .gossip .gossip-body {
+    font-size: 1.4rem;
+  }
+}
+
+.gossip-index .gossip-container .gossip .gossip-body .gossip-reciever {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.gossip-index .gossip-container .gossip .gossip-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 700;
+}
+
+.gossip-index .gossip-container .gossip .gossip-footer {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .gossip-index .gossip-container .gossip .gossip-footer {
+    font-size: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gossip-index .gossip-container .gossip .gossip-footer {
+    font-size: 1.2rem;
+  }
+}
+
+.gossip-index .gossip-create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* # End of Press Sections
  * ----------------------- */
 /*# sourceMappingURL=main.css.map */

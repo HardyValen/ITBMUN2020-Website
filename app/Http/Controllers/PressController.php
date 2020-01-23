@@ -8,6 +8,7 @@ use App\Press;
 class PressController extends Controller
 {
     protected $redirectTo = '/login';
+    
     public function __construct()
     {
         $this->middleware('auth');

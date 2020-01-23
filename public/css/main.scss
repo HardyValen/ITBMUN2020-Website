@@ -213,8 +213,21 @@ h1 {
 // -- 2. Index
     @import "blocks/press/index";
 
-// -- 3. Index
+// -- 3. Post
     @import "blocks/press/post";
 
-/* # End of Admin Sections
+/* # End of Press Sections
+ * ----------------------- */
+
+  /* ===================================================================
+ * # L. Gossip Index Section
+ * ------------------------------------------------------------------- */
+
+// -- 1. Press Hero Section
+    @import "blocks/gossip/hero";
+
+// -- 2. Index
+    @import "blocks/gossip/index";
+
+/* # End of Press Sections
  * ----------------------- */

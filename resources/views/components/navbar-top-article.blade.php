@@ -10,6 +10,7 @@
             <!-- <li class='navigation-item'><a href="/registration">Registration</a></li> -->
             <li class='navigation-item'><a href="/registration">Registration</a></li>
             <li class='navigation-item'><a href="/press">Press</a></li>
+            <li class='navigation-item'><a href="/gossip">Gossip Box</a></li>
             <!--<li class='navigation-item'><a href="/articles">Articles</a></li>
             <li class='navigation-item'><a href="/documents">Documents</a></li>
             <li class='navigation-item'><a href="/press">Press</a></li>-->

@@ -36,6 +36,10 @@
                             <img src='{{URL::asset("assets/navigationIcons/press.svg")}}'>
                             <p>Press</p>
                         </a>
+                        <a href="/gossip" class="navigation-link col-4">
+                            <img src='{{URL::asset("assets/navigationIcons/gossip.svg")}}'>
+                            <p>Gossip Box</p>
+                        </a>
                     </div>
                     
                     <!--<div class="row">
