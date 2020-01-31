@@ -19,6 +19,7 @@ class Gossip extends Migration
             $table->string('reciever')->nullable();
             $table->string('council')->nullable();
             $table->string('title');
+            $table->string('image')->nullable();
             $table->text('body');
             $table->timestamps();
         });

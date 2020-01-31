@@ -15,7 +15,25 @@
 
     <section class='registration-body' id='index' style='background-color:#0c0c0c'>
         <div class="registration-wrapper" style="display: flex">
-            <form action="" method="post" style="display: flex; width: 100%">
+            @if ($errors->any())
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>
+                                        {{ $error }}
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            @endif
+            <form action="" method="post" role="form" enctype="multipart/form-data" style="display: flex; width: 100%">
                 @csrf
                 <div class="registration-form-wrapper">
                     <h2 class='mb-3'>Identity<br>&mdash;</h2>
@@ -109,6 +127,13 @@
                                 <span class='info'></span>
                                 <span class='required'>*Required</span>
                             </p>  
+                        </div>
+                    </div>
+
+                    <div class="registration-row">
+                        <div class="registration-col r-col-12">
+                            <label for="body">Do you want to attach an image? (optional, max 2MB)</label>
+                            <input id="image" type="file" name="image">
                         </div>
                     </div>
 
