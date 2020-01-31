@@ -132,6 +132,7 @@
 
                     <div class="registration-row">
                         <div class="registration-col r-col-12">
+                            <label for="body">Do you want to attach an image? (optional, max 2MB)</label>
                             <input id="image" type="file" name="image">
                         </div>
                     </div>
