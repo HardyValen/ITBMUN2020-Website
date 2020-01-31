@@ -12,7 +12,8 @@ class Gossip extends Model
         'reciever',
         'council',
         'title',
-        'body'
+        'body',
+        'image'
     ];
 
     protected $table = "gossip";

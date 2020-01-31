@@ -17,6 +17,12 @@
 
         <section class='gossip-index' id='index'>
             @if(count($gossips) > 0)
+                <div class="gossip-create">
+                    <a href="/gossip/create" class='button-white-transparent'>Create another gossip</a>
+                </div>
+                <div class="gossip-navigation">
+                    {{ $gossips->links() }}
+                </div>
                 <div class="gossip-container">
                     @foreach ($gossips as $gossip)
                         <div class="gossip">
@@ -43,6 +49,9 @@
                                     </span><br>
                                 @endif
                                 <p>{{$gossip->body}}</p>
+                                @if (isset($gossip->image))
+                                    <img src="{{asset($gossip->image)}}" style="width: 100%;">
+                                @endif
                             </span>
                             <div class="gossip-footer">
                                 <span class="gossip-time">
