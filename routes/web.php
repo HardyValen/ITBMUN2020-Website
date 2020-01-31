@@ -56,7 +56,7 @@ Route::post('/registration/individual-delegate', 'IndividualDelegatesController@
 Route::post('/registration/delegations', 'DelegationsController@sendDataDelegations');
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('home');
 
 Route::get('/home/create', 'PressController@create');
 Route::post('/home/create', 'PressController@store');

@@ -78,14 +78,14 @@ class PressController extends Controller
         ]);
 
         $request->session()->flash('status', "{$request->title} successfully updated!");
-        return redirect('/dashboard/update');   
+        return redirect('/home/update');   
     }
 
     public function delete(Request $request, $id)
     {
         $title = Press::find($id)->title;
         Press::destroy($id);
-        return redirect("/dashboard/delete")->with('status', "{$title} has been deleted successfully.");
+        return redirect("/home/delete")->with('status', "{$title} has been deleted successfully.");
     }
 
     public function viewHelp()

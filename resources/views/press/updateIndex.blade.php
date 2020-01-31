@@ -28,7 +28,7 @@ Update Post Index - ITBMUN Admin Dashboard
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12">
-                            <small>/ <a href='/home'>Home</a></small>
+                            <small>/ <a href='/dashboard'>Home</a></small>
                         </div>
                     </div>
                     

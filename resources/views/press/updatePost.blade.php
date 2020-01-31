@@ -14,7 +14,7 @@ Editing {{$post->title}} - ITBMUN Admin Dashboard
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12">
-                            <small>/ <a href='/home'>Home</a> / <a href='/home/update'>Update Index</a></small>
+                            <small>/ <a href='/dashboard'>Home</a> / <a href='/home/update'>Update Index</a></small>
                         </div>
                     </div>
 
