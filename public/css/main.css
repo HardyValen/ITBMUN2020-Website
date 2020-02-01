@@ -7924,6 +7924,31 @@ footer p {
   color: #EA5A5A;
 }
 
+.post-content pre {
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  color: #C6C6C6;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.post-content pre {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .post-content pre {
+    font-size: calc(1.3rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .post-content pre {
+    font-size: 1.6rem;
+  }
+}
+
 .post-content blockquote {
   padding-left: 1.5rem;
 }
