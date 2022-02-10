@@ -25,6 +25,6 @@
         "medium-editor": "^5.23.3",
         "medium-editor-insert-plugin": "^2.5.1",
         "medium-editor-markdown": "^3.0.1",
-        "node-sass": "^4.13.1"
+        "node-sass": "^7.0.0"
     }
 }
